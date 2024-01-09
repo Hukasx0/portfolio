@@ -18,7 +18,7 @@ const urls = [
 const Navi: React.FC<NaviProps> = ({ containerStyles, linkStyles, linkUnderlineStyles }) => {
   const currentPath = usePathname();
   return (
-    <nav className={`${containerStyles}`}>
+    <motion.nav className={`${containerStyles}`}>
         {urls.map((url, i) => {
             return (
             <Link 
@@ -38,7 +38,7 @@ const Navi: React.FC<NaviProps> = ({ containerStyles, linkStyles, linkUnderlineS
                 {url.name}
             </Link>)
         })}
-    </nav>
+    </motion.nav>
   )
 }
 
