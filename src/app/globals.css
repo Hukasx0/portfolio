@@ -85,6 +85,31 @@
   100% { transform: rotate( 0.0deg) }
 }
 
+.block-container {
+  position: relative;
+  transition: 250ms;
+  perspective: 500px;
+}
+
+
+.block-container .btn-front {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+  background-color: #ffffff33;
+  transition: 250ms;
+  transform-style: preserve-3d;
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+
+.block-container:hover > .btn-front {
+  transform: translateZ(80px) translateY(-5px);
+}
+
 @layer base {
   * {
     @apply border-border;
