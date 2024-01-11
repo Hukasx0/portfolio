@@ -1,13 +1,13 @@
 import {
-    dotnet, actix, mysql, nodejs, postgres, redis
+    dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis
 } from "../assets/backend";
 
 import {
-    angular, reactsvg, rxjs, redux, sass, tailwind
+    angular, reactsvg, svelte, rxjs, redux, sass, tailwind
 } from "../assets/frontend";
 
 import {
-    csharp, javascript, typescript, python, rust
+    csharp, javascript, typescript, python, rust, go
 } from "../assets/programming_languages";
 
 import githubLogo from "../assets/icons/github.svg";
@@ -23,6 +23,11 @@ export const skills = [
     {
         imageUrl: angular,
         name: "Angular",
+        type: "Frontend"
+    },
+    {
+        imageUrl: svelte,
+        name: "Svelte",
         type: "Frontend"
     },
     {
@@ -56,6 +61,16 @@ export const skills = [
         type: "Backend"
     },
     {
+        imageUrl: express,
+        name: "Express.js",
+        type: "Backend"
+    },
+    {
+        imageUrl: nextjs,
+        name: "Next.js",
+        type: "Backend"
+    },
+    {
         imageUrl: csharp,
         name: "C#",
         type: "Language"
@@ -68,6 +83,11 @@ export const skills = [
     {
         imageUrl: rust,
         name: "Rust",
+        type: "Language"
+    },
+    {
+        imageUrl: go,
+        name: "Go",
         type: "Language"
     },
     {
