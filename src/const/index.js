@@ -178,6 +178,76 @@ export const projects = [
             }
         ],
         githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "AI Companion",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Aichar",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Rogger",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "ZSP2 Wagrowiec website",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Home Middleman",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
     }
 ];
 

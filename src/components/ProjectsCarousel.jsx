@@ -13,6 +13,8 @@ import {
 import Image from 'next/image';
 import Link from "next/link";
 
+import Autoplay from "embla-carousel-autoplay"
+
 import { projects } from "@/const";
 
 export function ProjectsCarousel() {
@@ -33,9 +35,16 @@ export function ProjectsCarousel() {
     })
   }, [api])
 
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  )
+
   return (
     <div>
-      <Carousel setApi={setApi} className="w-full max-w-xs">
+      <Carousel 
+         setApi={setApi}
+         className="w-full max-w-xs"
+         plugins={[plugin.current]}>
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
