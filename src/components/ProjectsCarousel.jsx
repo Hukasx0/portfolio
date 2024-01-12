@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -10,7 +10,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Image from 'next/image';
 import Link from "next/link";
+
+import { projects } from "@/const";
 
 export function ProjectsCarousel() {
   const [api, setApi] = React.useState()
@@ -34,11 +37,14 @@ export function ProjectsCarousel() {
     <div>
       <Carousel setApi={setApi} className="w-full max-w-xs">
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {projects.map((project, index) => (
             <CarouselItem key={index}>
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
+                <CardHeader>
+                  <CardTitle>{project.name}</CardTitle>
+                  <CardDescription>{project.description}</CardDescription>
+                </CardHeader>
                 </CardContent>
               </Card>
             </CarouselItem>
@@ -48,7 +54,7 @@ export function ProjectsCarousel() {
         <CarouselNext />
       </Carousel>
       <div className="py-2 text-center text-sm text-muted-foreground">
-        Slide {current} of {count}
+        Project preview {current} of {count}
       </div>
       <p>more projects <Link href="/projects">here</Link></p>
     </div>

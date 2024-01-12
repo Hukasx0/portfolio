@@ -8,7 +8,7 @@ const Header = () => {
           <div className="logo">Portfolio</div>
           <div className="flex items-center gap-x-6">
               <Navbar
-                containerStyles="xl:flex gap-x-8 items-center"
+                containerStyles="flex gap-x-8 items-center"
                 linkStyles="relative hover:text-primary transition-all"
                 linkUnderlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
               />

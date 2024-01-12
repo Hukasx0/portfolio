@@ -167,7 +167,7 @@ export const experiences = [
 export const projects = [
     {
         currentlyWorkingOn: false,
-        imageUrl: "/abc",
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Character factory",
         description: "xyz",
         link: "abc",
@@ -177,7 +177,7 @@ export const projects = [
                 iconUrl: "/abc"
             }
         ],
-        livePreview: "xyz"
+        githubLink: "xyz"
     }
 ];
 
