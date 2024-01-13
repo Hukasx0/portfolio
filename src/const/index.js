@@ -10,7 +10,10 @@ import {
     csharp, javascript, typescript, python, rust, go
 } from "../assets/programming_languages";
 
-import githubLogo from "../assets/icons/github.svg";
+import {
+    github, zs2Wagrowiec, matrix, discord
+} from "../assets/logos";
+
 import git from "../assets/tools/git.svg";
 import docker from "../assets/tools/docker.svg";
 
@@ -126,7 +129,7 @@ export const skills = [
         type: "Tool"
     },
     {
-        imageUrl: githubLogo,
+        imageUrl: github,
         name: "GitHub",
         type: "Tool"
     },
@@ -141,8 +144,8 @@ export const experiences = [
     {
         title: "Open Source Developer",
         company_name: "Github",
-        icon: githubLogo,
-        iconBg: "#12345",
+        icon: github,
+        iconBg: "#E8E8E8",
         date: "October 2022 - now",
         points: [
             "",
@@ -151,15 +154,17 @@ export const experiences = [
         ]
     },
     {
-        title: "first",
-        company_name: "",
-        icon: githubLogo,
-        iconBg: "#12345",
-        date: "",
+        title: "High school (programmer major)",
+        company_name: "ZSP2 Wagrowiec (school)",
+        icon: zs2Wagrowiec,
+        iconBg: "#5c76c3",
+        date: "September 2020 - now",
         points: [
-            "",
-            "",
-            ""
+            "Learning frontend, backend, desktop and mobile applications programming",
+            "Learning how to create, design and manage databases",
+            "2 months of professional experience as part of an apprenticeship",
+            "HTML5, CSS3, PHP, SQL, JavaScript, TypeScript, Python, Angular, JQuery, Node.js, C#, .net, Xamarin",
+            "Git, algorithms, application design, basic computer science"
         ]
     }
 ];
@@ -254,9 +259,19 @@ export const projects = [
 export const socials = [
     {
         name: "GitHub",
-        iconUrl: "/abc",
+        iconUrl: github,
         link: "https://github.com/Hukasx0"
-    }
+    },
+    {
+        name: "Matrix",
+        iconUrl: matrix,
+        link: "https://matrix.to/#/@hukasx0:matrix.org"
+    },
+    {
+        name: "Discord",
+        iconUrl: discord,
+        link: "https://discordapp.com/users/1107028721573056614"
+    },
 ];
 
 

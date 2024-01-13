@@ -40,7 +40,7 @@ export function ProjectsCarousel() {
   )
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Carousel 
          setApi={setApi}
          className="w-full max-w-xs"
