@@ -49,6 +49,9 @@ export function ProjectsCarousel() {
           {projects.map((project, index) => (
             <CarouselItem key={index}>
               <Card>
+                {project.currentlyWorkingOn && (
+                  <p className="text-center bg-secondary">Currently working on</p>
+                )}
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                 <CardHeader>
                   <CardTitle>{project.name}</CardTitle>

@@ -75,7 +75,7 @@ export const skills = [
     },
     {
         imageUrl: csharp,
-        name: "C#",
+        name: "CSharp",
         type: "Language"
     },
     {
@@ -185,6 +185,20 @@ export const experiences = [
 ];
 
 export const projects = [
+    {
+        currentlyWorkingOn: true,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Fuwa",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
