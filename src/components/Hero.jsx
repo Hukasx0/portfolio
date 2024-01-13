@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="text-muted-foreground font-medium lg:text-[40px] sm:text-[40px] xs:text-[40px] text-[32px] lg:leading-[40px]">
           <span className="font-semibold drop-shadow">my name is Hubert Kasperek</span>
         </div>
-        <p>I create fast, efficient and cheap to maintain backends, along with a clean, intuitive and easy to navigate frontends</p>
+        <p className="font-semibold lg:text-[20px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[20px]">I create fast, efficient and cheap to maintain backends, along with a clean, intuitive and easy to navigate frontends</p>
     </section>
   )
 }

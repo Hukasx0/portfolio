@@ -3,7 +3,7 @@ import {
 } from "../assets/backend";
 
 import {
-    angular, reactsvg, svelte, rxjs, redux, sass, tailwind
+    angular, reactsvg, svelte, rxjs, redux, sass, tailwind, html5, css3, gradio
 } from "../assets/frontend";
 
 import {
@@ -129,6 +129,21 @@ export const skills = [
         type: "Tool"
     },
     {
+        imageUrl: html5,
+        name: "HTML5",
+        type: "Frontend"
+    },
+    {
+        imageUrl: css3,
+        name: "CSS3",
+        type: "Frontend"
+    },
+    {
+        imageUrl: gradio,
+        name: "Gradio",
+        type: "Frontend"
+    },
+    {
         imageUrl: github,
         name: "GitHub",
         type: "Tool"
@@ -244,6 +259,76 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Home Middleman",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "HALM Assembler",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Maybe sharp",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Personal website",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Blog",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: "/abc"
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Portfolio",
         description: "xyz",
         link: "abc",
         technologies: [
