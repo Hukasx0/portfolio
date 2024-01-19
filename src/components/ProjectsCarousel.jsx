@@ -2,7 +2,8 @@
 
 import * as React from "react"
 
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+import { github } from "../assets/logos/index";
+
 import {
   Carousel,
   CarouselContent,
@@ -10,12 +11,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import Image from 'next/image';
 import Link from "next/link";
 
 import Autoplay from "embla-carousel-autoplay"
 
 import { projects } from "@/const";
+import ProjectCard from "./ProjectCard";
 
 export function ProjectsCarousel() {
   const [api, setApi] = React.useState()
@@ -48,17 +49,15 @@ export function ProjectsCarousel() {
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
-              <Card>
-                {project.currentlyWorkingOn && (
-                  <p className="text-center bg-secondary">Currently working on</p>
-                )}
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                <CardHeader>
-                  <CardTitle>{project.name}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
-                </CardHeader>
-                </CardContent>
-              </Card>
+                <ProjectCard
+                    id={index}
+                    name={project.name}
+                    desc={project.description}
+                    techs={project.technologies}
+                    img={github}
+                    githubLink={project.githubLink}
+                    currentlyWorkingOn={project.currentlyWorkingOn}
+                />
             </CarouselItem>
           ))}
         </CarouselContent>

@@ -13,7 +13,7 @@ import {
 
 const Skills = () => {
   return (
-    <section className="mt-16 flex flex-wrap gap-12">
+    <section className="mt-16 flex flex-wrap gap-12 justify-center">
               {skills.map((skill) => (
                 <TooltipProvider>
                   <Tooltip>

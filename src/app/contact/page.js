@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
@@ -7,6 +8,7 @@ export default function Contact() {
         <Header />
         <div className="max-container">
           {/* Contact form */}
+          <ContactForm />
         </div>
         <Footer />
       </main>

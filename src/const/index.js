@@ -193,8 +193,24 @@ export const projects = [
         link: "abc",
         technologies: [
             {
-                name: "Python",
-                iconUrl: "/abc"
+                name: "C#",
+                iconUrl: csharp
+            },
+            {
+                name: ".NET",
+                iconUrl: dotnet
+            },
+            {
+                name: "TypeScript",
+                iconUrl: typescript
+            },
+            {
+                name: "Angular",
+                iconUrl: angular
+            },
+            {
+                name: "Postgres",
+                iconUrl: postgres
             }
         ],
         githubLink: "xyz"
@@ -208,7 +224,11 @@ export const projects = [
         technologies: [
             {
                 name: "Python",
-                iconUrl: "/abc"
+                iconUrl: python
+            },
+            {
+                name: "Gradio",
+                iconUrl: gradio
             }
         ],
         githubLink: "xyz"
@@ -221,8 +241,20 @@ export const projects = [
         link: "abc",
         technologies: [
             {
-                name: "Python",
-                iconUrl: "/abc"
+                name: "Rust",
+                iconUrl: rust
+            },
+            {
+                name: "Actix",
+                iconUrl: actix
+            },
+            {
+                name: "TypeScript",
+                iconUrl: typescript
+            },
+            {
+                name: "React",
+                iconUrl: reactsvg
             }
         ],
         githubLink: "xyz"
@@ -235,8 +267,12 @@ export const projects = [
         link: "abc",
         technologies: [
             {
+                name: "Rust",
+                iconUrl: rust
+            },
+            {
                 name: "Python",
-                iconUrl: "/abc"
+                iconUrl: python
             }
         ],
         githubLink: "xyz"
@@ -249,8 +285,46 @@ export const projects = [
         link: "abc",
         technologies: [
             {
-                name: "Python",
-                iconUrl: "/abc"
+                name: "Rust",
+                iconUrl: rust
+            },
+            {
+                name: "Actix",
+                iconUrl: actix
+            },
+            {
+                name: "JavaScript",
+                iconUrl: javascript
+            },
+            {
+                name: "Redis",
+                iconUrl: redis
+            }
+        ],
+        githubLink: "xyz"
+    },
+    {
+        currentlyWorkingOn: false,
+        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        name: "Portfolio",
+        description: "xyz",
+        link: "abc",
+        technologies: [
+            {
+                name: "Next.js",
+                iconUrl: nextjs
+            },
+            {
+                name: "React",
+                iconUrl: reactsvg
+            },
+            {
+                name: "JavaScript",
+                iconUrl: javascript
+            },
+            {
+                name: "Tailwind",
+                iconUrl: tailwind
             }
         ],
         githubLink: "xyz"
@@ -305,8 +379,8 @@ export const projects = [
         link: "abc",
         technologies: [
             {
-                name: "Python",
-                iconUrl: "/abc"
+                name: "C#",
+                iconUrl: csharp
             }
         ],
         githubLink: "xyz"
@@ -319,8 +393,12 @@ export const projects = [
         link: "abc",
         technologies: [
             {
-                name: "Python",
-                iconUrl: "/abc"
+                name: "React",
+                iconUrl: reactsvg
+            },
+            {
+                name: "TypeScript",
+                iconUrl: typescript
             }
         ],
         githubLink: "xyz"
@@ -329,20 +407,6 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Blog",
-        description: "xyz",
-        link: "abc",
-        technologies: [
-            {
-                name: "Python",
-                iconUrl: "/abc"
-            }
-        ],
-        githubLink: "xyz"
-    },
-    {
-        currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
-        name: "Portfolio",
         description: "xyz",
         link: "abc",
         technologies: [
