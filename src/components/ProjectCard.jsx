@@ -31,45 +31,36 @@ const fadeIn = (direction, type, delay, duration) => {
     };
   };
 
-const ProjectCard = ({ id, name, desc, techs, img, githubLink, currentlyWorkingOn}) => {
+export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorkingOn }) => {
     return (
-        <motion.div variants={fadeIn("up", "spring", id * 0.5, 0.75)}>
-            <Tilt
-            options={{
-                max: 45,
-                scale: 1,
-                speed: 450,
-            }}
-            className="bg-secondary p-5 rounded-2xl sm:w-[360px] w-full">
+        <div>
                 <div className="relative w-full h-[230px]">
                     <Image
                         src={img}
                         alt={name}
                         className='w-full h-full object-cover rounded-2xl'
                         />
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger>
                     <div className="absolute inset-0 flex justify-end m-3">
                         <div
                             onClick={() => window.open(githubLink, "_blank")}
                             className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
                         >
-                        <Image
-                            src={github}
-                            alt={`${name} GitHub url`}
-                            width={500}
-                            height={500}
-                            className='w-full h-full object-cover rounded-2xl'
-                        />
+                        <TooltipProvider>
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <Image
+                                        src={github}
+                                        alt={`${name} GitHub url`}
+                                        className='w-full h-full object-cover rounded-2xl'
+                                    />
+                                </TooltipTrigger>
+                            <TooltipContent className="z-100">
+                                <p>{`Check ${name} on GitHub!`}</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
                         </div>
                     </div>
-                    </TooltipTrigger>
-                        <TooltipContent>
-                            <p>{`Check ${name} on GitHub!`}</p>
-                        </TooltipContent>
-                    </Tooltip>
-                    </TooltipProvider>
                 </div>
                 <div className="mt-5">
                     {currentlyWorkingOn ? (
@@ -95,9 +86,22 @@ const ProjectCard = ({ id, name, desc, techs, img, githubLink, currentlyWorkingO
                         })}
                     </div>
                 </div>
-            </Tilt>
-        </motion.div>
+            </div>
     )
 };
 
-export default ProjectCard;
+export const AnimatedProjectCard = ({ id, name, desc, techs, img, githubLink, currentlyWorkingOn}) => {
+    return (
+        <motion.div variants={fadeIn("up", "spring", id * 0.5, 0.75)}>
+            <Tilt
+            options={{
+                max: 45,
+                scale: 1,
+                speed: 450,
+            }}
+            className="bg-secondary p-5 rounded-2xl sm:w-[360px] w-full">
+                <ProjectCard  name={name} desc={desc} techs={techs} img={img} githubLink={githubLink} currentlyWorkingOn={currentlyWorkingOn} />
+            </Tilt>
+            </motion.div>
+    );
+}

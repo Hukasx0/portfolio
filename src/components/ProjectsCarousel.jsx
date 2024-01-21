@@ -16,7 +16,7 @@ import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay"
 
 import { projects } from "@/const";
-import ProjectCard from "./ProjectCard";
+import { ProjectCard } from "./ProjectCard";
 
 export function ProjectsCarousel() {
   const [api, setApi] = React.useState()
@@ -49,8 +49,8 @@ export function ProjectsCarousel() {
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
+              <div className="bg-secondary p-5 rounded-2xl sm:w-[360px] w-full">
                 <ProjectCard
-                    id={index}
                     name={project.name}
                     desc={project.description}
                     techs={project.technologies}
@@ -58,6 +58,7 @@ export function ProjectsCarousel() {
                     githubLink={project.githubLink}
                     currentlyWorkingOn={project.currentlyWorkingOn}
                 />
+                </div>
             </CarouselItem>
           ))}
         </CarouselContent>

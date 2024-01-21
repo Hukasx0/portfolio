@@ -8,5 +8,7 @@ import tailwind from "./tailwind.svg";
 import html5 from "./html5.svg";
 import css3 from "./css3.svg";
 import gradio from "./gradio.svg";
+import jquery from "./jquery.svg";
+import bootstrap from "./bootstrap.svg";
 
-export { angular, reactsvg, svelte, rxjs, redux, sass, tailwind, html5, css3, gradio };
+export { angular, reactsvg, svelte, rxjs, redux, sass, tailwind, html5, css3, gradio, jquery, bootstrap };

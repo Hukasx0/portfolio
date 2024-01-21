@@ -1,5 +1,5 @@
 import { projects } from '@/const';
-import ProjectCard from './ProjectCard';
+import { AnimatedProjectCard } from './ProjectCard';
 import { github } from "../assets/logos/index";
 
 const ProjectsList = () => {
@@ -7,7 +7,7 @@ const ProjectsList = () => {
     <div className='mt-20 flex flex-wrap gap-7 justify-center'>
         {projects.map((project, i) => {
             return (
-                <ProjectCard
+                <AnimatedProjectCard
                     key={i}
                     id={i}
                     name={project.name}

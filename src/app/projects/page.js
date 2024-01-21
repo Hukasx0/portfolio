@@ -15,7 +15,7 @@ export default function Projects() {
       <main>
         <Header />
         <div className="max-container">
-          <h1>Tech: <SearchProject /></h1>
+          <h1>Tech: <SearchProject selectedTech={null} /></h1>
           {/* projects display with search function */}
           <div className="mb-10">
             <ProjectsList />

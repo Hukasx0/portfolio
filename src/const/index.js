@@ -1,13 +1,13 @@
 import {
-    dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis
+    dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis, astro
 } from "../assets/backend";
 
 import {
-    angular, reactsvg, svelte, rxjs, redux, sass, tailwind, html5, css3, gradio
+    angular, reactsvg, svelte, rxjs, redux, sass, tailwind, html5, css3, gradio, jquery, bootstrap
 } from "../assets/frontend";
 
 import {
-    csharp, javascript, typescript, python, rust, go
+    csharp, javascript, typescript, python, rust, go, haskell
 } from "../assets/programming_languages";
 
 import {
@@ -190,7 +190,6 @@ export const projects = [
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Fuwa",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
                 name: "C#",
@@ -213,14 +212,13 @@ export const projects = [
                 iconUrl: postgres
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/Fuwa"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Character factory",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
                 name: "Python",
@@ -231,14 +229,13 @@ export const projects = [
                 iconUrl: gradio
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/character-factory"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "AI Companion",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
                 name: "Rust",
@@ -257,14 +254,13 @@ export const projects = [
                 iconUrl: reactsvg
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/ai-companion"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Aichar",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
                 name: "Rust",
@@ -275,14 +271,13 @@ export const projects = [
                 iconUrl: python
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/aichar"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Rogger",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
                 name: "Rust",
@@ -301,14 +296,13 @@ export const projects = [
                 iconUrl: redis
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/rogger"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Portfolio",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
                 name: "Next.js",
@@ -327,70 +321,93 @@ export const projects = [
                 iconUrl: tailwind
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/portfolio"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "ZSP2 Wagrowiec website",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
-                name: "Python",
-                iconUrl: "/abc"
+                name: "HTML5",
+                iconUrl: html5
+            },
+            {
+                name: "CSS3",
+                iconUrl: css3
+            },
+            {
+                name: "JavaScript",
+                iconUrl: javascript
+            },
+            {
+                name: "JQuery",
+                iconUrl: jquery
+            },
+            {
+                name: "Bootstrap",
+                iconUrl: bootstrap
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/zsp2wagrowiec-strona"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Home Middleman",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
+                name: "Node.js",
+                iconUrl: nodejs
+            },
+            {
+                name: "JavaScript",
+                iconUrl: javascript
+            },
+            {
+                name: "Bootstrap",
+                iconUrl: bootstrap
+            },
+            {
                 name: "Python",
-                iconUrl: "/abc"
-            }
+                iconUrl: python
+            },
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/Home_Middleman"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "HALM Assembler",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
-                name: "Python",
-                iconUrl: "/abc"
+                name: "Haskell",
+                iconUrl: haskell
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/HALM-Assembler"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Maybe sharp",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
                 name: "C#",
                 iconUrl: csharp
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/maybe-sharp"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Personal website",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
                 name: "React",
@@ -401,21 +418,24 @@ export const projects = [
                 iconUrl: typescript
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/hukasx0.github.io"
     },
     {
         currentlyWorkingOn: false,
         imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
         name: "Blog",
         description: "xyz",
-        link: "abc",
         technologies: [
             {
-                name: "Python",
-                iconUrl: "/abc"
+                name: "Astro",
+                iconUrl: astro
+            },
+            {
+                name: "Tailwind",
+                iconUrl: tailwind
             }
         ],
-        githubLink: "xyz"
+        githubLink: "https://github.com/Hukasx0/blog"
     }
 ];
 
