@@ -13,15 +13,15 @@ export default function Home() {
       <div className='max-container'>
         <Hero />
         <div className='py-10 flex flex-col'>
-          <h3 className='font-medium lg:text-[25px] sm:text-[25px] xs:text-[25px] text-[25px] lg:leading-[20px]'>Known technologies</h3>
+          <h3 className='font-medium lg:text-[35px] sm:text-[35px] xs:text-[35px] text-[35px] lg:leading-[30px]'>Known technologies</h3>
         </div>
         <Skills />
         <div className='py-10 flex flex-col'>
-          <h3 className='font-medium lg:text-[25px] sm:text-[25px] xs:text-[25px] text-[25px] lg:leading-[20px]'>Preview of my projects</h3>
+          <h3 className='font-medium lg:text-[35px] sm:text-[35px] xs:text-[35px] text-[35px] lg:leading-[30px]'>Preview of my projects</h3>
         </div>
         <ProjectsCarousel />
         <div className='py-10 flex flex-col'>
-          <h3 className='font-medium lg:text-[25px] sm:text-[25px] xs:text-[25px] text-[25px] lg:leading-[20px]'>My experience</h3>
+          <h3 className='font-medium lg:text-[35px] sm:text-[35px] xs:text-[35px] text-[35px] lg:leading-[30px]'>My experience</h3>
         </div>
         <Experience />
         <hr />

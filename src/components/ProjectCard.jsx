@@ -51,11 +51,11 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                                     <Image
                                         src={github}
                                         alt={`${name} GitHub url`}
-                                        className='w-full h-full object-cover rounded-2xl'
+                                        className='w-full h-full object-cover rounded-2xl z-10'
                                     />
                                 </TooltipTrigger>
                             <TooltipContent className="z-100">
-                                <p>{`Check ${name} on GitHub!`}</p>
+                                <p className='z-100'>{`Check ${name} on GitHub!`}</p>
                             </TooltipContent>
                         </Tooltip>
                     </TooltipProvider>
@@ -72,7 +72,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                     }
                     <h3 className='text-primary font-bold text-[24px]'>{name}</h3>
                     <p className='mt-2 text-primary text-[14px]'>{desc}</p>
-                    <div className="mt-4 flex flex-wrap grap-2">
+                    <div className="mt-4 flex flex-wrap gap-2">
                         {techs.map((tech) => {
                             return (
                                 <Image

@@ -1,14 +1,14 @@
 const Hero = () => {
   return (
-    <section>
-      <div className="text-sm uppercase font-semibold mv-4 text-primary tracking-[4px]">Fullstack Developer</div>
-        <h1 className="lg:text-[80px] sm:text-[65px] xs:text-[80px] text-[50px] lg:leading-[80px]">Hi there!
+    <section className="flex flex-col items-center">
+      <div className="text-sm uppercase font-semibold mt-2 text-primary tracking-[4px] text-center">Fullstack Developer</div>
+        <h1 className="font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2">Hi there!
           <span className="wave lg:text-[65px] sm:text-[65px] xs:text-[65px] text-[50px] lg:leading-[80px] pl-5">👋</span>
         </h1>
-        <div className="text-muted-foreground font-medium lg:text-[40px] sm:text-[40px] xs:text-[40px] text-[32px] lg:leading-[40px]">
+        <div className="text-muted-foreground my-4 font-medium lg:text-[40px] sm:text-[40px] xs:text-[40px] text-[20px] lg:leading-[40px]">
           <span className="font-semibold drop-shadow">my name is Hubert Kasperek</span>
         </div>
-        <p className="font-semibold lg:text-[20px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[20px]">I create fast, efficient and cheap to maintain backends, along with a clean, intuitive and easy to navigate frontends</p>
+        <p className="text-muted-foreground my-4 text-center font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]">I create fast, efficient and cheap to maintain backends, along with a clean, intuitive and easy to navigate frontends</p>
     </section>
   )
 }

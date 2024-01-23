@@ -7,7 +7,6 @@ export default function Contact() {
       <main>
         <Header />
         <div className="max-container">
-          {/* Contact form */}
           <ContactForm />
         </div>
         <Footer />

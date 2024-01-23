@@ -294,6 +294,10 @@ export const projects = [
             {
                 name: "Redis",
                 iconUrl: redis
+            },
+            {
+                name: "Docker",
+                iconUrl: docker
             }
         ],
         githubLink: "https://github.com/Hukasx0/rogger"

@@ -104,7 +104,7 @@
   z-index: 1;
   width: inherit;
   height: inherit;
-  background-color: #ffffff33;
+  background-color: var(--background);
   transition: 250ms;
   transform-style: preserve-3d;
   transform-origin: top left;
