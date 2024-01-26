@@ -1,6 +1,5 @@
 import { projects } from '@/const';
 import { AnimatedProjectCard } from './ProjectCard';
-import { github } from "../assets/logos/index";
 
 const ProjectsList = () => {
   return (

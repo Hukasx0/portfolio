@@ -2,8 +2,6 @@
 
 import * as React from "react"
 
-import { github } from "../assets/logos/index";
-
 import {
   Carousel,
   CarouselContent,

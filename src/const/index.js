@@ -177,9 +177,10 @@ export const experiences = [
         iconBg: "#E8E8E8",
         date: "October 2022 - now",
         points: [
-            "",
-            "",
-            ""
+            "I learned how to use Git and GitHub at an advanced level, the concept of contributions, branches, merge, push, commit, etc.",
+            "I created, designed and managed personal projects, from the first lines of code to operations on other branches, writing documentation, testing and releasing stable versions",
+            "I learned how to help others by contributing to other people's repositories, reading their code, following their rules for contributing and writing code.",
+            "I experimented and learned: Rust, C#, ASP .NET, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python scripts, LLM's, Stable Diffusion, Haskell"
         ]
     },
     {
@@ -203,7 +204,7 @@ export const projects = [
         currentlyWorkingOn: true,
         imageUrl: fuwa,
         name: "Fuwa",
-        description: "xyz",
+        description: "Free and open source platform for sharing code snippets, asking questions and solving problems together",
         technologies: [
             {
                 name: "C#",
@@ -232,7 +233,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: characterFactory,
         name: "Character factory",
-        description: "xyz",
+        description: "Python script with Gradio WebUI to automate/help create characters for SillyTavern, TavernAI, TextGenerationWebUI using artificial intelligence (Large Language Models and Stable Diffusion). This project also uses the aichar library I wrote earlier for Python in the Rust language to create, parse and export AI characters/character files in different formats",
         technologies: [
             {
                 name: "Python",
@@ -249,7 +250,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: aiCompanion,
         name: "AI Companion",
-        description: "xyz",
+        description: "Backend + API + Frontend for running large language models of artificial intelligence on the local computer, with the addition of short-term memory, long-term memory, ai learning by chatting with the user and the ability to add your own custom data. Can be used as a easy to use and fast chat interface with AI chatbots or can be used as an API/Backend to other projects",
         technologies: [
             {
                 name: "Rust",
@@ -274,7 +275,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: aichar,
         name: "Aichar",
-        description: "xyz",
+        description: "Python library for creating/transporting/parsing AI characters between different interfaces (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion), my other project - Character Factory - uses it. The library recorded a record 7,000 monthly downloads on PyPi (pip). The library allows you to solve problems related to AI characters in a simple, safe and fast way.",
         technologies: [
             {
                 name: "Rust",
@@ -291,7 +292,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: rogger,
         name: "Rogger",
-        description: "xyz",
+        description: "Very lightweight, efficient, secure and easy to use Fullstack Blog Content Management System (CMS)",
         technologies: [
             {
                 name: "Rust",
@@ -320,7 +321,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: zsp2wagrowiecWebsite,
         name: "Portfolio",
-        description: "xyz",
+        description: "My portfolio written in Next.js and JavaScript. You are currently on it.",
         technologies: [
             {
                 name: "Next.js",
@@ -345,7 +346,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: zsp2wagrowiecWebsite,
         name: "ZSP2 Wagrowiec website",
-        description: "xyz",
+        description: "The website that won the school contest, the website automatically fetches the latest data from the school backend Rest API",
         technologies: [
             {
                 name: "HTML5",
@@ -375,7 +376,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: homeMiddleman,
         name: "Home Middleman",
-        description: "xyz",
+        description: "A fullstack application that I wrote in Node.js to manage cyclic boring server tasks in your browser in a few clicks",
         technologies: [
             {
                 name: "Node.js",
@@ -400,7 +401,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: halmAssembler,
         name: "HALM Assembler",
-        description: "xyz",
+        description: "the main assumption of halm assembler, as the name suggests, is assembly, which is compiled into binary code. But halm also has a built-in interpreted language, which was originally intended to better manage code, files, and simple calculations. However, this language has grown to a level where you can write much more complex scripts in it than I expected when writing the first lines of code for this project.",
         technologies: [
             {
                 name: "Haskell",
@@ -413,7 +414,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: maybeSharp,
         name: "Maybe sharp",
-        description: "xyz",
+        description: "A simple header only library for C# that allows you to use Monads similar to programming languages such as Rust or Haskell.",
         technologies: [
             {
                 name: "C#",
@@ -426,7 +427,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: personalWebsite,
         name: "Personal website",
-        description: "xyz",
+        description: "My personal website written in React and TypeScript, the website is designed to imitate Windows 95 with its functionality and aesthetics.",
         technologies: [
             {
                 name: "React",
@@ -444,7 +445,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: blog,
         name: "Blog",
-        description: "xyz",
+        description: "My blog written in Astro framework using Tailwind and View Transitions API for smooth transitions between pages.",
         technologies: [
             {
                 name: "Astro",

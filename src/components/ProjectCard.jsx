@@ -124,7 +124,7 @@ export const AnimatedProjectCard = ({ id, name, desc, techs, img, githubLink, cu
                 scale: 1,
                 speed: 450,
             }}
-            className="bg-secondary p-5 rounded-2xl sm:w-[360px] w-full">
+            className="bg-secondary p-5 rounded-2xl sm:w-[360px] w-full h-full">
                 <ProjectCard  name={name} desc={desc} techs={techs} img={img} githubLink={githubLink} currentlyWorkingOn={currentlyWorkingOn} websitePreview={websitePreview} />
             </Tilt>
             </motion.div>
