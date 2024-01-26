@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <header>
+    <header className="mt-5">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div className="logo">Portfolio</div>

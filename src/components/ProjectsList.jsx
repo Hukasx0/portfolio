@@ -13,9 +13,10 @@ const ProjectsList = () => {
                     name={project.name}
                     desc={project.description}
                     techs={project.technologies}
-                    img={github}
+                    img={project.imageUrl}
                     githubLink={project.githubLink}
                     currentlyWorkingOn={project.currentlyWorkingOn}
+                    websitePreview={project.websitePreview}
                 />
             );
         })}

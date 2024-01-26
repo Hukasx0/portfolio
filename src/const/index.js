@@ -14,6 +14,20 @@ import {
     github, zs2Wagrowiec, matrix, discord
 } from "../assets/logos";
 
+import {
+    characterFactory,
+    aiCompanion,
+    homeMiddleman,
+    rogger,
+    zsp2wagrowiecWebsite,
+    blog,
+    personalWebsite,
+    aichar,
+    halmAssembler,
+    maybeSharp,
+    fuwa
+} from "../assets/projects";
+
 import git from "../assets/tools/git.svg";
 import docker from "../assets/tools/docker.svg";
 
@@ -187,7 +201,7 @@ export const experiences = [
 export const projects = [
     {
         currentlyWorkingOn: true,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: fuwa,
         name: "Fuwa",
         description: "xyz",
         technologies: [
@@ -216,7 +230,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: characterFactory,
         name: "Character factory",
         description: "xyz",
         technologies: [
@@ -233,7 +247,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: aiCompanion,
         name: "AI Companion",
         description: "xyz",
         technologies: [
@@ -258,7 +272,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: aichar,
         name: "Aichar",
         description: "xyz",
         technologies: [
@@ -275,7 +289,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: rogger,
         name: "Rogger",
         description: "xyz",
         technologies: [
@@ -304,7 +318,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: zsp2wagrowiecWebsite,
         name: "Portfolio",
         description: "xyz",
         technologies: [
@@ -329,7 +343,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: zsp2wagrowiecWebsite,
         name: "ZSP2 Wagrowiec website",
         description: "xyz",
         technologies: [
@@ -354,11 +368,12 @@ export const projects = [
                 iconUrl: bootstrap
             }
         ],
-        githubLink: "https://github.com/Hukasx0/zsp2wagrowiec-strona"
+        githubLink: "https://github.com/Hukasx0/zsp2wagrowiec-strona",
+        websitePreview: "https://hukasx0.github.io/zsp2wagrowiec-strona/"
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: homeMiddleman,
         name: "Home Middleman",
         description: "xyz",
         technologies: [
@@ -383,7 +398,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: halmAssembler,
         name: "HALM Assembler",
         description: "xyz",
         technologies: [
@@ -396,7 +411,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: maybeSharp,
         name: "Maybe sharp",
         description: "xyz",
         technologies: [
@@ -409,7 +424,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: personalWebsite,
         name: "Personal website",
         description: "xyz",
         technologies: [
@@ -422,11 +437,12 @@ export const projects = [
                 iconUrl: typescript
             }
         ],
-        githubLink: "https://github.com/Hukasx0/hukasx0.github.io"
+        githubLink: "https://github.com/Hukasx0/hukasx0.github.io",
+        websitePreview: "https://hukasx0.github.io/"
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: "https://raw.githubusercontent.com/Hukasx0/hukasx0.github.io/main/src/assets/projects_imgs/character-factory.png",
+        imageUrl: blog,
         name: "Blog",
         description: "xyz",
         technologies: [
@@ -439,7 +455,8 @@ export const projects = [
                 iconUrl: tailwind
             }
         ],
-        githubLink: "https://github.com/Hukasx0/blog"
+        githubLink: "https://github.com/Hukasx0/blog",
+        websitePreview: "https://hukasx0.github.io/blog/"
     }
 ];
 

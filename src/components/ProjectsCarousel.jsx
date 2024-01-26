@@ -54,7 +54,7 @@ export function ProjectsCarousel() {
                     name={project.name}
                     desc={project.description}
                     techs={project.technologies}
-                    img={github}
+                    img={project.imageUrl}
                     githubLink={project.githubLink}
                     currentlyWorkingOn={project.currentlyWorkingOn}
                 />
@@ -68,7 +68,7 @@ export function ProjectsCarousel() {
       <div className="py-2 text-center text-sm text-muted-foreground">
         Project preview {current} of {count}
       </div>
-      <p>more projects <Link href="/projects">here</Link></p>
+      <p className="hover:text-muted-foreground text-foreground"><Link href="/projects">more projects here</Link></p>
     </div>
   )
 }

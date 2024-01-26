@@ -10,6 +10,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { Drawer } from 'vaul';
 
 const Skills = () => {
   return (
@@ -18,7 +19,7 @@ const Skills = () => {
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger>
-                      <Link href={`/projects/?tech=${skill.name}`}>
+                      {}
                         <div className="block-container w-20 h-20">
                           <div className="btn-back rounded-xl" />
                           <div className="btn-front rounded-xl flex justify-center items-center">
@@ -31,7 +32,7 @@ const Skills = () => {
                               />
                           </div>
                         </div>
-                      </Link>
+                      {}
                   </TooltipTrigger>
                 <TooltipContent>
                 <p>{skill.name}</p>

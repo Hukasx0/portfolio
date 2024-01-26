@@ -14,12 +14,13 @@ export default function Projects() {
         <div className='py-10 flex flex-col'>
           <h3 className='font-medium lg:text-[35px] sm:text-[35px] xs:text-[35px] text-[35px] lg:leading-[30px]'>My projects</h3>
         </div>
-          {/* projects display with search function */}
           <div className="mb-10">
             <ProjectsList />
           </div>
-          <h3>And many other smaller projects carried out as part of:</h3>
-          <h4>professional practice, school tasks, practical tests at school</h4>
+          <div className="py-10 flex flex-col gap-5">
+            <h3 className="font-medium text-center lg:text-[25px] sm:text-[25px] xs:text-[25px] text-[25px] lg:leading-[20px]">And many other smaller projects carried out as part of</h3>
+            <h4 className="lg:text-[20px] text-center sm:text-[20px] xs:text-[20px] text-[20px] lg:leading-[15px]">Github contributions, professional practice, school tasks, practical tests at school</h4>
+          </div>
           <hr />
           <CallToAction />
         </div>

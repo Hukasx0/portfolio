@@ -12,11 +12,11 @@ const ContactForm = () => {
             <form
             className="w-full flex flex-col gap-7 mt-14">
                 <Label htmlFor="email">Name</Label>
-                <Input type="email" id="email" placeholder="Email" />
+                <Input type="email" id="email" placeholder="Your name" />
                 <Label htmlFor="email">Email</Label>
                 <Input type="email" id="email" placeholder="Email" />
                 <Label htmlFor="email">Topic</Label>
-                <Input type="email" id="email" placeholder="Email" />
+                <Input type="email" id="email" placeholder="Topic" />
                 <Label htmlFor="email">Message</Label>
                 <Textarea placeholder="Type your message here." />
                 <Button>Message me</Button>

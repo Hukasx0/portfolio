@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
 import Image from 'next/image';
 import { github } from "../assets/logos/index";
+import websiteSvg from "../assets/tools/website-preview.svg";
 
 import {
     Tooltip,
@@ -31,13 +32,15 @@ const fadeIn = (direction, type, delay, duration) => {
     };
   };
 
-export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorkingOn }) => {
+export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorkingOn, websitePreview }) => {
     return (
         <div>
                 <div className="relative w-full h-[230px]">
                     <Image
                         src={img}
                         alt={name}
+                        width={500}
+                        height={500}
                         className='w-full h-full object-cover rounded-2xl'
                         />
                     <div className="absolute inset-0 flex justify-end m-3">
@@ -60,6 +63,28 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                         </Tooltip>
                     </TooltipProvider>
                         </div>
+                        {websitePreview && (
+                            <div
+                            onClick={() => window.open(websitePreview, "_blank")}
+                            className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                            >
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            <Image
+                                                src={websiteSvg}
+                                                alt={`${name} website preview`}
+                                                className='w-full h-full object-cover rounded-2xl z-10'
+                                            />
+                                        </TooltipTrigger>
+                                        <TooltipContent className="z-100">
+                                            <p className='z-100'>{`Check ${name} preview!`}</p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
+                            </div>
+                        )
+                        }
                     </div>
                 </div>
                 <div className="mt-5">
@@ -90,7 +115,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
     )
 };
 
-export const AnimatedProjectCard = ({ id, name, desc, techs, img, githubLink, currentlyWorkingOn}) => {
+export const AnimatedProjectCard = ({ id, name, desc, techs, img, githubLink, currentlyWorkingOn, websitePreview}) => {
     return (
         <motion.div variants={fadeIn("up", "spring", id * 0.5, 0.75)}>
             <Tilt
@@ -100,7 +125,7 @@ export const AnimatedProjectCard = ({ id, name, desc, techs, img, githubLink, cu
                 speed: 450,
             }}
             className="bg-secondary p-5 rounded-2xl sm:w-[360px] w-full">
-                <ProjectCard  name={name} desc={desc} techs={techs} img={img} githubLink={githubLink} currentlyWorkingOn={currentlyWorkingOn} />
+                <ProjectCard  name={name} desc={desc} techs={techs} img={img} githubLink={githubLink} currentlyWorkingOn={currentlyWorkingOn} websitePreview={websitePreview} />
             </Tilt>
             </motion.div>
     );
