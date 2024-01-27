@@ -287,7 +287,8 @@ export const projects = [
                 iconUrl: python
             }
         ],
-        githubLink: "https://github.com/Hukasx0/aichar"
+        githubLink: "https://github.com/Hukasx0/aichar",
+        websitePreview: "https://pypi.org/project/aichar/"
     },
     {
         currentlyWorkingOn: false,
@@ -341,7 +342,8 @@ export const projects = [
                 iconUrl: tailwind
             }
         ],
-        githubLink: "https://github.com/Hukasx0/portfolio"
+        githubLink: "https://github.com/Hukasx0/portfolio",
+        websitePreview: "https://hukasx0.github.io/portfolio"
     },
     {
         currentlyWorkingOn: false,

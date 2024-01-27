@@ -55,6 +55,7 @@ export function ProjectsCarousel() {
                     img={project.imageUrl}
                     githubLink={project.githubLink}
                     currentlyWorkingOn={project.currentlyWorkingOn}
+                    websitePreview={project.websitePreview}
                 />
                 </div>
             </CarouselItem>
