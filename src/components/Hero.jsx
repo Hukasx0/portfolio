@@ -6,7 +6,7 @@ const Hero = () => {
           <span className="wave lg:text-[65px] sm:text-[65px] xs:text-[65px] text-[50px] lg:leading-[80px] pl-5">👋</span>
         </h1>
         <div className="text-muted-foreground my-4 font-medium lg:text-[40px] sm:text-[40px] xs:text-[40px] text-[20px] lg:leading-[40px]">
-          <span className="font-semibold drop-shadow">my name is Hubert Kasperek</span>
+          <span className="font-semibold drop-shadow">my name is <span className="font-bold">Hubert Kasperek</span></span>
         </div>
         <p className="text-muted-foreground my-4 text-center font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]">I create fast, efficient and cheap to maintain backends, along with a clean, intuitive and easy to navigate frontends</p>
     </section>

@@ -18,10 +18,8 @@ const Skills = () => {
               {skills.map((skill) => (
                 <TooltipProvider>
                   <Tooltip>
-                    <TooltipTrigger>
-                      {}
+                    <TooltipTrigger className='cursor-default'>
                         <div className="block-container w-20 h-20">
-                          <div className="btn-back rounded-xl" />
                           <div className="btn-front rounded-xl flex justify-center items-center">
                             <Image 
                               src={skill.imageUrl.src} 
@@ -32,7 +30,6 @@ const Skills = () => {
                               />
                           </div>
                         </div>
-                      {}
                   </TooltipTrigger>
                 <TooltipContent>
                 <p>{skill.name}</p>

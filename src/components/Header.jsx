@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -5,7 +6,7 @@ const Header = () => {
     <header className="mt-5">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <div className="logo">Portfolio</div>
+          <div className="font-black italic"><Link href="/">Portfolio</Link></div>
           <div className="flex items-center gap-x-6">
               <Navbar
                 containerStyles="flex gap-x-8 items-center"

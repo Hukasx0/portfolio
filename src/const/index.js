@@ -25,7 +25,8 @@ import {
     aichar,
     halmAssembler,
     maybeSharp,
-    fuwa
+    fuwa,
+    portfolio
 } from "../assets/projects";
 
 import git from "../assets/tools/git.svg";
@@ -180,7 +181,7 @@ export const experiences = [
             "I learned how to use Git and GitHub at an advanced level, the concept of contributions, branches, merge, push, commit, etc.",
             "I created, designed and managed personal projects, from the first lines of code to operations on other branches, writing documentation, testing and releasing stable versions",
             "I learned how to help others by contributing to other people's repositories, reading their code, following their rules for contributing and writing code.",
-            "I experimented and learned: Rust, C#, ASP .NET, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python scripts, LLM's, Stable Diffusion"
+            "I experimented and learned: Rust, C#, ASP .NET, Node.js, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python, Gradio, Go, LLM's, Stable Diffusion and Docker"
         ]
     },
     {
@@ -193,7 +194,7 @@ export const experiences = [
             "Learning frontend, backend, desktop and mobile applications programming",
             "Learning how to create, design and manage databases",
             "2 months of professional experience as part of an apprenticeship",
-            "HTML5, CSS3, PHP, SQL, JavaScript, TypeScript, Python, Angular, JQuery, Node.js, C#, .net, Xamarin",
+            "HTML5, CSS3, PHP, SQL, JavaScript, TypeScript, Python, Angular, JQuery, Node.js, C#, .NET, Xamarin",
             "Git, algorithms, application design, basic computer science"
         ]
     }
@@ -319,7 +320,7 @@ export const projects = [
     },
     {
         currentlyWorkingOn: false,
-        imageUrl: zsp2wagrowiecWebsite,
+        imageUrl: portfolio,
         name: "Portfolio",
         description: "My portfolio written in Next.js and JavaScript. You are currently on it.",
         technologies: [

@@ -9,6 +9,7 @@ import aichar from "./aichar.png";
 import halmAssembler from "./halm-assembler.png";
 import maybeSharp from "./maybe-sharp.png";
 import fuwa from "./fuwa.png";
+import portfolio from "./portfolio.png";
 
 export {
     characterFactory,
@@ -21,5 +22,6 @@ export {
     aichar,
     halmAssembler,
     maybeSharp,
-    fuwa
+    fuwa,
+    portfolio
 }
