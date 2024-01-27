@@ -18,9 +18,9 @@ const ContactForm = () => {
   return (
     <section className="relative flex lg:flex-row flex-col">
         <div className="flex-1 min-w-[50%] flex flex-col items-center">
-            <h1 className="lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px]">Let's talk</h1>
+            <h1 className="lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center">Let's talk</h1>
             <form
-            className="w-full flex flex-col gap-7 mt-14">
+            className="w-full flex flex-col gap-7 sm:mt-14 mt-7">
                 <Label htmlFor="email">Name</Label>
                 <Input type="email" id="email" placeholder="Your name" />
                 <Label htmlFor="email">Email</Label>

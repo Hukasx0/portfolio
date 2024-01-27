@@ -47,7 +47,7 @@ export function ProjectsCarousel() {
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
-              <div className="bg-secondary p-5 rounded-2xl sm:w-[360px] w-full">
+              <div className="bg-secondary p-5 rounded-2xl w-full h-full">
                 <ProjectCard
                     name={project.name}
                     desc={project.description}
@@ -66,7 +66,7 @@ export function ProjectsCarousel() {
       <div className="py-2 text-center text-sm text-muted-foreground">
         Project preview {current} of {count}
       </div>
-      <p className="hover:text-muted-foreground text-foreground"><Link href="/projects">more projects here</Link></p>
+      <p className="hover:text-muted-foreground text-foreground font-semibold"><Link href="/projects">more projects here</Link></p>
     </div>
   )
 }
