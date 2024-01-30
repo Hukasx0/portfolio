@@ -9,7 +9,7 @@ export default function Contact() {
         <Header />
         <div className="max-container">
           <ContactForm />
-          <div className="sm:py-10 py-5">
+          <div className="sm:py-15 py-10">
             <h2 className="lg:text-[35px] sm:text-[32px] xs:text-[35px] text-[25px] lg:leading-[35px] text-center">Or</h2>
             <h3 className="lg:text-[25px] sm:text-[22px] xs:text-[25px] text-[15px] lg:leading-[25px] text-center sm:mt-5 mt-2">Reach me out here</h3>
             <ContactList />

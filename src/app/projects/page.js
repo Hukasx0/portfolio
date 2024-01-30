@@ -19,7 +19,7 @@ export default function Projects() {
             <ProjectsList />
           </div>
           <div className="py-10 flex flex-col gap-5">
-            <h3 className="font-medium text-center lg:text-[25px] sm:text-[25px] xs:text-[25px] text-[25px] lg:leading-[20px]">And many other smaller projects carried out as part of</h3>
+            <h3 className="font-medium text-center lg:text-[25px] sm:text-[25px] xs:text-[25px] text-[25px] lg:leading-[20px]">And many other projects carried out as part of</h3>
             <h4 className="lg:text-[20px] text-center sm:text-[20px] xs:text-[20px] text-[20px] lg:leading-[15px]">
               <Link className="hover:text-muted-foreground text-foreground font-semibold" href="https://github.com/Hukasx0?tab=repositories" target="_blank">Github contributions</Link>, professional practice, school tasks, practical tests at school</h4>
           </div>

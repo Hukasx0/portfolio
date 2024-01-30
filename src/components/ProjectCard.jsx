@@ -43,7 +43,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                         height={500}
                         className='w-full h-full object-cover rounded-2xl'
                         />
-                    <div className="absolute inset-0 flex justify-end m-3">
+                    <div className="absolute inset-0 flex justify-end m-3 gap-2">
                         <div
                             onClick={() => window.open(githubLink, "_blank")}
                             className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -100,13 +100,22 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                     <div className="mt-4 flex flex-wrap gap-2">
                         {techs.map((tech) => {
                             return (
-                                <Image
-                                    key={tech.name}
-                                    src={tech.iconUrl}
-                                    width={25}
-                                    height={25}
-                                    alt={tech.name}
-                                />
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger className='cursor-default'>
+                                            <Image
+                                                key={tech.name}
+                                                src={tech.iconUrl}
+                                                width={25}
+                                                height={25}
+                                                alt={tech.name}
+                                            />
+                                        </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p>{tech.name}</p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
                             )
                         })}
                     </div>

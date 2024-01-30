@@ -1,6 +1,5 @@
 "use client";
 
-import Link from 'next/link';
 import Image from 'next/image';
 import { skills } from "@/const"
 
@@ -10,13 +9,12 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { Drawer } from 'vaul';
 
 const Skills = () => {
   return (
     <section className="mt-16 flex flex-wrap gap-12 justify-center">
               {skills.map((skill) => (
-                <TooltipProvider>
+                <TooltipProvider key={skill.name}>
                   <Tooltip>
                     <TooltipTrigger className='cursor-default'>
                         <div className="block-container w-20 h-20">

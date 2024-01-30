@@ -11,7 +11,7 @@ import {
 } from "../assets/programming_languages";
 
 import {
-    github, zs2Wagrowiec, matrix, discord
+    github, zs2Wagrowiec, matrix, discord, mail
 } from "../assets/logos";
 
 import {
@@ -482,6 +482,23 @@ export const socials = [
     },
 ];
 
+export const contactTypes = [
+    {
+        name: "Discord",
+        iconUrl: discord,
+        link: "https://discordapp.com/users/1107028721573056614"
+    },
+    {
+        name: "e-mail",
+        iconUrl: mail,
+        link: "mailto:hubertkasp13@gmail.com"
+    },
+    {
+        name: "Matrix",
+        iconUrl: matrix,
+        link: "https://matrix.to/#/@hukasx0:matrix.org"
+    }
+]
 
 export const routes = [
     { path: "/", name: "Home" },
