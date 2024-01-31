@@ -45,15 +45,17 @@ const ContactForm = () => {
         toast({
           title: "Error sending message",
           variant: "destructive",
-          description: "Please try again later or contact me in another way. (The full error text is printed in the browser console)"
+          description: "Please try again later or contact me in another way. (Full error message is printed in the browser console)"
         });
         console.error(error);
       });
     }).catch((error) => {
       setSending(false);
       setForm({ name: '', email: '', topic: '', message: ''});
-      toast("Error sending message", {
-        description: "Please try again later or contact me in another way. (The full error text is printed in the browser console)"
+      toast({
+        title: "Error sending message",
+        variant: "destructive",
+        description: "Please try again later or contact me in another way. (Full error message is printed in the browser console)"
       });
       console.error(error);
     });
@@ -62,7 +64,7 @@ const ContactForm = () => {
   return (
     <section className="relative flex lg:flex-row flex-col">
         <div className="flex-1 min-w-[50%] flex flex-col items-center">
-            <h1 className="lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center">Let's talk</h1>
+            <h1 className="lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center">Let&apos;s talk</h1>
             <form
               className="w-full flex flex-col gap-7 sm:mt-14 mt-7"
               onSubmit={handleSubmit}

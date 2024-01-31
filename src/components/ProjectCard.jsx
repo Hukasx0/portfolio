@@ -100,7 +100,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                     <div className="mt-4 flex flex-wrap gap-2">
                         {techs.map((tech) => {
                             return (
-                                <TooltipProvider>
+                                <TooltipProvider key={tech.name}>
                                     <Tooltip>
                                         <TooltipTrigger className='cursor-default'>
                                             <Image

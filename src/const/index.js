@@ -180,8 +180,8 @@ export const experiences = [
         points: [
             "I learned how to use Git and GitHub at an advanced level, the concept of contributions, branches, merge, push, commit, etc.",
             "I created, designed and managed personal projects, from the first lines of code to operations on other branches, writing documentation, testing and releasing stable versions",
-            "I learned how to help others by contributing to other people's repositories, reading their code, following their rules for contributing and writing code.",
-            "I experimented and learned: Rust, C#, ASP .NET, Node.js, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python, Gradio, Go, LLM's, Stable Diffusion and Docker"
+            "I learned how to help others by contributing to other people's repositories, reading their code, reading documentation, following their rules for contributing and writing code.",
+            "I experimented and learned: Rust, C#, ASP .NET, Node.js, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python, Gradio, Go, LLM's, Stable Diffusion and Docker and more"
         ]
     },
     {
