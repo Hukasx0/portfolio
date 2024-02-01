@@ -224,6 +224,10 @@ export const projects = [
                 iconUrl: angular
             },
             {
+                name: "RxJS",
+                iconUrl: rxjs
+            },
+            {
                 name: "Postgres",
                 iconUrl: postgres
             }

@@ -8,9 +8,15 @@ import 'react-vertical-timeline-component/style.min.css';
 const Experience = () => {
   return (
     <div className='mt-12 flex'>
-    <VerticalTimeline>
+    <VerticalTimeline
+    lineColor='hsl(var(--secondary))'
+    animate={true}>
       {experiences.map((experience) => (
         <VerticalTimelineElement
+        contentArrowStyle={{
+          color: 'hsl(var(--secondary))',
+          borderRight: '7px solid'
+        }}
         visible={true}
         key={experience.company_name}
         date={experience.date}
@@ -32,7 +38,8 @@ const Experience = () => {
           borderBottom: '8px',
           borderStyle: 'solid',
           borderBottomColor: experience.iconBg,
-          boxShadow: 'none'
+          boxShadow: 'none',
+          background: 'hsl(var(--secondary))'
         }}
         >
           <div>

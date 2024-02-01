@@ -18,7 +18,7 @@ const Skills = () => {
                   <Tooltip>
                     <TooltipTrigger className='cursor-default'>
                         <div className="block-container w-20 h-20">
-                          <div className="btn-front rounded-xl flex justify-center items-center">
+                          <div className="btn-front bg-secondary rounded-xl flex justify-center items-center">
                             <Image 
                               src={skill.imageUrl.src} 
                               alt={skill.name} 

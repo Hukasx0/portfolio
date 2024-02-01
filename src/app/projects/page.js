@@ -1,11 +1,14 @@
-"use client";
-
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ProjectsList from "@/components/ProjectsList";
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Projects | Hubert Kasperek\'s portfolio website',
+  description: 'Hubert \'Hukasx0\' Kasperek\'s portfolio website (project list)',
+  keywords: ["portfolio", "Hubert Kasperek", "projects", "projects list", "skills", "contact", "Hukasx0", "fullstack developer", "backend developer", "frontend developer"]
+};
 
 export default function Projects() {
     return (

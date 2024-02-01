@@ -104,13 +104,26 @@
   z-index: 1;
   width: inherit;
   height: inherit;
-  background-color: var(--background);
   transition: 250ms;
   transform-style: preserve-3d;
   transform-origin: top left;
   overflow: hidden;
 }
 
+@media (max-width: 400px) {
+  .tiny {
+    display: none;
+  }
+  .tiny-center {
+    justify-content: center;
+  }
+  .tiny-hero-text {
+    font-size: 40px;
+  }
+  .tiny-hero-subtext {
+    font-size: 17px;
+  }
+}
 
 .block-container:hover > .btn-front {
   transform: translateZ(80px) translateY(-5px);

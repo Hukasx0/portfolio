@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header className="mt-5">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <div className="font-black italic"><Link href="/">Portfolio</Link></div>
+        <div className="flex justify-between items-center tiny-center">
+          <div className="font-black italic tiny"><Link href="/">Portfolio</Link></div>
           <div className="flex items-center gap-x-6">
               <Navbar
                 containerStyles="flex gap-x-8 items-center"
