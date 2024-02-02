@@ -181,12 +181,12 @@ export const experiences = [
             "I learned how to use Git and GitHub at an advanced level, the concept of contributions, branches, merge, push, commit, etc.",
             "I created, designed and managed personal projects, from the first lines of code to operations on other branches, writing documentation, testing and releasing stable versions",
             "I learned how to help others by contributing to other people's repositories, reading their code, reading documentation, following their rules for contributing and writing code.",
-            "I experimented and learned: Rust, C#, ASP .NET, Node.js, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python, Gradio, Go, LLM's, Stable Diffusion and Docker and more"
+            "I experimented and learned: Rust, C#, ASP .NET, Node.js, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python, Gradio, Go, LLM's, Stable Diffusion, Docker and more"
         ]
     },
     {
         title: "High school (programmer major)",
-        company_name: "ZSP2 Wagrowiec (school)",
+        company_name: "Zespół Szkół nr 2 im. ppłk. dr. Stanisława Kulińskiego w Wągrowcu (school)",
         icon: zs2Wagrowiec,
         iconBg: "#5c76c3",
         date: "September 2020 - now",
@@ -506,6 +506,6 @@ export const contactTypes = [
 
 export const routes = [
     { path: "/", name: "Home" },
-    { path: "/projects", name: "Projects" },
-    { path: "/contact", name: "Contact" }
+    { path: "/projects/", name: "Projects" },
+    { path: "/contact/", name: "Contact" }
 ]

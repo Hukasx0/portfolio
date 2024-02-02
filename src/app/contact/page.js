@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 export const metadata = {
   title: 'Contact | Hubert Kasperek\'s portfolio website',
   description: 'Hubert \'Hukasx0\' Kasperek\'s portfolio website (contact form)',
-  keywords: ["portfolio", "Hubert Kasperek", "projects", "projects list", "skills", "contact", "Hukasx0", "fullstack developer", "backend developer", "frontend developer"]
+  keywords: ["portfolio", "Hubert Kasperek", "projects", "projects list", "skills", "contact", "Hukasx0", "fullstack developer", "backend developer", "frontend developer", "discord contact", "mail contact", "matrix contact"]
 };
 
 export default function Contact() {
