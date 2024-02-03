@@ -20,6 +20,7 @@ export function ProjectsCarousel() {
   const [api, setApi] = React.useState()
   const [current, setCurrent] = React.useState(0)
   const [count, setCount] = React.useState(0)
+  const isMobile = window.matchMedia("(max-width: 470px)").matches;
 
   React.useEffect(() => {
     if (!api) {
@@ -43,7 +44,10 @@ export function ProjectsCarousel() {
       <Carousel 
          setApi={setApi}
          className="w-full max-w-xs"
-         plugins={[plugin.current]}>
+         plugins={[plugin.current]}
+         onMouseEnter={plugin.current.stop}
+         onMouseLeave={plugin.current.reset}
+      >
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
@@ -61,8 +65,8 @@ export function ProjectsCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        {!isMobile && <CarouselPrevious />}
+        {!isMobile && <CarouselNext />}
       </Carousel>
       <div className="py-2 text-center text-sm text-muted-foreground">
         Project preview {current} of {count}
