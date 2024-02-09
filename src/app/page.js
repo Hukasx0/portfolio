@@ -3,8 +3,13 @@ import Experience from '@/components/Experience'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import { ProjectsCarousel } from '@/components/ProjectsCarousel'
-import Skills from '@/components/Skills'
+import dynamic from 'next/dynamic'
+const ProjectsCarousel = dynamic(() => import('@/components/ProjectsCarousel'), {
+  ssr: true
+})
+const Skills = dynamic(() => import('@/components/Skills'), {
+  ssr: true
+})
 
 export default function Home() {
   return (

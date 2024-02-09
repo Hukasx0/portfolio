@@ -16,7 +16,7 @@ import Autoplay from "embla-carousel-autoplay"
 import { projects } from "@/const";
 import { ProjectCard } from "./ProjectCard";
 
-export function ProjectsCarousel() {
+export default function ProjectsCarousel() {
   const [api, setApi] = React.useState()
   const [current, setCurrent] = React.useState(0)
   const [count, setCount] = React.useState(0)

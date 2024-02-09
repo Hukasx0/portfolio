@@ -1,7 +1,7 @@
 "use client";
 
 import { projects } from '@/const';
-import { AnimatedProjectCard } from './ProjectCard';
+import { AnimatedProjectCard } from './AnimatedProjectCard';
 
 const ProjectsList = () => {
   return (
