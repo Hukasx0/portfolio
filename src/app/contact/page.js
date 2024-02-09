@@ -1,7 +1,11 @@
+import dynamic from 'next/dynamic'
+
 import ContactForm from "@/components/ContactForm";
 import ContactList from "@/components/ContactList";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+const Header = dynamic(() => import('@/components/Header'), {
+  ssr: true
+});
 
 export const metadata = {
   title: 'Contact | Hubert Kasperek\'s portfolio website',

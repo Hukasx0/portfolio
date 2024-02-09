@@ -1,9 +1,12 @@
+import dynamic from 'next/dynamic'
+
 import CallToAction from '@/components/CallToAction'
 import Experience from '@/components/Experience'
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+const Header = dynamic(() => import('@/components/Header'), {
+  ssr: true
+});
 import Hero from '@/components/Hero'
-import dynamic from 'next/dynamic'
 const ProjectsCarousel = dynamic(() => import('@/components/ProjectsCarousel'), {
   ssr: true
 })

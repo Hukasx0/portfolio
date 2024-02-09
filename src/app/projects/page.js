@@ -1,6 +1,10 @@
+import dynamic from 'next/dynamic'
+
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+const Header = dynamic(() => import('@/components/Header'), {
+  ssr: true
+});
 import ProjectsList from "@/components/ProjectsList";
 import Link from "next/link";
 
