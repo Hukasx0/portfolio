@@ -14,3 +14,7 @@
 <a href="https://en.wikipedia.org/wiki/HTML5">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40px" />
 </a>
+
+### [Github pages](https://hukasx0.github.io/portfolio/)
+
+### [Vercel](https://hukasx0-portfolio.vercel.app/)
