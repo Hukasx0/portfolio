@@ -9,7 +9,10 @@ if (process.env.NEXT_PUBLIC_GH_PAGES === 'True') {
     nextConfig = {
         basePath: '/portfolio',
         trailingSlash: true,
-        output: 'export'
+        output: 'export',
+        images: {
+            unoptimized: true,
+        },
     };
 } 
 
