@@ -504,8 +504,18 @@ export const contactTypes = [
     }
 ]
 
-export const routes = [
+let routes = [
     { path: "/", name: "Home" },
-    { path: "/projects/", name: "Projects" },
-    { path: "/contact/", name: "Contact" }
-]
+    { path: "/projects", name: "Projects" },
+    { path: "/contact", name: "Contact" }
+];
+
+if (process.env.NEXT_PUBLIC_GH_PAGES === 'True') {
+    routes = [
+        { path: "/", name: "Home" },
+        { path: "/projects/", name: "Projects" },
+        { path: "/contact/", name: "Contact" }
+    ];
+}
+
+export { routes };

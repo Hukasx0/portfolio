@@ -3,10 +3,14 @@
 })*/
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: '/portfolio',
-    trailingSlash: true,
-    output: 'export'
-}
+let nextConfig = {};
+
+if (process.env.NEXT_PUBLIC_GH_PAGES === 'True') {
+    nextConfig = {
+        basePath: '/portfolio',
+        trailingSlash: true,
+        output: 'export'
+    };
+} 
 
 module.exports = nextConfig // withBundleAnalyzer(nextConfig)
