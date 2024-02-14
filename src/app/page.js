@@ -10,9 +10,7 @@ import Hero from '@/components/Hero'
 const ProjectsCarousel = dynamic(() => import('@/components/ProjectsCarousel'), {
   ssr: true
 })
-const Skills = dynamic(() => import('@/components/Skills'), {
-  ssr: true
-})
+import Skills from '@/components/Skills';
 
 export default function Home() {
   return (

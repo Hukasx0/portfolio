@@ -34,136 +34,163 @@ import docker from "../assets/tools/docker.svg";
 
 export const skills = [
     {
+        id: 0,
         imageUrl: reactsvg,
         name: "React",
         type: "Frontend"
     },
     {
+        id: 1,
         imageUrl: angular,
         name: "Angular",
         type: "Frontend"
     },
     {
+        id: 2,
         imageUrl: svelte,
         name: "Svelte",
         type: "Frontend"
     },
     {
+        id: 3,
         imageUrl: rxjs,
         name: "RxJS",
         type: "Frontend"
     },
     {
+        id: 4,
         imageUrl: redux,
         name: "Redux",
         type: "Frontend"
     },
     {
+        id: 5,
         imageUrl: typescript,
         name: "TypeScript",
         type: "Language"
     },
     {
+        id: 6,
         imageUrl: javascript,
         name: "JavaScript",
         type: "Language"
     },
     {
+        id: 7,
         imageUrl: dotnet,
         name: "Dotnet",
         type: "Backend"
     },
     {
+        id: 8,
         imageUrl: actix,
         name: "Actix",
         type: "Backend"
     },
     {
+        id: 9,
         imageUrl: express,
         name: "Express.js",
         type: "Backend"
     },
     {
+        id: 10,
         imageUrl: nextjs,
         name: "Next.js",
-        type: "Backend"
+        type: "Fullstack"
     },
     {
+        id: 11,
         imageUrl: csharp,
         name: "CSharp",
         type: "Language"
     },
     {
+        id: 12,
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend"
     },
     {
+        id: 13,
         imageUrl: rust,
         name: "Rust",
         type: "Language"
     },
     {
+        id: 14,
         imageUrl: go,
         name: "Go",
         type: "Language"
     },
     {
+        id: 15,
         imageUrl: python,
         name: "Python",
         type: "Language"
     },
     {
+        id: 16,
         imageUrl: sass,
         name: "Scss",
         type: "Design"
     },
     {
+        id: 17,
         imageUrl: tailwind,
         name: "Tailwind",
         type: "Design"
     },
     {
+        id: 18,
         imageUrl: postgres,
         name: "PostgreSQL",
         type: "Database"
     },
     {
+        id: 19,
         imageUrl: redis,
         name: "Redis",
         type: "Database"
     },
     {
+        id: 20,
         imageUrl: mysql,
         name: "MySQL",
         type: "Database"
     },
     {
+        id: 21,
         imageUrl: git,
         name: "Git",
         type: "Tool"
     },
     {
+        id: 22,
         imageUrl: html5,
         name: "HTML5",
         type: "Frontend"
     },
     {
+        id: 23,
         imageUrl: css3,
         name: "CSS3",
         type: "Frontend"
     },
     {
+        id: 24,
         imageUrl: gradio,
         name: "Gradio",
         type: "Frontend"
     },
     {
+        id: 25,
         imageUrl: github,
         name: "GitHub",
         type: "Tool"
     },
     {
+        id: 26,
         imageUrl: docker,
         name: "Docker",
         type: "Tool"
