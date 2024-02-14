@@ -72,7 +72,13 @@ export default function ProjectsCarousel() {
       <div className="py-2 text-center text-sm text-muted-foreground">
         Project preview {current} of {count}
       </div>
-      <p className="hover:text-muted-foreground text-foreground font-semibold"><Link href="/projects">more projects here</Link></p>
+      <span className="hover:text-muted-foreground text-foreground font-semibold mt-5">
+        <Link href="/projects">
+          <button className="px-4 py-2 backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-sm transition duration-200">
+            Click for more projects
+          </button>
+        </Link>
+      </span>
     </div>
   )
 }
