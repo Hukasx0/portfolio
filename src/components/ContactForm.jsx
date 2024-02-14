@@ -64,7 +64,7 @@ const ContactForm = () => {
   return (
     <section className="relative flex lg:flex-row flex-col">
         <div className="flex-1 min-w-[50%] flex flex-col items-center">
-            <h1 className="lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center">Let&apos;s talk</h1>
+            <h1 className="lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.300),theme(colors.green.100),theme(colors.sky.400),theme(colors.yellow.200),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.300))] bg-[length:200%_auto] animate-gradient">Let&apos;s talk</h1>
             <form
               className="w-full flex flex-col gap-7 sm:mt-14 mt-7"
               onSubmit={handleSubmit}

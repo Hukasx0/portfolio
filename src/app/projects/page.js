@@ -21,9 +21,9 @@ export default function Projects() {
         <Header />
         <div className="max-container">
         <div className='sm:py-10 flex flex-col'>
-          <h3 className='font-medium lg:text-[35px] sm:text-[35px] xs:text-[35px] text-[35px] lg:leading-[30px]'>My projects</h3>
+          <h1 className='lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center text-transparent bg-clip-text bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient py-2'>My projects</h1>
         </div>
-          <div className="mb-10">
+          <div className="my-4">
             <ProjectsList />
           </div>
           <div className="py-10 flex flex-col gap-5">
