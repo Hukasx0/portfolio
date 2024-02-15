@@ -18,7 +18,7 @@ export default function Home() {
       <Header />
       <div className='max-container'>
         <Hero />
-        <div className='py-5 sm:mt-5 flex flex-col'>
+        <div className='py-10 sm:mt-5 flex flex-col'>
           <h2 className='font-medium lg:text-[30px] sm:text-[30px] xs:text-[30px] text-[25px] lg:leading-[30px]'>Known technologies</h2>
           <Skills />
         </div>
