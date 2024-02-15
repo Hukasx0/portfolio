@@ -6,10 +6,12 @@ import Footer from '@/components/Footer'
 const Header = dynamic(() => import('@/components/Header'), {
   ssr: true
 });
-import Hero from '@/components/Hero'
+const Hero = dynamic(() => import('@/components/Hero'), {
+  ssr: true
+});
 const ProjectsCarousel = dynamic(() => import('@/components/ProjectsCarousel'), {
   ssr: true
-})
+});
 import Skills from '@/components/Skills';
 
 export default function Home() {

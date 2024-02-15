@@ -1,3 +1,5 @@
+"use client";
+
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 const Hero = () => {
