@@ -72,7 +72,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                         <br />
                      )
                     }
-                    <h3 className='text-primary font-bold text-[24px]'>{name}</h3>
+                    <h2 className='text-primary font-bold text-[24px]'>{name}</h2>
                     <p className='mt-2 text-primary text-[14px]'>{desc}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                         {techs.map((tech) => {
