@@ -1,9 +1,5 @@
-import dynamic from 'next/dynamic';
-
 import { ProjectCard } from './ProjectCard';
-const BackgroundGradient = dynamic(() => import('./ui/background-gradient'), {
-  ssr: true
-});
+import BackgroundGradient from './ui/background-gradient';
 
 export const AnimatedProjectCard = ({ id, name, desc, techs, img, githubLink, currentlyWorkingOn, websitePreview}) => {
     return (
