@@ -307,7 +307,7 @@ export const projects = [
         currentlyWorkingOn: false,
         imageUrl: aichar,
         name: "Aichar",
-        description: "Python library for creating/transporting/parsing AI characters between different interfaces (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion), my other project - Character Factory - uses it. The library recorded a record 7,000 monthly downloads on PyPi (pip). The library allows you to solve problems related to AI characters in a simple, safe and fast way.",
+        description: "Python library for creating/transporting/parsing AI characters between different interfaces (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion), my other project - Character Factory - uses it. The library saw a record 7,000 monthly downloads on PyPi (pip). The library allows you to solve problems related to AI characters in a simple, safe and fast way.",
         technologies: [
             {
                 name: "Rust",
