@@ -259,7 +259,8 @@ export const projects = [
                 iconUrl: postgres
             }
         ],
-        githubLink: "https://github.com/Hukasx0/Fuwa"
+        githubLink: "https://github.com/Hukasx0/Fuwa",
+        lightIcon: false
     },
     {
         currentlyWorkingOn: false,
@@ -276,7 +277,8 @@ export const projects = [
                 iconUrl: gradio
             }
         ],
-        githubLink: "https://github.com/Hukasx0/character-factory"
+        githubLink: "https://github.com/Hukasx0/character-factory",
+        lightIcon: true
     },
     {
         currentlyWorkingOn: false,
@@ -301,7 +303,8 @@ export const projects = [
                 iconUrl: reactsvg
             }
         ],
-        githubLink: "https://github.com/Hukasx0/ai-companion"
+        githubLink: "https://github.com/Hukasx0/ai-companion",
+        lightIcon: true
     },
     {
         currentlyWorkingOn: false,
@@ -319,7 +322,8 @@ export const projects = [
             }
         ],
         githubLink: "https://github.com/Hukasx0/aichar",
-        websitePreview: "https://pypi.org/project/aichar/"
+        websitePreview: "https://pypi.org/project/aichar/",
+        lightIcon: false
     },
     {
         currentlyWorkingOn: false,
@@ -348,7 +352,8 @@ export const projects = [
                 iconUrl: docker
             }
         ],
-        githubLink: "https://github.com/Hukasx0/rogger"
+        githubLink: "https://github.com/Hukasx0/rogger",
+        lightIcon: true
     },
     {
         currentlyWorkingOn: false,
@@ -374,7 +379,8 @@ export const projects = [
             }
         ],
         githubLink: "https://github.com/Hukasx0/portfolio",
-        websitePreview: "https://hukasx0.github.io/portfolio"
+        websitePreview: "https://hukasx0.github.io/portfolio",
+        lightIcon: false
     },
     {
         currentlyWorkingOn: false,
@@ -404,7 +410,8 @@ export const projects = [
             }
         ],
         githubLink: "https://github.com/Hukasx0/zsp2wagrowiec-strona",
-        websitePreview: "https://hukasx0.github.io/zsp2wagrowiec-strona/"
+        websitePreview: "https://hukasx0.github.io/zsp2wagrowiec-strona/",
+        lightIcon: false
     },
     {
         currentlyWorkingOn: false,
@@ -429,7 +436,8 @@ export const projects = [
                 iconUrl: python
             },
         ],
-        githubLink: "https://github.com/Hukasx0/Home_Middleman"
+        githubLink: "https://github.com/Hukasx0/Home_Middleman",
+        lightIcon: false
     },
     {
         currentlyWorkingOn: false,
@@ -442,7 +450,8 @@ export const projects = [
                 iconUrl: haskell
             }
         ],
-        githubLink: "https://github.com/Hukasx0/HALM-Assembler"
+        githubLink: "https://github.com/Hukasx0/HALM-Assembler",
+        lightIcon: true
     },
     {
         currentlyWorkingOn: false,
@@ -455,7 +464,8 @@ export const projects = [
                 iconUrl: csharp
             }
         ],
-        githubLink: "https://github.com/Hukasx0/maybe-sharp"
+        githubLink: "https://github.com/Hukasx0/maybe-sharp",
+        lightIcon: true
     },
     {
         currentlyWorkingOn: false,
@@ -491,7 +501,8 @@ export const projects = [
             }
         ],
         githubLink: "https://github.com/Hukasx0/blog",
-        websitePreview: "https://hukasx0.github.io/blog/"
+        websitePreview: "https://hukasx0.github.io/blog/",
+        lightIcon: false
     }
 ];
 

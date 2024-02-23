@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { github } from "../assets/logos/index";
+import { github, githubLight } from "../assets/logos/index";
 import websiteSvg from "../assets/tools/website-preview.svg";
 
 import {
@@ -9,7 +9,7 @@ import {
     TooltipTrigger,
   } from "@/components/ui/tooltip"
 
-export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorkingOn, websitePreview }) => {
+export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorkingOn, websitePreview, lightIcon }) => {
     return (
         <div>
                 <div className="relative w-full h-[230px]">
@@ -29,7 +29,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <Image
-                                        src={github}
+                                        src={lightIcon ? githubLight : github}
                                         alt={`${name} GitHub url`}
                                         className='w-full h-full object-cover rounded-2xl z-10'
                                     />

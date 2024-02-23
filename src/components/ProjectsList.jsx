@@ -18,6 +18,7 @@ const ProjectsList = () => {
                     githubLink={project.githubLink}
                     currentlyWorkingOn={project.currentlyWorkingOn}
                     websitePreview={project.websitePreview}
+                    lightIcon={project.lightIcon}
                 />
             );
         })}
