@@ -78,6 +78,7 @@ const ContactForm = () => {
                   required
                   value={form.name}
                   onChange={handleChange}
+                  className="bg-background"
                 />
                 <Label htmlFor="email">Email</Label>
                 <Input 
@@ -88,6 +89,7 @@ const ContactForm = () => {
                   required
                   value={form.email}
                   onChange={handleChange}
+                  className="bg-background"
                 />
                 <Label htmlFor="topic">Topic</Label>
                 <Input 
@@ -98,6 +100,7 @@ const ContactForm = () => {
                   required
                   value={form.topic}
                   onChange={handleChange}
+                  className="bg-background"
                 />
                 <Label htmlFor="message">Message</Label>
                 <Textarea 
@@ -107,6 +110,7 @@ const ContactForm = () => {
                   value={form.message}
                   placeholder="Type your message here."
                   onChange={handleChange}
+                  className="bg-background"
                 />
                 <Button
                   type="submit"
