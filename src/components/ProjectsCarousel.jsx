@@ -62,6 +62,7 @@ export default function ProjectsCarousel() {
                     githubLink={project.githubLink}
                     currentlyWorkingOn={project.currentlyWorkingOn}
                     websitePreview={project.websitePreview}
+                    lightIcon={project.lightIcon}
                 />
                 </div>
             </CarouselItem>
