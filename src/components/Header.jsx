@@ -1,6 +1,10 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import Navbar from "./Navbar";
-import { ModeToggle } from "./ui/ModeToggle";
+
+const ModeToggle = dynamic(() => import("./ui/ModeToggle"), {
+  ssr: true
+});
 
 const Header = () => {
   return (
