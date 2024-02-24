@@ -66,7 +66,7 @@ const ContactForm = () => {
         <div className="flex-1 min-w-[50%] flex flex-col items-center">
             <h1 className="lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.300),theme(colors.green.100),theme(colors.sky.400),theme(colors.yellow.200),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.300))] bg-[length:200%_auto] animate-gradient">Let&apos;s talk</h1>
             <form
-              className="w-full flex flex-col gap-7 sm:mt-14 mt-7"
+              className="w-full flex flex-col gap-5 sm:gap-7 sm:mt-14 mt-7"
               onSubmit={handleSubmit}
             >
                 <Label htmlFor="name">Name</Label>
@@ -115,7 +115,7 @@ const ContactForm = () => {
                 <Button
                   type="submit"
                   disabled={sending}
-                  className="font-medium animate-shimmer transition-color border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-5 text-center"
+                  className="font-medium animate-shimmer transition-color bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] dark:bg-[linear-gradient(110deg,#FFFFFF,45%,#D1D1D1,55%,#FFFFFF)] bg-[length:200%_100%] rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-5 text-center"
                 >
                   {sending ? 'Sending...' : 'Message me'}
                 </Button>

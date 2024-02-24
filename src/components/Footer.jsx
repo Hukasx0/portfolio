@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex items-center space-x-4">
             {socials.map((social) => (
               <Link key={social.name} href={social.link}>
-                <Image src={social.iconUrl} alt={social.name} width={30} height={30} />
+                <Image src={social.iconUrl} className="dark:invert" alt={social.name} width={30} height={30} />
               </Link>
             ))}
           </div>

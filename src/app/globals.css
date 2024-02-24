@@ -111,17 +111,20 @@
 }
 
 @media (max-width: 400px) {
-  .tiny {
-    display: none;
-  }
-  .tiny-center {
-    justify-content: center;
-  }
   .tiny-hero-text {
     font-size: 40px;
   }
   .tiny-hero-subtext {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 462px) {
+  .tiny {
+    display: none;
+  }
+  .tiny-center {
+    justify-content: center;
   }
 }
 

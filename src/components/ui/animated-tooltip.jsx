@@ -78,7 +78,7 @@ const AnimatedTooltip = () => {
                 alt={item.name} 
                 width={item.imageUrl.width}
                 height={item.imageUrl.height}
-                className="w-1/2 h-1/2 object-contain"
+                className={`w-1/2 h-1/2 object-contain ${item.darkModeInvert ? "dark:invert" : null}`}
               />
             </div>
           </div>

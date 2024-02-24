@@ -24,7 +24,7 @@ const ContactList = () => {
                               alt={contact.name} 
                               width={contact.iconUrl.width}
                               height={contact.iconUrl.height}
-                              className="w-1/2 h-1/2 object-contain"
+                              className="w-1/2 h-1/2 object-contain dark:invert"
                               />
                           </div>
                         </div>

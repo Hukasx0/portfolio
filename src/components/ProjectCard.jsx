@@ -86,6 +86,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                                                 width={25}
                                                 height={25}
                                                 alt={tech.name}
+                                                className={`${tech.darkModeInvert ? "dark:invert" : null}`}
                                             />
                                         </TooltipTrigger>
                                         <TooltipContent>

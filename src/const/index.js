@@ -85,19 +85,22 @@ export const skills = [
         id: 8,
         imageUrl: actix,
         name: "Actix",
-        type: "Backend"
+        type: "Backend",
+        darkModeInvert: true
     },
     {
         id: 9,
         imageUrl: express,
         name: "Express.js",
-        type: "Backend"
+        type: "Backend",
+        darkModeInvert: true
     },
     {
         id: 10,
         imageUrl: nextjs,
         name: "Next.js",
-        type: "Fullstack"
+        type: "Fullstack",
+        darkModeInvert: true
     },
     {
         id: 11,
@@ -115,7 +118,8 @@ export const skills = [
         id: 13,
         imageUrl: rust,
         name: "Rust",
-        type: "Language"
+        type: "Language",
+        darkModeInvert: true
     },
     {
         id: 14,
@@ -187,7 +191,8 @@ export const skills = [
         id: 25,
         imageUrl: github,
         name: "GitHub",
-        type: "Tool"
+        type: "Tool",
+        darkModeInvert: true
     },
     {
         id: 26,
@@ -288,11 +293,13 @@ export const projects = [
         technologies: [
             {
                 name: "Rust",
-                iconUrl: rust
+                iconUrl: rust,
+                darkModeInvert: true
             },
             {
                 name: "Actix",
-                iconUrl: actix
+                iconUrl: actix,
+                darkModeInvert: true
             },
             {
                 name: "TypeScript",
@@ -314,7 +321,8 @@ export const projects = [
         technologies: [
             {
                 name: "Rust",
-                iconUrl: rust
+                iconUrl: rust,
+                darkModeInvert: true
             },
             {
                 name: "Python",
@@ -333,11 +341,13 @@ export const projects = [
         technologies: [
             {
                 name: "Rust",
-                iconUrl: rust
+                iconUrl: rust,
+                darkModeInvert: true
             },
             {
                 name: "Actix",
-                iconUrl: actix
+                iconUrl: actix,
+                darkModeInvert: true
             },
             {
                 name: "JavaScript",
@@ -363,7 +373,8 @@ export const projects = [
         technologies: [
             {
                 name: "Next.js",
-                iconUrl: nextjs
+                iconUrl: nextjs,
+                darkModeInvert: true
             },
             {
                 name: "React",
