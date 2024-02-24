@@ -132,6 +132,10 @@
   transform: translateZ(80px) translateY(-5px);
 }
 
+.vertical-timeline-element .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px hsl(var(--secondary)), inset 0 4px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
 @layer base {
   * {
     @apply border-border;
