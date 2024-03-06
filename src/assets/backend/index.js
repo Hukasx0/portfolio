@@ -7,5 +7,7 @@ import nodejs from "./nodejs.svg";
 import postgres from "./postgres.svg";
 import redis from "./redis.svg";
 import astro from "./astro.svg";
+import t3stack from "./t3.svg";
+import trpc from "./trpc.svg";
 
-export { dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis, astro };
+export { dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis, astro, t3stack, trpc };

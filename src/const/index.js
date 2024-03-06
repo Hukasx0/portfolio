@@ -1,9 +1,9 @@
 import {
-    dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis, astro
+    dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis, astro, t3stack, trpc
 } from "../assets/backend";
 
 import {
-    angular, reactsvg, svelte, rxjs, redux, sass, tailwind, html5, css3, gradio, jquery, bootstrap
+    angular, reactsvg, rxjs, redux, sass, tailwind, html5, css3, gradio, jquery, bootstrap
 } from "../assets/frontend";
 
 import {
@@ -47,155 +47,162 @@ export const skills = [
     },
     {
         id: 2,
-        imageUrl: svelte,
-        name: "Svelte",
-        type: "Frontend"
-    },
-    {
-        id: 3,
         imageUrl: rxjs,
         name: "RxJS",
         type: "Frontend"
     },
     {
-        id: 4,
+        id: 3,
         imageUrl: redux,
         name: "Redux",
         type: "Frontend"
     },
     {
-        id: 5,
+        id: 4,
         imageUrl: typescript,
         name: "TypeScript",
         type: "Language"
     },
     {
-        id: 6,
+        id: 5,
         imageUrl: javascript,
         name: "JavaScript",
         type: "Language"
     },
     {
-        id: 7,
+        id: 6,
         imageUrl: dotnet,
         name: "Dotnet",
         type: "Backend"
     },
     {
-        id: 8,
+        id: 7,
         imageUrl: actix,
         name: "Actix",
         type: "Backend",
         darkModeInvert: true
     },
     {
-        id: 9,
+        id: 8,
         imageUrl: express,
         name: "Express.js",
         type: "Backend",
         darkModeInvert: true
     },
     {
-        id: 10,
+        id: 9,
         imageUrl: nextjs,
         name: "Next.js",
         type: "Fullstack",
         darkModeInvert: true
     },
     {
+        id: 10,
+        imageUrl: t3stack,
+        name: "T3 Stack",
+        type: "Fullstack",
+        darkModeInvert: true
+    },
+    {
         id: 11,
+        imageUrl: trpc,
+        name: "tRPC",
+        type: "Fullstack"
+    },
+    {
+        id: 12,
         imageUrl: csharp,
         name: "CSharp",
         type: "Language"
     },
     {
-        id: 12,
+        id: 13,
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend"
     },
     {
-        id: 13,
+        id: 14,
         imageUrl: rust,
         name: "Rust",
         type: "Language",
         darkModeInvert: true
     },
     {
-        id: 14,
+        id: 15,
         imageUrl: go,
         name: "Go",
         type: "Language"
     },
     {
-        id: 15,
+        id: 16,
         imageUrl: python,
         name: "Python",
         type: "Language"
     },
     {
-        id: 16,
+        id: 17,
         imageUrl: sass,
         name: "Scss",
         type: "Design"
     },
     {
-        id: 17,
+        id: 18,
         imageUrl: tailwind,
         name: "Tailwind",
         type: "Design"
     },
     {
-        id: 18,
+        id: 19,
         imageUrl: postgres,
         name: "PostgreSQL",
         type: "Database"
     },
     {
-        id: 19,
+        id: 20,
         imageUrl: redis,
         name: "Redis",
         type: "Database"
     },
     {
-        id: 20,
+        id: 21,
         imageUrl: mysql,
         name: "MySQL",
         type: "Database"
     },
     {
-        id: 21,
+        id: 22,
         imageUrl: git,
         name: "Git",
         type: "Tool"
     },
     {
-        id: 22,
+        id: 23,
         imageUrl: html5,
         name: "HTML5",
         type: "Frontend"
     },
     {
-        id: 23,
+        id: 24,
         imageUrl: css3,
         name: "CSS3",
         type: "Frontend"
     },
     {
-        id: 24,
+        id: 25,
         imageUrl: gradio,
         name: "Gradio",
         type: "Frontend"
     },
     {
-        id: 25,
+        id: 26,
         imageUrl: github,
         name: "GitHub",
         type: "Tool",
         darkModeInvert: true
     },
     {
-        id: 26,
+        id: 27,
         imageUrl: docker,
         name: "Docker",
         type: "Tool"
