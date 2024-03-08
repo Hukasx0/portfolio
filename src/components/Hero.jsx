@@ -6,8 +6,6 @@ const Hero = () => {
   return (
     <CardContainer className="border border-black/[0.2] dark:border-white/[0.2] p-3 sm:p-5 lg:p-20 relative bg-background">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
     <CardBody className="flex flex-col items-center">
     <CardItem
