@@ -217,10 +217,9 @@ export const experiences = [
         iconBg: "#E8E8E8",
         date: "October 2022 - now",
         points: [
-            "I learned how to use Git and GitHub at an advanced level, the concept of contributions, branches, merge, push, commit, etc.",
-            "I created, designed and managed personal projects, from the first lines of code to operations on other branches, writing documentation, testing and releasing stable versions",
-            "I learned how to help others by contributing to other people's repositories, reading their code, reading documentation, following their rules for contributing and writing code.",
-            "I experimented and learned: Rust, C#, ASP .NET, Node.js, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python, Gradio, Go, LLM's, Stable Diffusion, Docker and more"
+            "I am an experienced open-source developer with an advanced knowledge of Git and GitHub.",
+            "I can create and manage personal projects from scratch, test and release stable versions, and contribute to other repositories while adhering to their guidelines.",
+            " I have experimented with various programming languages, technologies, and frameworks, such as Rust, C#, ASP .NET, Node.js, TypeScript, React, JavaScript, Angular, Tailwind, Haskell, Python, Gradio, Go, LLM's, Stable Diffusion, Docker, and more.",
         ]
     },
     {

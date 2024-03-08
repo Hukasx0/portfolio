@@ -35,7 +35,7 @@ const Hero = () => {
         <CardItem
           translateZ="50"
         >
-        <p className="text-muted-foreground my-4 text-center font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]">I create fast, efficient and cheap to maintain backends, along with a clean, intuitive and easy to navigate frontends</p>
+        <p className="text-muted-foreground my-4 text-center font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]">My expertise lies in designing, planning, and creating fast and cost-efficient backends complemented by sleek and intuitive frontends.</p>
         </CardItem>
     </CardBody>
     </CardContainer>
