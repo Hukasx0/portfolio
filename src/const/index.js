@@ -196,13 +196,19 @@ export const skills = [
     },
     {
         id: 26,
+        imageUrl: haskell,
+        name: "Haskell",
+        type: "Language"
+    },
+    {
+        id: 27,
         imageUrl: github,
         name: "GitHub",
         type: "Tool",
         darkModeInvert: true
     },
     {
-        id: 27,
+        id: 28,
         imageUrl: docker,
         name: "Docker",
         type: "Tool"
