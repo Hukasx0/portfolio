@@ -13,6 +13,7 @@ const ProjectsCarousel = dynamic(() => import('@/components/ProjectsCarousel'), 
   ssr: true
 });
 import Skills from '@/components/Skills';
+import About from '@/components/About';
 
 export default function Home() {
   return (
@@ -32,6 +33,10 @@ export default function Home() {
           <div className='py-10 flex flex-col'>
             <h2 className='font-medium lg:text-[30px] sm:text-[30px] xs:text-[30px] text-[25px] lg:leading-[30px]'>My experience</h2>
             <Experience />
+          </div>
+          <div className='py-10 flex flex-col'>
+            <h2 className='font-medium lg:text-[30px] sm:text-[30px] xs:text-[30px] text-[25px] lg:leading-[30px]'>About me</h2>
+            <About />
           </div>
           <hr />
           <CallToAction />
