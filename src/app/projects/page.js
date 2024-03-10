@@ -21,8 +21,9 @@ export default function Projects() {
         <div className='inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]'>
           <Header />
           <div className="max-container">
-          <div className='sm:py-10 flex flex-col'>
+          <div className='sm:py-10 flex flex-col gap-5 xs:gap-7 sm:gap-10 md:gap-15 md:gap-10 xl:gap-14'>
             <h1 className='lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center text-transparent bg-clip-text bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient py-2'>My projects</h1>
+            <h2 className='text-muted-foreground text-sm sm:text-base xl:text-lg mx-5 xs:mx-10 sm:mx-20 md:mx-36 xl:mx-20'>I take great inspiration from <span className='text-primary'>creating projects that solve problems</span>, which demand a combination of <span className='text-primary'>creativity, planning, discipline, and execution</span>. With each project, I broaden my knowledge and find joy in knowing that <span className='text-primary'>hundreds, even tens of thousands of people have benefited from them.</span> Most of my projects are open source and free, allowing everyone to access, modify, and contribute to them.</h2>
           </div>
             <div className="my-4">
               <ProjectsList />
