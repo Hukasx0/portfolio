@@ -6,7 +6,7 @@ const CardHoverEffect = dynamic(() => import('./ui/card-hover-effect'), {
 
 const About = () => {
     return (
-      <section className="mt-10 text-sm sm:text-base lg:text-xl text-start">
+      <section className="mt-10 text-sm sm:text-base lg:text-xl text-start mb-0 sm:mb-5">
         <p className="leading-loose tracking-wide">
           As a seasoned full-stack developer with expertise across various stacks,
         </p>
@@ -15,7 +15,7 @@ const About = () => {
           unparalleled support.
         </p>
         <div className="my-5 h-3"></div>
-        <h3 className="sm:text-xl xl:text-2xl text-lg">My favorite programming stacks:</h3>
+        <h3 className="sm:text-xl xl:text-2xl text-base font-medium">My favorite web development stacks:</h3>
         <CardHoverEffect items={stacks} />
         <p className="leading-loose tracking-wide text-muted-foreground">
           My meticulous planning and attention to detail enable me to manage
