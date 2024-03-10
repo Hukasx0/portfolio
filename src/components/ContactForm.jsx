@@ -66,7 +66,7 @@ const ContactForm = () => {
         <div className="flex-1 min-w-[50%] flex flex-col items-center">
           <div className="flex flex-col gap-5 xs:gap-7 sm:gap-10 md:gap-15 md:gap-10 xl:gap-14">
             <h1 className="lg:text-[70px] sm:text-[65px] xs:text-[70px] text-[50px] lg:leading-[70px] text-center bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.300),theme(colors.green.100),theme(colors.sky.400),theme(colors.yellow.200),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.300))] bg-[length:200%_auto] animate-gradient">Let&apos;s talk</h1>
-            <h2 className='text-muted-foreground text-sm sm:text-base xl:text-lg mx-5 xs:mx-10 sm:mx-10 md:mx-20'>I would be delighted to hear from you if you have any questions or ideas. If you're interested in collaborating, providing feedback, or exploring potential opportunities, I'm all ears. Your message is valuable to me, and I'll respond within 24-48 hours. Let's connect and work together to create something extraordinary!</h2>
+            <h2 className='text-muted-foreground text-sm sm:text-base xl:text-lg mx-5 xs:mx-10 sm:mx-10 md:mx-20'>I would be delighted to hear from you if you have any questions or ideas. If you&apos;re interested in collaborating, providing feedback, or exploring potential opportunities, I&apos;m all ears. Your message is valuable to me, and I&apos;ll respond within 24-48 hours. Let&apos;s connect and work together to create something extraordinary!</h2>
           </div>
             <form
               className="w-full flex flex-col gap-5 sm:gap-7 sm:mt-14 mt-7"
