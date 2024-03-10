@@ -5,7 +5,7 @@ import { AnimatedProjectCard } from './AnimatedProjectCard';
 
 const ProjectsList = () => {
   return (
-    <div className='mt-20 flex flex-wrap gap-7 justify-center'>
+    <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {projects.map((project, i) => {
             return (
                 <AnimatedProjectCard
