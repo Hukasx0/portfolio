@@ -119,8 +119,7 @@ export const skills = [
         id: 13,
         imageUrl: EFCore,
         name: "EF Core",
-        type: "Backend",
-        darkModeInvert: true
+        type: "Backend"
     },
     {
         id: 14,
