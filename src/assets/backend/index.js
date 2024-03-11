@@ -9,5 +9,6 @@ import redis from "./redis.svg";
 import astro from "./astro.svg";
 import t3stack from "./t3.svg";
 import trpc from "./trpc.svg";
+import EFCore from "./EF_Core.png";
 
-export { dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis, astro, t3stack, trpc };
+export { dotnet, actix, express, nextjs, mysql, nodejs, postgres, redis, astro, t3stack, trpc, EFCore };

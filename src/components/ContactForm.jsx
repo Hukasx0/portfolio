@@ -69,7 +69,7 @@ const ContactForm = () => {
             <h2 className='text-muted-foreground text-sm sm:text-base xl:text-lg mx-5 xs:mx-10 sm:mx-10 md:mx-20'>I would be delighted to hear from you if you have any questions or ideas. If you&apos;re interested in collaborating, providing feedback, or exploring potential opportunities, I&apos;m all ears. Your message is valuable to me, and I&apos;ll respond within 24-48 hours. Let&apos;s connect and work together to create something extraordinary!</h2>
           </div>
             <form
-              className="w-full flex flex-col gap-5 sm:gap-7 sm:mt-14 mt-7"
+              className="w-full flex flex-col gap-5 sm:gap-7 sm:mt-14 mt-10"
               onSubmit={handleSubmit}
             >
                 <Label htmlFor="name">Name</Label>
