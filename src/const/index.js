@@ -117,104 +117,98 @@ export const skills = [
     },
     {
         id: 13,
-        imageUrl: EFCore,
-        name: "EF Core",
-        type: "Backend"
-    },
-    {
-        id: 14,
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend"
     },
     {
-        id: 15,
+        id: 14,
         imageUrl: rust,
         name: "Rust",
         type: "Language",
         darkModeInvert: true
     },
     {
-        id: 16,
+        id: 15,
         imageUrl: go,
         name: "Go",
         type: "Language"
     },
     {
-        id: 17,
+        id: 16,
         imageUrl: python,
         name: "Python",
         type: "Language"
     },
     {
-        id: 18,
+        id: 17,
         imageUrl: sass,
         name: "Scss",
         type: "Design"
     },
     {
-        id: 19,
+        id: 18,
         imageUrl: tailwind,
         name: "Tailwind",
         type: "Design"
     },
     {
-        id: 20,
+        id: 29,
         imageUrl: postgres,
         name: "PostgreSQL",
         type: "Database"
     },
     {
-        id: 21,
+        id: 20,
         imageUrl: redis,
         name: "Redis",
         type: "Database"
     },
     {
-        id: 22,
+        id: 21,
         imageUrl: mysql,
         name: "MySQL",
         type: "Database"
     },
     {
-        id: 23,
+        id: 22,
         imageUrl: git,
         name: "Git",
         type: "Tool"
     },
     {
-        id: 24,
+        id: 23,
         imageUrl: html5,
         name: "HTML5",
         type: "Frontend"
     },
     {
-        id: 25,
+        id: 24,
         imageUrl: css3,
         name: "CSS3",
         type: "Frontend"
     },
     {
-        id: 26,
+        id: 25,
         imageUrl: gradio,
         name: "Gradio",
         type: "Frontend"
     },
     {
-        id: 27,
+        id: 26,
         imageUrl: haskell,
         name: "Haskell",
         type: "Language"
     },
     {
-        id: 28,
+        id: 27,
         imageUrl: github,
         name: "GitHub",
         type: "Tool",
         darkModeInvert: true
     },
     {
-        id: 29,
+        id: 28,
         imageUrl: docker,
         name: "Docker",
         type: "Tool"
