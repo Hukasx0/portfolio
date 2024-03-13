@@ -27,7 +27,7 @@ export default function Home() {
             <Skills />
           </div>
           <div className='py-10 flex flex-col gap-5'>
-            <h2 className='font-medium lg:text-[30px] sm:text-[30px] xs:text-[30px] text-[25px] lg:leading-[30px] pb-5'>Preview of my projects</h2>
+            <h2 className='font-medium lg:text-[30px] sm:text-[30px] xs:text-[30px] text-[25px] lg:leading-[30px] pb-5 md:pb-10'>Preview of my projects</h2>
             <ProjectsCarousel />
           </div>
           <div className='py-10 flex flex-col'>
