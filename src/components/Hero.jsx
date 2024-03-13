@@ -11,7 +11,7 @@ const Hero = () => {
     <CardItem
           translateZ="40"
         >
-      <div className="text-xs sm:text-sm uppercase font-semibold mt-2 text-primary tracking-[4px] text-center">Fullstack Developer</div>
+      <div className="text-xs sm:text-sm uppercase font-semibold mt-2 bg-gradient-to-r from-purple-600 to-indigo-400 inline-block text-transparent bg-clip-text tracking-[4px] text-center">Fullstack Developer</div>
       </CardItem>
       <CardItem
           translateZ="100"
