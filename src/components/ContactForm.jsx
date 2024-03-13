@@ -118,7 +118,7 @@ const ContactForm = () => {
                 <Button
                   type="submit"
                   disabled={sending}
-                  className="font-medium animate-shimmer transition-color bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] dark:bg-[linear-gradient(110deg,#FFFFFF,45%,#D1D1D1,55%,#FFFFFF)] bg-[length:200%_100%] rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-5 text-center"
+                  className="font-medium animate-shimmer transition-color bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] dark:bg-[linear-gradient(110deg,#FFFFFF,45%,#D1D1D1,55%,#FFFFFF)] bg-[length:200%_100%] rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-5 text-center text-secondary"
                 >
                   {sending ? 'Sending...' : 'Message me'}
                 </Button>
