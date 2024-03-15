@@ -1,14 +1,26 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { useTheme } from "next-themes";
 
 const World = dynamic(() => import("./ui/globe").then((m) => ({ default: m.World })), {
   ssr: false,
 });
 
 export function HeroGlobe() {
-  const globeConfig = {
-    globeColor: "#062056",
+  const { theme } = useTheme();
+  const [themeChanged, setThemeChanged] = useState(false);
+
+  useEffect(() => {
+    setThemeChanged(true);
+  }, [theme]);
+
+  const handleThemeChange = () => {
+    setThemeChanged(false);
+  };
+
+  const defaultGlobeConfig = {
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
@@ -16,10 +28,6 @@ export function HeroGlobe() {
     emissiveIntensity: 0.1,
     shininess: 0.9,
     polygonColor: "rgba(255,255,255,0.7)",
-    ambientLight: "#38bdf8",
-    directionalLeftLight: "#ffffff",
-    directionalTopLight: "#ffffff",
-    pointLight: "#ffffff",
     arcTime: 1000,
     arcLength: 0.9,
     rings: 1,
@@ -27,6 +35,29 @@ export function HeroGlobe() {
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
     autoRotateSpeed: 0.5,
+  };
+
+  const lightThemeConfig = {
+    globeColor: "#6630c2",
+    emissiveIntensity: 0.9,
+    ambientLight: "#ecfa",
+    directionalLeftLight: "#ffffff",
+    directionalTopLight: "#ffffff",
+    pointLight: "#ffffff",
+  };
+
+  const darkThemeConfig = {
+    globeColor: "#321268",
+    emissiveIntensity: 0.1,
+    ambientLight: "#38bdf8",
+    directionalLeftLight: "#ffffff",
+    directionalTopLight: "#ffffff",
+    pointLight: "#ffffff",
+  };
+
+  const globeConfig = {
+    ...defaultGlobeConfig,
+    ...(theme === 'dark' ? darkThemeConfig : lightThemeConfig),
   };
   const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
   const sampleArcs = [
@@ -391,15 +422,36 @@ export function HeroGlobe() {
       color: colors[Math.floor(Math.random() * colors.length)],
     },
   ];
+  function isWebGLSupported() {
+    try {
+        var canvas = document.createElement('canvas');
+        return !!(
+            window.WebGLRenderingContext &&
+            (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))
+        );
+    } catch (e) {
+        return false;
+    }
+}
 
   return (
-    <div className="flex flex-row items-center justify-center">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[12rem] md:h-[20rem] xl:h-[28rem]">
-      <div className="absolute w-full bottom-0 inset-x-0 h-5 dark:h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-card z-40" />
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-full -bottom-20 h-72 md:h-full z-10">
-          <World data={sampleArcs} globeConfig={globeConfig} />
+    <>
+    {isWebGLSupported() ? ( 
+        <>
+        <div className="flex flex-row items-center justify-center">
+        <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[12rem] md:h-[20rem] xl:h-[28rem]">
+        <div className="absolute w-full bottom-0 inset-x-0 h-5 dark:h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-card z-40" />
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-full -bottom-20 h-72 md:h-full z-10">
+                {themeChanged && <World key={theme} data={sampleArcs} globeConfig={globeConfig} />}
+            </div>
         </div>
-      </div>
-    </div>
+        </div>
+        <div className="flex flex-col items-center">
+            <TextGenerateEffect words="I am determined to make a significant difference in the world and better myself every single day." />
+        </div>
+        </>
+    ) : null
+    }
+    </>
   );
 }

@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 const HeroGlobe = dynamic(() => import("./HeroGlobe").then((m) => ({ default: m.HeroGlobe })), {
   ssr: false,
 });
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   return (
@@ -23,9 +22,6 @@ const Hero = () => {
         <p className="text-muted-foreground my-4 text-center font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]">My expertise lies in designing, planning, and creating fast and cost-efficient backends complemented by sleek and intuitive frontends.</p>
         </div>
         <HeroGlobe />
-        <div className="flex flex-col items-center">
-          <TextGenerateEffect words="I am determined to make a significant difference in the world and better myself every single day." />
-        </div>
     </div>
   )
 }
