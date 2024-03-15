@@ -439,12 +439,12 @@ export function HeroGlobe() {
     {isWebGLSupported() ? ( 
         <>
         <div className="flex flex-row items-center justify-center">
-        <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[12rem] md:h-[20rem] xl:h-[28rem]">
-        <div className="absolute w-full bottom-0 inset-x-0 h-5 dark:h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-card z-40" />
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-full -bottom-20 h-72 md:h-full z-10">
-                {themeChanged && <World key={theme} data={sampleArcs} globeConfig={globeConfig} />}
+            <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[12rem] md:h-[20rem] xl:h-[28rem]">
+                <div className="absolute w-full bottom-0 inset-x-0 h-5 dark:h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-card z-40" />
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full -bottom-20 h-72 md:h-full z-10">
+                    {themeChanged && <World key={theme} data={sampleArcs} globeConfig={globeConfig} />}    
+                </div>
             </div>
-        </div>
         </div>
         <div className="flex flex-col items-center">
             <TextGenerateEffect words="I am determined to make a significant difference in the world and better myself every single day." />
