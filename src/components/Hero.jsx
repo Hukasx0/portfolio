@@ -1,5 +1,7 @@
 import dynamic from "next/dynamic";
-import { HeroGlobe } from "./HeroGlobe";
+const HeroGlobe = dynamic(() => import("./HeroGlobe").then((m) => ({ default: m.HeroGlobe })), {
+  ssr: false,
+});
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
