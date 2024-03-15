@@ -72,6 +72,9 @@
   .max-container {
     @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
+  .hero-container {
+    @apply max-w-5xl mx-auto px-8 pt-[63px] sm:px-16 xl:pt-[126px];
+  }
 }
 
 .block-container {
