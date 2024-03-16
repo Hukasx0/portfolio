@@ -420,14 +420,19 @@ export function HeroGlobe() {
     },
   ];
   function isWebGLSupported() {
-    try {
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        return false;
+    }
+    else {
+      try {
         var canvas = document.createElement('canvas');
         return !!(
             window.WebGLRenderingContext &&
             (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))
         );
-    } catch (e) {
-        return false;
+      } catch (e) {
+          return false;
+      }
     }
 }
 
@@ -448,7 +453,8 @@ export function HeroGlobe() {
             <TextGenerateEffect words="I am determined to make a significant difference in the world and better myself every single day." />
         </div>
         </>
-    ) : null}
+    ) : null
+      }
     </>
   );
 }
