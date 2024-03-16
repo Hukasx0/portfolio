@@ -9,9 +9,8 @@ const World = dynamic(() => import("./ui/globe").then((m) => ({ default: m.World
 });
 
 export function HeroGlobe() {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
   const [themeChanged, setThemeChanged] = useState(false);
-
   useEffect(() => {
     setThemeChanged(true);
   }, [theme]);
@@ -57,7 +56,7 @@ export function HeroGlobe() {
 
   const globeConfig = {
     ...defaultGlobeConfig,
-    ...(theme === 'dark' ? darkThemeConfig : lightThemeConfig),
+    ...(theme === 'dark' || (theme === 'system' && resolvedTheme === 'dark') ? darkThemeConfig : lightThemeConfig),
   };
   const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
   const sampleArcs = [
