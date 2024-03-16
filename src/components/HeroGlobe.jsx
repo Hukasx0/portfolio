@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { useTheme } from "next-themes";
+import Spinner from "./ui/spinner";
 
 const World = dynamic(() => import("./ui/globe").then((m) => ({ default: m.World })), {
   ssr: false,
@@ -11,13 +12,10 @@ const World = dynamic(() => import("./ui/globe").then((m) => ({ default: m.World
 export function HeroGlobe() {
   const { theme, resolvedTheme } = useTheme();
   const [themeChanged, setThemeChanged] = useState(false);
+
   useEffect(() => {
     setThemeChanged(true);
   }, [theme]);
-
-  const handleThemeChange = () => {
-    setThemeChanged(false);
-  };
 
   const defaultGlobeConfig = {
     showAtmosphere: true,
@@ -441,7 +439,8 @@ export function HeroGlobe() {
             <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[12rem] md:h-[20rem] xl:h-[28rem]">
                 <div className="absolute w-full bottom-0 inset-x-0 h-5 dark:h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-card z-40" />
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full -bottom-20 h-72 md:h-full z-10">
-                    {themeChanged && <World key={theme} data={sampleArcs} globeConfig={globeConfig} />}    
+                  <div className='absolute inset-0 flex items-center justify-center pointer-events-none'><Spinner /></div>
+                  {themeChanged && <World key={theme} data={sampleArcs} globeConfig={globeConfig} />}    
                 </div>
             </div>
         </div>
@@ -449,8 +448,7 @@ export function HeroGlobe() {
             <TextGenerateEffect words="I am determined to make a significant difference in the world and better myself every single day." />
         </div>
         </>
-    ) : null
-    }
+    ) : null}
     </>
   );
 }
