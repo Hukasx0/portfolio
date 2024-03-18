@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="container mx-auto">
       <hr />
-        <div className="flex flex-col items-center justify-between p-6 mx-auto space-y-4">
+      <div className="flex flex-col sm:flex-row items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0">
           <span className="text-sm text-center">© {new Date().getFullYear()} <b>Hubert Kasperek </b></span>
           <div className="flex items-center space-x-4">
             {socials.map((social) => (
