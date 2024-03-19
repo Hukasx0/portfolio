@@ -31,7 +31,7 @@ export default function Projects() {
             <div className="py-10 flex flex-col gap-5">
               <h3 className="font-medium text-center lg:text-[25px] sm:text-[25px] xs:text-[25px] text-[25px] lg:leading-[20px]">And many other projects carried out as a part of</h3>
               <h4 className="lg:text-[20px] text-center sm:text-[20px] xs:text-[20px] text-[20px] lg:leading-[15px]">
-                <Link className="hover:text-muted-foreground bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.100),theme(colors.pink.300),theme(colors.orange.400),theme(colors.pink.300),theme(colors.purple.100),theme(colors.purple.400))] bg-[length:200%_auto] animate-gradient" href="https://github.com/Hukasx0?tab=repositories" target="_blank">Github contributions</Link>, professional practice, school tasks and practical tests at school</h4>
+                <Link className="hover:text-muted-foreground text-stroke dark:no-stroke bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.100),theme(colors.pink.300),theme(colors.orange.400),theme(colors.pink.300),theme(colors.purple.100),theme(colors.purple.400))] bg-[length:200%_auto] animate-gradient" href="https://github.com/Hukasx0?tab=repositories" target="_blank">Github contributions</Link>, professional practice, school tasks and practical tests at school</h4>
             </div>
             <hr />
             <CallToAction />

@@ -45,7 +45,7 @@ export const CardHoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle className={item.cardTitleClassName}>{item.title}</CardTitle>
+            <CardTitle className={item.cardTitleClassName}><span className="text-stroke dark:no-stroke">{item.title}</span></CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </Link>

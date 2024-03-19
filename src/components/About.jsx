@@ -38,7 +38,7 @@ const About = () => {
       description:
         "I prefer to use T3 stack (Next.js, TypeScript, Tailwind, tRPC, Prisma) for developing web applications that are flexible and quick to deploy.",
       link: "https://create.t3.gg/en/introduction",
-      cardTitleClassName: "text-transparent bg-clip-text bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto]",
+      cardTitleClassName: "text-transparent bg-clip-text bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient",
     },
     {
       title: "ASP .NET + Angular",
