@@ -60,7 +60,7 @@ export default function ProjectsCarousel() {
                     techs={project.technologies}
                     img={project.imageUrl}
                     githubLink={project.githubLink}
-                    currentlyWorkingOn={project.currentlyWorkingOn}
+                    status={project.status}
                     websitePreview={project.websitePreview}
                     lightIcon={project.lightIcon}
                 />

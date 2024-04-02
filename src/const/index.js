@@ -257,9 +257,82 @@ export const experiences = [
     }
 ];
 
+export const Status = {
+    currentlyWorkingOn: 0,
+    Suspended: 1,
+    Rewriting: 2,
+    Finished: 3
+}
+
 export const projects = [
     {
-        currentlyWorkingOn: true,
+        status: Status.Rewriting,
+        imageUrl: aiCompanion,
+        name: "AI Companion",
+        description: "Backend + API + Frontend for running large language models of artificial intelligence on the local computer, with the addition of short-term memory, long-term memory, ai learning by chatting with the user and the ability to add your own custom data. Can be used as a easy to use and fast chat interface with AI chatbots or can be used as an API/Backend to other projects",
+        technologies: [
+            {
+                name: "Rust",
+                iconUrl: rust,
+                darkModeInvert: true
+            },
+            {
+                name: "Actix",
+                iconUrl: actix,
+                darkModeInvert: true
+            },
+            {
+                name: "TypeScript",
+                iconUrl: typescript
+            },
+            {
+                name: "React",
+                iconUrl: reactsvg
+            }
+        ],
+        githubLink: "https://github.com/Hukasx0/ai-companion",
+        lightIcon: true
+    },
+    {
+        status: Status.Finished,
+        imageUrl: characterFactory,
+        name: "Character factory",
+        description: "Python script with Gradio WebUI to automate/help create characters for SillyTavern, TavernAI, TextGenerationWebUI using artificial intelligence (Large Language Models and Stable Diffusion). This project also uses the aichar library I wrote earlier for Python in the Rust language to create, parse and export AI characters/character files in different formats",
+        technologies: [
+            {
+                name: "Python",
+                iconUrl: python
+            },
+            {
+                name: "Gradio",
+                iconUrl: gradio
+            }
+        ],
+        githubLink: "https://github.com/Hukasx0/character-factory",
+        lightIcon: true
+    },
+    {
+        status: Status.Finished,
+        imageUrl: aichar,
+        name: "Aichar",
+        description: "Python library for creating/transporting/parsing AI characters between different interfaces (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion), my other project - Character Factory - uses it. The library saw a record 7,000 monthly downloads on PyPi (pip). The library allows you to solve problems related to AI characters in a simple, safe and fast way.",
+        technologies: [
+            {
+                name: "Rust",
+                iconUrl: rust,
+                darkModeInvert: true
+            },
+            {
+                name: "Python",
+                iconUrl: python
+            }
+        ],
+        githubLink: "https://github.com/Hukasx0/aichar",
+        websitePreview: "https://pypi.org/project/aichar/",
+        lightIcon: false
+    },
+    {
+        status: Status.Suspended,
         imageUrl: fuwa,
         name: "Fuwa",
         description: "Free and open source platform for sharing code snippets, asking questions and solving problems together",
@@ -293,73 +366,7 @@ export const projects = [
         lightIcon: false
     },
     {
-        currentlyWorkingOn: false,
-        imageUrl: characterFactory,
-        name: "Character factory",
-        description: "Python script with Gradio WebUI to automate/help create characters for SillyTavern, TavernAI, TextGenerationWebUI using artificial intelligence (Large Language Models and Stable Diffusion). This project also uses the aichar library I wrote earlier for Python in the Rust language to create, parse and export AI characters/character files in different formats",
-        technologies: [
-            {
-                name: "Python",
-                iconUrl: python
-            },
-            {
-                name: "Gradio",
-                iconUrl: gradio
-            }
-        ],
-        githubLink: "https://github.com/Hukasx0/character-factory",
-        lightIcon: true
-    },
-    {
-        currentlyWorkingOn: false,
-        imageUrl: aiCompanion,
-        name: "AI Companion",
-        description: "Backend + API + Frontend for running large language models of artificial intelligence on the local computer, with the addition of short-term memory, long-term memory, ai learning by chatting with the user and the ability to add your own custom data. Can be used as a easy to use and fast chat interface with AI chatbots or can be used as an API/Backend to other projects",
-        technologies: [
-            {
-                name: "Rust",
-                iconUrl: rust,
-                darkModeInvert: true
-            },
-            {
-                name: "Actix",
-                iconUrl: actix,
-                darkModeInvert: true
-            },
-            {
-                name: "TypeScript",
-                iconUrl: typescript
-            },
-            {
-                name: "React",
-                iconUrl: reactsvg
-            }
-        ],
-        githubLink: "https://github.com/Hukasx0/ai-companion",
-        lightIcon: true
-    },
-    {
-        currentlyWorkingOn: false,
-        imageUrl: aichar,
-        name: "Aichar",
-        description: "Python library for creating/transporting/parsing AI characters between different interfaces (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion), my other project - Character Factory - uses it. The library saw a record 7,000 monthly downloads on PyPi (pip). The library allows you to solve problems related to AI characters in a simple, safe and fast way.",
-        technologies: [
-            {
-                name: "Rust",
-                iconUrl: rust,
-                darkModeInvert: true
-            },
-            {
-                name: "Python",
-                iconUrl: python
-            }
-        ],
-        githubLink: "https://github.com/Hukasx0/aichar",
-        websitePreview: "https://pypi.org/project/aichar/",
-        lightIcon: false
-    },
-    {
-        currentlyWorkingOn: false,
+        status: Status.Finished,
         imageUrl: rogger,
         name: "Rogger",
         description: "Very lightweight, efficient, secure and easy to use Fullstack Blog Content Management System (CMS)",
@@ -391,7 +398,7 @@ export const projects = [
         lightIcon: true
     },
     {
-        currentlyWorkingOn: false,
+        status: Status.Finished,
         imageUrl: portfolio,
         name: "Portfolio",
         description: "My portfolio written in Next.js and JavaScript. You are currently on it.",
@@ -419,7 +426,7 @@ export const projects = [
         lightIcon: false
     },
     {
-        currentlyWorkingOn: false,
+        status: Status.Finished,
         imageUrl: zsp2wagrowiecWebsite,
         name: "ZSP2 Wagrowiec website",
         description: "The website that won the school contest, the website automatically fetches the latest data from the school backend Rest API",
@@ -450,7 +457,7 @@ export const projects = [
         lightIcon: false
     },
     {
-        currentlyWorkingOn: false,
+        status: Status.Finished,
         imageUrl: homeMiddleman,
         name: "Home Middleman",
         description: "A fullstack application that I wrote in Node.js to manage cyclic boring server tasks in your browser in a few clicks",
@@ -476,7 +483,7 @@ export const projects = [
         lightIcon: false
     },
     {
-        currentlyWorkingOn: false,
+        status: Status.Finished,
         imageUrl: halmAssembler,
         name: "HALM Assembler",
         description: "the main assumption of halm assembler, as the name suggests, is assembly, which is compiled into binary code. But halm also has a built-in interpreted language, which was originally intended to better manage code, files, and simple calculations. However, this language has grown to a level where you can write much more complex scripts in it than I expected when writing the first lines of code for this project.",
@@ -490,7 +497,7 @@ export const projects = [
         lightIcon: true
     },
     {
-        currentlyWorkingOn: false,
+        status: Status.Finished,
         imageUrl: maybeSharp,
         name: "Maybe sharp",
         description: "A simple header only library for C# that allows you to use Monads similar to programming languages such as Rust or Haskell.",
@@ -504,7 +511,7 @@ export const projects = [
         lightIcon: true
     },
     {
-        currentlyWorkingOn: false,
+        status: Status.Finished,
         imageUrl: personalWebsite,
         name: "Personal website",
         description: "My personal website written in React and TypeScript, the website is designed to imitate Windows 95 with its functionality and aesthetics.",
@@ -522,7 +529,7 @@ export const projects = [
         websitePreview: "https://hukasx0.github.io/"
     },
     {
-        currentlyWorkingOn: false,
+        status: Status.Finished,
         imageUrl: blog,
         name: "Blog",
         description: "My blog written in Astro framework using Tailwind and View Transitions API for smooth transitions between pages.",

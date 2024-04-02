@@ -8,8 +8,9 @@ import {
     TooltipProvider,
     TooltipTrigger,
   } from "@/components/ui/tooltip"
+import { Status } from '@/const';
 
-export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorkingOn, websitePreview, lightIcon }) => {
+export const ProjectCard = ({ name, desc, techs, img, githubLink, status, websitePreview, lightIcon }) => {
     return (
         <div>
                 <div className="relative w-full h-[230px]">
@@ -65,13 +66,18 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, currentlyWorki
                     </div>
                 </div>
                 <div className="mt-5">
-                    {currentlyWorkingOn ? (
-                        <p className="text-center bg-secondary">Currently working on</p>
-                     )
-                     : (
-                        <br />
-                     )
-                    }
+                    {(() => {
+                        switch (status) {
+                            case Status.currentlyWorkingOn:
+                                return <p className="text-center bg-secondary">Currently working on</p>;
+                            case Status.Suspended:
+                                return <p className="text-center bg-destructive">Project suspended</p>;
+                            case Status.Rewriting:
+                                return <p className="text-center bg-primary">Rewriting project code</p>;
+                            default:
+                                return <br />;
+                        }
+                    })()}
                     <h2 className='font-bold text-[24px]'>{name}</h2>
                     <p className='mt-2 text-[14px]'>{desc}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
