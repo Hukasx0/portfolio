@@ -13,7 +13,7 @@ const ContactList = () => {
   return (
     <section className="sm:mt-5 flex flex-wrap gap-6 sm:gap-8 justify-center">
               {contactTypes.map((contact) => (
-                <TooltipProvider key={contact.name}>
+                <TooltipProvider key={contact.name} delayDuration={0}>
                   <Tooltip>
                     <TooltipTrigger>
                       <Link href={contact.link}>

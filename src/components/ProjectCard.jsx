@@ -26,7 +26,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, status, websit
                             onClick={() => window.open(githubLink, "_blank")}
                             className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
                         >
-                        <TooltipProvider>
+                        <TooltipProvider delayDuration={0}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <Image
@@ -46,7 +46,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, status, websit
                             onClick={() => window.open(websitePreview, "_blank")}
                             className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
                             >
-                                <TooltipProvider>
+                                <TooltipProvider delayDuration={0}>
                                     <Tooltip>
                                         <TooltipTrigger asChild>
                                             <Image
@@ -83,7 +83,7 @@ export const ProjectCard = ({ name, desc, techs, img, githubLink, status, websit
                     <div className="mt-4 flex flex-wrap gap-2">
                         {techs.map((tech) => {
                             return (
-                                <TooltipProvider key={tech.name}>
+                                <TooltipProvider key={tech.name} delayDuration={0}>
                                     <Tooltip>
                                         <TooltipTrigger className='cursor-default'>
                                             <Image
