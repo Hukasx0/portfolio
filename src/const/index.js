@@ -266,10 +266,10 @@ export const Status = {
 
 export const projects = [
     {
-        status: Status.Rewriting,
+        status: Status.Finished,
         imageUrl: aiCompanion,
         name: "AI Companion",
-        description: "Backend + API + Frontend for running large language models of artificial intelligence on the local computer, with the addition of short-term memory, long-term memory, ai learning by chatting with the user and the ability to add your own custom data. Can be used as a easy to use and fast chat interface with AI chatbots or can be used as an API/Backend to other projects",
+        description: "AI Companion is a project that aims to provide a quick, simple, light and convenient way to create AI chatbots on your local computer, it does not require any external API, installation of any libraries, you simply install the binary file corresponding to your operating system and device, download the selected model and you can start using the tool as: WebUI for chatting with LLM, WebUI for roleplaying with an AI character, or use as an API for your other projects that require an AI chatbot.",
         technologies: [
             {
                 name: "Rust",
@@ -280,6 +280,14 @@ export const projects = [
                 name: "Actix",
                 iconUrl: actix,
                 darkModeInvert: true
+            },
+            {
+                name: "Scss",
+                iconUrl: sass
+            },
+            {
+                name: "Tailwind",
+                iconUrl: tailwind
             },
             {
                 name: "TypeScript",
