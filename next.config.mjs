@@ -1,14 +1,12 @@
 /** @type {import('next').NextConfig} */
-let nextConfig = {};
-
-nextConfig = {
+let nextConfig = {
     basePath: '/portfolio',
     trailingSlash: true,
     output: 'export',
     images: {
         unoptimized: true,
     },
-    distDir: "out"
+    distDir: "./out"
 };
 
 export default nextConfig;
