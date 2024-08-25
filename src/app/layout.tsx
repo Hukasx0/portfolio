@@ -17,7 +17,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Hubert Kasperek's portfolio website",
   description: "Hubert Kasperek's portfolio website",
-  icons: [{ rel: "icon", url: "/icon.png" }],
+  icons: [{ rel: "icon", url: "/portfolio/icon.png" }],
 };
 
 export default function RootLayout({

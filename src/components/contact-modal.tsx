@@ -69,7 +69,7 @@ export function ContactModal() {
       setSendStatus('success');
       toast({
         title: "Message sent!",
-        description: "Thank you for your message. We'll get back to you soon.",
+        description: "Thank you for your message. I'll answer as fast as possible.",
       })
       setOpen(false)
       form.reset();
