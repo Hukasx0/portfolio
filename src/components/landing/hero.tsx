@@ -31,7 +31,7 @@ export default function Hero() {
                 <Balancer>
                     <div className="flex flex-col items-center text-center">
                         <Image
-                            src="/avatar.jpg"
+                            src="/portfolio/avatar.jpg"
                             alt="Hubert"
                             width={120}
                             height={120}

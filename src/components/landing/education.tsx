@@ -8,7 +8,7 @@ const educations = [
     degree: "Programmer Major",
     period: "2020 - 2025",
     description: "Focused on computer science and programming fundamentals, preparing for a career in software development.",
-    logo: "/zsp2wagrowiec.svg"
+    logo: "/portfolio/zsp2wagrowiec.svg"
   },
 ];
 
