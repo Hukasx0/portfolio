@@ -79,8 +79,12 @@ jobs:
           echo "NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
           echo "NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}" >> $GITHUB_ENV
           echo "NEXT_PUBLIC_GH_PAGES=True" >> $GITHUB_ENV
+      - name: Install wait-on
+        run: npm install -g wait-on
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Wait for build to finish
+        run: wait-on ./out/index.html
       - name: Check files
         run: ls -la
       - name: Upload artifact
