@@ -6,7 +6,7 @@ import Balancer from "react-wrap-balancer";
 const experiences = [
     {
       title: "Founder & Full Stack Developer",
-      company: "Blitzy",
+      company: "Blitzy (blitzyapp.com)",
       period: "2024 - Present",
       description: "Leading the development of Blitzy, a SaaS platform with a no-code editor for rapid idea validation. Utilizing Next.js, TypeScript, and Tailwind CSS to create a robust and user-friendly application.",
       link: "https://blitzyapp.com/"

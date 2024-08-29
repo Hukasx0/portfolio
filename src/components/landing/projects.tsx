@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc } from "react-icons/si";
 import Balancer from "react-wrap-balancer";
 
 const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
@@ -20,7 +20,7 @@ const projects = [
     description: "Fullstack SaaS application with no-code editor created to make idea validation way faster",
     image: "/portfolio/blitzy.webp",
     link: "https://blitzyapp.com",
-    technologies: [SiNextdotjs, SiTypescript, SiTailwindcss, SiTurso],
+    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso],
   },
   {
     title: "Character Factory",
@@ -34,7 +34,7 @@ const projects = [
     description: "AI chatbot API and webui with customizable personalities and short-term and long-term memory.",
     image: "/portfolio/ai-companion.png",
     github: "https://github.com/Hukasx0/ai-companion",
-    technologies: [SiNextdotjs, SiTypescript, SiTailwindcss, SiRust, SiSqlite],
+    technologies: [SiReact, SiTypescript, SiTailwindcss, SiRust, SiSqlite],
   },
   {
     title: "Aichar",
@@ -46,11 +46,11 @@ const projects = [
   },
   {
     title: "Todist",
-    description: "Project created as a result of a challenge - write a simple Fullstack application with authorization in 1 day",
+    description: "Project created as a result of a challenge - write a simple Fullstack application with authentication in 1 day",
     image: "/portfolio/todist.png",
     link: "https://todistapp.vercel.app/",
     github: "https://github.com/Hukasx0/todist",
-    technologies: [SiNextdotjs, SiReact, SiTypescript, SiPostgresql],
+    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiPostgresql],
   },
 ];
 
@@ -107,7 +107,7 @@ export default function Projects() {
         <div className="mt-8 text-center">
           <Button asChild variant="link" size="lg">
             <Balancer>
-            <Link href="https://github.com/Hukasx0?tab=repositories" target="_blank" className="flex items-center">
+            <Link href="https://github.com/Hukasx0?tab=repositories" target="_blank" className="flex items-center hover:underline">
               <FaGithub className="mr-2" />
               More projects available on my GitHub
             </Link>
