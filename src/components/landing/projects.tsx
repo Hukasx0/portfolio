@@ -25,21 +25,21 @@ const projects = [
   {
     title: "Character Factory",
     description: "Web app for creating AI characters with custom personalities using Stable Diffusion and LLM.",
-    image: "/portfolio/character-factory.png",
+    image: "/portfolio/character-factory.webp",
     github: "https://github.com/Hukasx0/character-factory",
     technologies: [SiPython, SiJupyter],
   },
   {
     title: "AI Companion",
     description: "AI chatbot API and webui with customizable personalities and short-term and long-term memory.",
-    image: "/portfolio/ai-companion.png",
+    image: "/portfolio/ai-companion.webp",
     github: "https://github.com/Hukasx0/ai-companion",
     technologies: [SiReact, SiTypescript, SiTailwindcss, SiRust, SiSqlite],
   },
   {
     title: "Aichar",
     description: "A Python library for creating/transporting/parsing AI characters between different frontends (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion) ",
-    image: "/portfolio/aichar.png",
+    image: "/portfolio/aichar.webp",
     link: "https://pypi.org/project/aichar/",
     github: "https://github.com/Hukasx0/aichar",
     technologies: [SiRust, SiPython],
@@ -47,7 +47,7 @@ const projects = [
   {
     title: "Todist",
     description: "Project created as a result of a challenge - write a simple Fullstack application with authentication in 1 day",
-    image: "/portfolio/todist.png",
+    image: "/portfolio/todist.webp",
     link: "https://todistapp.vercel.app/",
     github: "https://github.com/Hukasx0/todist",
     technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiPostgresql],
