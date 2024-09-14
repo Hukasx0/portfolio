@@ -10,7 +10,8 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ContactModal } from "../contact-modal";
 import { Button } from "../ui/button";
-import Image from "next/image";
+import OrbitingItems from "../ui/animata/list/orbiting-items";
+import { SiDrizzle, SiNextdotjs, SiReact, SiTailwindcss, SiTurso, SiTypescript } from "react-icons/si";
 
 export default function Hero() {
     const { toast } = useToast();
@@ -30,12 +31,16 @@ export default function Hero() {
             <CardContent className="p-6 my-3">
                 <Balancer>
                     <div className="flex flex-col items-center text-center">
-                        <Image
-                            src="/portfolio/avatar.webp"
-                            alt="Hubert"
-                            width={120}
-                            height={120}
-                            className="rounded-full mb-6 border-4 border-primary hover:scale-105 transition-transform duration-300"
+                        <OrbitingItems
+                            items={[
+                                <SiNextdotjs key="nextjs" className="h-6 w-6" />,
+                                <SiReact key="react" className="h-6 w-6" />,
+                                <SiTypescript key="typescript" className="h-6 w-6" />,
+                                <SiTailwindcss key="tailwind" className="h-6 w-6" />,
+                                <SiTurso key="turso" className="h-6 w-6" />,
+                                <SiDrizzle key="drizzle" className="h-6 w-6" />,
+                            ]}
+                            radius={50}
                         />
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                             Hi, I&apos;m <span className="text-primary">Hubert</span>{" "}

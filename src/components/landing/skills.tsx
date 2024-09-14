@@ -2,7 +2,6 @@ import { IconType } from "react-icons";
 import { FaReact, FaGitAlt } from "react-icons/fa";
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSqlite, SiAuth0, SiTurso, SiShadcnui, SiTrpc, SiDrizzle, SiCloudflarepages, SiCloudflareworkers } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { BsDatabaseFillCheck } from "react-icons/bs";
 import { Card, CardContent } from "@/components/ui/card";
 import Balancer from "react-wrap-balancer";
 import Link from "next/link";
