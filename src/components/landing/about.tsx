@@ -14,7 +14,7 @@ export default function About() {
                         Creator of <Link className="text-primary hover:underline" target="_blank" href="https://blitzyapp.com/">blitzyapp.com</Link>, <Link className="text-primary hover:underline" target="_blank" href="https://github.com/Hukasx0/ai-companion">AI-Companion</Link> and <Link className="text-primary hover:underline" target="_blank" href="https://github.com/Hukasx0/character-factory">Character Factory</Link>
                     </p>
                     <p className="text-muted-foreground">
-                        I have the appropriate skills to create a SaaS or micro SaaS myself (or in a team) from start to finish, regardless of whether it is hosted on VPS or Serverless.
+                        I have the appropriate skills to create a <span className="text-primary">Software as a Service (SaaS) application</span> or a <span className="text-primary">micro SaaS application myself (or in a team)</span> from start to finish, regardless of whether it is hosted on VPS or Serverless.
                     </p>
                 </div>
             </Balancer>
