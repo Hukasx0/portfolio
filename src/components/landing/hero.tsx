@@ -9,9 +9,10 @@ import Balancer from "react-wrap-balancer";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ContactModal } from "../contact-modal";
-import { Button } from "../ui/button";
 import OrbitingItems from "../ui/animata/list/orbiting-items";
 import { SiDrizzle, SiNextdotjs, SiReact, SiTailwindcss, SiTurso, SiTypescript } from "react-icons/si";
+import SwipeButton from "../ui/animata/button/swipe-button";
+import { MoveDown } from "lucide-react";
 
 export default function Hero() {
     const { toast } = useToast();
@@ -50,7 +51,15 @@ export default function Hero() {
                             Fullstack developer from Poland 🇵🇱 passionate about creating innovative solutions
                         </h2>
                         <div className="flex gap-4 mb-8">
-                            <Link href="#projects"><Button variant="default" size="lg">My Projects</Button></Link>
+                            <Link href="#projects">
+                            <SwipeButton
+                                className=""
+                                firstClass="bg-primary text-primary-foreground"
+                                firstText="My projects"
+                                secondClass="bg-secondary text-secondary-foreground flex flex-row justify-center"
+                                secondText=<MoveDown className="w-5 h-5 pt-1" />
+                            />
+                            </Link>
                             <ContactModal />
                         </div>
                         <div className="flex space-x-6">
