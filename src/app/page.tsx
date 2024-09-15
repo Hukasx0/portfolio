@@ -11,19 +11,19 @@ import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-    <>
-    <Navbar />
-    <div className="hero-container">
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Education />
-      <Projects />
-      <CTA />
-      <Contact />
-      <Footer />
+    <div className="w-screen overflow-x-hidden">
+      <Navbar />
+      <div className="hero-container">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+        <CTA />
+        <Contact />
+        <Footer />
+      </div>
     </div>
-    </>
   );
 }

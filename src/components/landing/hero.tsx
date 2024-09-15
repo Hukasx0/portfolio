@@ -28,7 +28,7 @@ export default function Hero() {
     };
 
     return (
-        <Card className={cn("w-full", "mt-16", "md:mt-0")}>
+        <Card className={cn("w-full", "mt-16")}>
             <CardContent className="p-6 my-3">
                 <Balancer>
                     <div className="flex flex-col items-center text-center">
