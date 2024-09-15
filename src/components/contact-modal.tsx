@@ -133,7 +133,7 @@ export function ContactModal() {
             </div>
           </CredenzaBody>
           <CredenzaFooter className="!justify-center">
-            <div className="flex flex-col gap-3 text-center">
+            <div className="flex flex-col gap-3 text-center mt-2">
                 <Button type="submit" disabled={isSending}>
                     {isSending ? 'Sending...' : 'Send Message'}
                 </Button>
