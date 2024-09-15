@@ -22,7 +22,7 @@ export default function Education() {
             {educations.map((edu, index) => (
               <div key={index} className="flex">
                 <div className="mr-4 mt-1">
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary overflow-hidden">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-secondary dark:bg-primary overflow-hidden">
                     <Image
                       src={edu.logo}
                       alt={`${edu.school} logo`}
