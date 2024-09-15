@@ -61,7 +61,12 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
 }
 
 .wave {
