@@ -91,7 +91,8 @@ export function ContactModal() {
         <CredenzaHeader>
           <CredenzaTitle>Contact Me</CredenzaTitle>
           <CredenzaDescription>
-            Fill out the form below and I&apos;ll get back to you as soon as possible.
+            Fill out the form below and I&apos;ll get back to you as soon as possible. <br />
+            (You can also email me directly: <span className="text-primary">hubertkasp13@gmail.com</span>)
           </CredenzaDescription>
         </CredenzaHeader>
         <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -112,7 +113,7 @@ export function ContactModal() {
                 <label htmlFor="email">Email</label>
                 <Input
                   id="email"
-                  placeholder="Your email"
+                  placeholder="Your e-mail address"
                   {...form.register("email")}
                 />
                 {form.formState.errors.email && (
