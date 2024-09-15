@@ -51,8 +51,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                {isMenuOpen && (
-                    <div className="md:hidden" role="menu" aria-label="Mobile menu">
+                    <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`} role="menu" aria-label="Mobile menu">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             <Link href="#about" className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-colors" role="menuitem">
                                 About
@@ -68,7 +67,6 @@ export default function Navbar() {
                             </a>
                         </div>
                     </div>
-                )}
             </nav>
         </div>
     );
