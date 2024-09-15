@@ -63,16 +63,16 @@ export default function Hero() {
                             <ContactModal />
                         </div>
                         <div className="flex space-x-6">
-                            <Link href="https://github.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="https://github.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My GitHub account">
                                 <FaGithub className="w-6 h-6" />
                             </Link>
-                            <Link href="https://twitter.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="https://twitter.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My Twitter/X account">
                                 <FaTwitter className="w-6 h-6" />
                             </Link>
-                            <button onClick={handleCopyEmail} className="text-muted-foreground hover:text-foreground transition-colors">
+                            <button onClick={handleCopyEmail} className="text-muted-foreground hover:text-foreground transition-colors" value={"copy e-mail address to clipboard"} aria-label="Copy my e-mail address to clipboard">
                                 <MdEmail className="w-6 h-6" />
                             </button>
-                            <Link href="https://www.producthunt.com/@Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="https://www.producthunt.com/@Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My Product Hunt account">
                                 <FaProductHunt className="w-6 h-6" />
                             </Link>
                         </div>

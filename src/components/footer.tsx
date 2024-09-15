@@ -42,16 +42,16 @@ export default function Footer() {
             </Link>
           </nav>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="https://github.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="https://github.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My GitHub account">
                 <FaGithub className="w-5 h-5" />
             </Link>
-            <Link href="https://twitter.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="https://twitter.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My Twitter/X account">
                 <FaTwitter className="w-5 h-5" />
             </Link>
-            <button onClick={handleCopyEmail} className="text-muted-foreground hover:text-foreground transition-colors">
+            <button onClick={handleCopyEmail} className="text-muted-foreground hover:text-foreground transition-colors" value={"copy e-mail address to clipboard"} aria-label="Copy my e-mail address to clipboard">
                 <MdEmail className="w-5 h-5" />
             </button>
-            <Link href="https://www.producthunt.com/@Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="https://www.producthunt.com/@Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My Product Hunt account">
                 <FaProductHunt className="w-5 h-5" />
             </Link>
           </div>

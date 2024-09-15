@@ -52,7 +52,7 @@ export default function Skills() {
         <Card className="w-full">
             <CardContent className="p-6">
                 <Balancer>
-                    <h2 className="text-3xl font-bold mb-6">My tech stack</h2>
+                    <h2 className="text-3xl font-bold mb-6">My primary tech stack</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                         {skills.map((skill, index) => (
                             <Link 
