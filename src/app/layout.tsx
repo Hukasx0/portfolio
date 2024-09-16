@@ -28,15 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-          {children}
-          <Toaster />
-        </ThemeProvider>
+        <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <div vaul-drawer-wrapper="" className="bg-background">
+                {children}
+              </div>
+              <Toaster />
+          </ThemeProvider>
       </body>
     </html>
   );
