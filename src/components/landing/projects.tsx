@@ -23,6 +23,13 @@ const projects = [
     technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso],
   },
   {
+    title: "Assistly",
+    description: "Web app created during a 3-hour Hackathon (\"Hacknarok\") at ZSP2 Wągrowiec Highschool in 2024. Helps students manage and track their study notes in the cloud.",
+    image: "/portfolio/assistly.webp",
+    link: "https://hacknarock-2024.pages.dev/",
+    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso],
+  },
+  {
     title: "Character Factory",
     description: "Web app for creating AI characters with custom personalities using Stable Diffusion and LLM.",
     image: "/portfolio/character-factory.webp",
