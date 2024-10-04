@@ -17,35 +17,35 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
 const projects = [
   {
     title: "Blitzy",
-    description: "Fullstack SaaS application with no-code editor created to make idea validation way faster",
+    description: "<strong>Fullstack SaaS application</strong> with <strong>no-code editor</strong> created to make idea validation way faster",
     image: "/portfolio/blitzy.webp",
     link: "https://blitzyapp.com",
     technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso],
   },
   {
     title: "AssistlyApp",
-    description: "Web app created during a 3-hour Hackathon (\"Hacknarok\") at ZSP2 Wągrowiec Highschool in 2024. Helps students manage and track their study notes in the cloud.",
+    description: "Web app created during a <strong>3-hour Hackathon</strong> (\"Hacknarok\") at ZSP2 Wągrowiec Highschool in 2024. Helps students <strong>manage and track their study notes in the cloud</strong>.",
     image: "/portfolio/assistly.webp",
     link: "https://hacknarock-2024.pages.dev/",
     technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso],
   },
   {
     title: "Character Factory",
-    description: "Web app for creating AI characters with custom personalities using Stable Diffusion and LLM.",
+    description: "Web app for <strong>creating AI characters with custom personalities</strong> using Stable Diffusion and LLM. <strong>Tens of thousands of people use this project monthly</strong>.",
     image: "/portfolio/character-factory.webp",
     github: "https://github.com/Hukasx0/character-factory",
     technologies: [SiPython, SiJupyter],
   },
   {
     title: "AI Companion",
-    description: "AI chatbot API and webui with customizable personalities and short-term and long-term memory.",
+    description: "AI chatbot API and webui with <strong>customizable personalities</strong> and <strong>short-term and long-term memory</strong>.",
     image: "/portfolio/ai-companion.webp",
     github: "https://github.com/Hukasx0/ai-companion",
     technologies: [SiReact, SiTypescript, SiTailwindcss, SiRust, SiSqlite],
   },
   {
     title: "Aichar",
-    description: "A Python library for creating/transporting/parsing AI characters between different frontends (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion) ",
+    description: "A Python library for <strong>creating/transporting/parsing AI characters</strong> between different frontends (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion). This library averages <strong>5,000-25,000 downloads per month</strong> on PyPI (pip).",
     image: "/portfolio/aichar.webp",
     link: "https://pypi.org/project/aichar/",
     github: "https://github.com/Hukasx0/aichar",
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     title: "Todist",
-    description: "Project created as a result of a challenge - write a simple Fullstack application with authentication in 1 day",
+    description: "Project created as a result of a challenge - <strong>write a simple Fullstack application with authentication in 1 day</strong>",
     image: "/portfolio/todist.webp",
     link: "https://todistapp.vercel.app/",
     github: "https://github.com/Hukasx0/todist",
@@ -73,7 +73,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
         />
         <CardContent className="p-4 flex flex-col flex-grow">
           <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-          <p className="text-sm text-muted-foreground mb-4 flex-grow">{project.description}</p>
+          <p className="text-sm text-muted-foreground mb-4 flex-grow" dangerouslySetInnerHTML={{ __html: project.description }}></p>
           <div className="flex space-x-2 mb-4">
             {project.technologies.map((Tech, i) => (
               <Tech key={i} className="text-primary w-6 h-6" />
