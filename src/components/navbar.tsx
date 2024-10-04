@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { useState } from 'react';
+import GibberishText from "./ui/animata/text/gibberish-text";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar() {
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center h-16">
                         <Link href="/" className="text-foreground font-bold text-2xl">
-                            Hubert Kasperek
+                            <GibberishText text="Hubert Kasperek" />
                         </Link>
                         <div className="hidden md:flex items-center space-x-4">
                             <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
