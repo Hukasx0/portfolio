@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: "Aichar",
-    description: "A Python library for <strong>creating/transporting/parsing AI characters</strong> between different frontends (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion). This library averages <strong>5,000-25,000 downloads per month</strong> on PyPI (pip install).",
+    description: "A Python library for <strong>creating/transporting/parsing AI characters</strong> between different frontends (TavernAI, SillyTavern, TextGenerationWebUI, AI-companion, Pygmalion). This library averages <strong>5,000-25,000 downloads per month (73,000 on record)</strong> on PyPI (pip install).",
     image: "/portfolio/aichar.webp",
     link: "https://pypi.org/project/aichar/",
     github: "https://github.com/Hukasx0/aichar",
