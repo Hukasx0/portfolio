@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import { FaReact, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSqlite, SiAuth0, SiTurso, SiShadcnui, SiTrpc, SiDrizzle, SiCloudflarepages, SiCloudflareworkers } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSqlite, SiAuth0, SiTurso, SiShadcnui, SiTrpc, SiDrizzle, SiCloudflarepages, SiCloudflareworkers, SiCsharp, SiDotnet } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { Card, CardContent } from "@/components/ui/card";
 import Balancer from "react-wrap-balancer";
@@ -26,7 +26,9 @@ const skills: Skill[] = [
     { name: "Drizzle ORM", icon: SiDrizzle },
     { name: "Tailwind CSS", icon: SiTailwindcss },
     { name: "Cloudflare Pages", icon: SiCloudflarepages},
-    { name: "Workers", icon: SiCloudflareworkers}
+    { name: "Workers", icon: SiCloudflareworkers},
+    { name: "C#", icon: SiCsharp },
+    { name: ".NET", icon: SiDotnet }
 ];
 
 const skillLinks: { [key: string]: string } = {
@@ -44,7 +46,9 @@ const skillLinks: { [key: string]: string } = {
   "Drizzle ORM": "https://orm.drizzle.team",
   "Tailwind CSS": "https://tailwindcss.com",
   "Cloudflare Pages": "https://pages.cloudflare.com/",
-  "Workers": "https://workers.cloudflare.com/"
+  "Workers": "https://workers.cloudflare.com/",
+  "C#": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+  ".NET": "https://dotnet.microsoft.com/"
 };
 
 export default function Skills() {
@@ -55,10 +59,10 @@ export default function Skills() {
                     <h2 className="text-3xl font-bold mb-6">My primary tech stack</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                         {skills.map((skill, index) => (
-                            <Link 
-                                key={index} 
-                                href={skillLinks[skill.name] || "#"} 
-                                target="_blank" 
+                            <Link
+                                key={index}
+                                href={skillLinks[skill.name] || "#"}
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center space-x-2 p-2 rounded-md bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
                             >
@@ -72,4 +76,3 @@ export default function Skills() {
         </Card>
     )
 }
-

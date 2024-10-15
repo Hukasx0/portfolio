@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc, SiCsharp, SiDotnet } from "react-icons/si";
 import Balancer from "react-wrap-balancer";
 
 const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
@@ -58,6 +58,13 @@ const projects = [
     link: "https://todistapp.vercel.app/",
     github: "https://github.com/Hukasx0/todist",
     technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiPostgresql],
+  },
+  {
+    title: "egzamin-inf04-rozwiazania",
+    description: "<strong>Comprehensive solution guide</strong> for practical C# tasks from previous years' INF.04 exams. <strong>Invaluable resource for Polish IT students</strong> preparing for their professional certification.",
+    image: "/portfolio/egzamin-inf04-rozwiazania.webp",
+    github: "https://github.com/Hukasx0/egzamin-inf04-rozwiazania",
+    technologies: [SiCsharp, SiDotnet],
   },
 ];
 
