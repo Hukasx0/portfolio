@@ -7,7 +7,7 @@ export default function NotFound() {
             <div className="text-center">
                 <h1 className="text-6xl font-bold text-gray-900 dark:text-gray-100 mb-4">404</h1>
                 <h2 className="text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">Page Not Found</h2>
-                <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">Oops! The page you're looking for doesn't exist.</p>
+                <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">{"Oops! The page you're looking for doesn't exist."}</p>
                 <div className="flex justify-center">
                     <Link href="/">
                         <Button className="flex items-center space-x-2">
