@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import About from "@/components/landing/about";
+import Certificates from "@/components/landing/certificates";
 import Contact from "@/components/landing/contact";
 import CTA from "@/components/landing/cta";
 import Education from "@/components/landing/education";
@@ -19,6 +20,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Education />
+        {/*<Certificates />*/}
         <Projects />
         <CTA />
         <Contact />
