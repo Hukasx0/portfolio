@@ -2,7 +2,7 @@
 
 import { FaGithub, FaTwitter, FaProductHunt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { Card, CardContent } from "../ui/card";
 import Balancer from "react-wrap-balancer";
@@ -13,6 +13,8 @@ import OrbitingItems from "../ui/animata/list/orbiting-items";
 import { SiDrizzle, SiNextdotjs, SiReact, SiTailwindcss, SiTurso, SiTypescript } from "react-icons/si";
 import SwipeButton from "../ui/animata/button/swipe-button";
 import { MoveDown } from "lucide-react";
+
+import { motion } from "framer-motion"
 
 export default function Hero() {
     const { toast } = useToast();
@@ -27,10 +29,15 @@ export default function Hero() {
         });
     };
 
+    const [isJsEnabled, setIsJsEnabled] = useState(false);
+
+    useEffect(() => {
+        setIsJsEnabled(true);
+    }, []);
+
     return (
         <Card className={cn("w-full", "mt-16")}>
             <CardContent className="p-6 my-3">
-                <Balancer>
                     <div className="flex flex-col items-center text-center">
                         <OrbitingItems
                             items={[
@@ -43,13 +50,46 @@ export default function Hero() {
                             ]}
                             radius={50}
                         />
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                        {isJsEnabled ? 
+                        <motion.h1 
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+                        >
+                            <Balancer>
                             Hi, I&apos;m <span className="text-primary">Hubert</span>{" "}
                             <span className="wave inline-block animate-wave">👋</span>
-                        </h1>
+                            </Balancer>
+                            </motion.h1>
+                            :
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                                <Balancer>
+                                    Hi, I&apos;m <span className="text-primary">Hubert</span>{" "}
+                                    <span className="wave inline-block animate-wave">👋</span>
+                                </Balancer>
+                            </h1>
+                        }
+
+                        {isJsEnabled ?
+                        <motion.h2 
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.75 }}
+                            className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8"
+                        >
+                            <Balancer>
+                                Fullstack developer from Poland 🇵🇱 passionate about creating innovative solutions
+                            </Balancer>
+                        </motion.h2>
+                        :
                         <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8">
-                            Fullstack developer from Poland 🇵🇱 passionate about creating innovative solutions
+                            <Balancer>
+                                Fullstack developer from Poland 🇵🇱 passionate about creating innovative solutions
+                            </Balancer>
                         </h2>
+                        }
+
                         <div className="flex gap-4 mb-8">
                             <Link href="#projects">
                             <SwipeButton
@@ -77,7 +117,6 @@ export default function Hero() {
                             </Link>
                         </div>
                     </div>
-                </Balancer>
             </CardContent>
         </Card>
     );
