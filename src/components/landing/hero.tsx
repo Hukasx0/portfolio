@@ -79,7 +79,7 @@ export default function Hero() {
                             className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8"
                         >
                             <Balancer>
-                                Fullstack developer from Poland 🇵🇱 passionate about creating innovative solutions
+                                Fullstack web developer from Poland 🇵🇱 passionate about creating innovative solutions
                             </Balancer>
                         </motion.h2>
                         :
