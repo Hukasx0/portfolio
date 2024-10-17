@@ -11,7 +11,7 @@ export default function NotFound() {
                 <div className="flex justify-center">
                     <Link href="/">
                         <Button className="flex items-center space-x-2">
-                            <span>Go Home</span>
+                            <span>Go back</span>
                         </Button>
                     </Link>
                 </div>
