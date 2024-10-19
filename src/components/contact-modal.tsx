@@ -20,6 +20,7 @@ import {
   CredenzaBody,
   CredenzaFooter,
 } from "@/components/ui/credenza"
+import { Send } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -85,7 +86,14 @@ export function ContactModal() {
   return (
     <Credenza open={open} onOpenChange={setOpen}>
       <CredenzaTrigger asChild>
-        <Button variant="outline">Contact Me</Button>
+        <button
+          className="group relative overflow-hidden rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground px-4 py-2 text-sm font-medium transition-all w-full h-10 inline-flex items-center justify-center"
+        >
+          <span className="flex items-center justify-center space-x-2 transition-all duration-300 group-hover:translate-x-[-20px]">
+            <span>Contact Me</span>
+            <Send className="w-4 h-4 mt-1 transition-all duration-300 group-hover:translate-x-[30px] group-hover:translate-y-[-30px] group-hover:opacity-0" />
+          </span>
+      </button>
       </CredenzaTrigger>
       <CredenzaContent>
         <CredenzaHeader>

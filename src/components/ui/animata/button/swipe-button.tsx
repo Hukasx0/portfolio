@@ -2,6 +2,7 @@
 import React from "react";
 
 import { cn } from "@/lib/utils";
+import { CodeXml } from "lucide-react";
 
 interface SwipeButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   firstText: string;
@@ -23,7 +24,7 @@ export default function SwipeButton({
   return (
     <button
       {...props}
-      className={cn("group relative min-w-fit overflow-hidden rounded-md", className)}
+      className={cn("group relative w-full overflow-hidden rounded-md", className)}
     >
       <span
         className={cn(
@@ -34,7 +35,17 @@ export default function SwipeButton({
       >
         {secondText}
       </span>
-      <span className={cn("group-hover:-translate-y-full", common, firstClass)}>{firstText}</span>
+      <span
+        className={cn(
+          "group-hover:-translate-y-full flex items-center justify-center",
+          common,
+          firstClass
+        )}
+      >
+        <span className="flex items-center justify-center">
+          {firstText} <CodeXml className="w-4 h-4 ml-2 mt-1" />
+        </span>
+      </span>
     </button>
   );
 }
