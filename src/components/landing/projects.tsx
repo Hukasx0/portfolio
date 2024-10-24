@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc, SiCsharp, SiDotnet } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc, SiCsharp, SiDotnet, SiCloudflare, SiVercel, SiPypi, SiGooglecolab } from "react-icons/si";
 import Balancer from "react-wrap-balancer";
 
 const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
@@ -20,21 +20,21 @@ const projects = [
     description: "<strong>Fullstack SaaS application</strong> with <strong>no-code editor</strong> created to make idea validation way faster",
     image: "/portfolio/blitzy.webp",
     link: "https://blitzyapp.com",
-    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso],
+    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso, SiCloudflare],
   },
   {
     title: "AssistlyApp",
     description: "Web app created during a <strong>3-hour Hackathon</strong> (\"Hacknarok\") at ZSP2 Wągrowiec Highschool in 2024. Helps students <strong>manage and track their study notes in the cloud</strong>.",
     image: "/portfolio/assistly.webp",
     link: "https://hacknarock-2024.pages.dev/",
-    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso],
+    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso, SiCloudflare],
   },
   {
     title: "Character Factory",
     description: "Web app for <strong>creating AI characters with custom personalities</strong> using Stable Diffusion and LLM. <strong>Tens of thousands of people use this project monthly</strong>.",
     image: "/portfolio/character-factory.webp",
     github: "https://github.com/Hukasx0/character-factory",
-    technologies: [SiPython, SiJupyter],
+    technologies: [SiPython, SiJupyter, SiGooglecolab],
   },
   {
     title: "AI Companion",
@@ -49,7 +49,7 @@ const projects = [
     image: "/portfolio/aichar.webp",
     link: "https://pypi.org/project/aichar/",
     github: "https://github.com/Hukasx0/aichar",
-    technologies: [SiRust, SiPython],
+    technologies: [SiRust, SiPython, SiPypi],
   },
   {
     title: "Todist",
@@ -57,7 +57,7 @@ const projects = [
     image: "/portfolio/todist.webp",
     link: "https://todistapp.vercel.app/",
     github: "https://github.com/Hukasx0/todist",
-    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiPostgresql],
+    technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiPostgresql, SiVercel],
   },
   {
     title: "egzamin-inf04-rozwiazania",
