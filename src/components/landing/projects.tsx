@@ -121,7 +121,7 @@ export default function Projects() {
         <div className="mt-8 text-center">
           <Button asChild variant="link" size="lg">
             <Balancer>
-            <Link href="https://github.com/Hukasx0?tab=repositories" target="_blank" className="flex items-center hover:underline">
+            <Link href="https://github.com/Hukasx0" target="_blank" className="flex items-center hover:underline">
               <FaGithub className="mr-2" />
               More projects available on my GitHub
             </Link>
