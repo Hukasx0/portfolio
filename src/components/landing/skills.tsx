@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import { FaReact, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSqlite, SiAuth0, SiTurso, SiShadcnui, SiTrpc, SiDrizzle, SiCloudflarepages, SiCloudflareworkers, SiCsharp, SiDotnet } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSqlite, SiAuth0, SiTurso, SiShadcnui, SiTrpc, SiDrizzle, SiCloudflarepages, SiCloudflareworkers, SiCsharp, SiDotnet, SiAngular } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { Card, CardContent } from "@/components/ui/card";
 import Balancer from "react-wrap-balancer";
@@ -28,7 +28,8 @@ const skills: Skill[] = [
     { name: "Cloudflare Pages", icon: SiCloudflarepages},
     { name: "Workers", icon: SiCloudflareworkers},
     { name: "C#", icon: SiCsharp },
-    { name: ".NET", icon: SiDotnet }
+    { name: ".NET", icon: SiDotnet },
+    { name: "Angular", icon: SiAngular}
 ];
 
 const skillLinks: { [key: string]: string } = {
@@ -48,7 +49,8 @@ const skillLinks: { [key: string]: string } = {
   "Cloudflare Pages": "https://pages.cloudflare.com/",
   "Workers": "https://workers.cloudflare.com/",
   "C#": "https://docs.microsoft.com/en-us/dotnet/csharp/",
-  ".NET": "https://dotnet.microsoft.com/"
+  ".NET": "https://dotnet.microsoft.com/",
+  "Angular": "https://angular.dev/"
 };
 
 export default function Skills() {
