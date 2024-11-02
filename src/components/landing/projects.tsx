@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -5,6 +7,43 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc, SiCsharp, SiDotnet, SiCloudflare, SiVercel, SiPypi, SiGooglecolab, SiAngular } from "react-icons/si";
 import Balancer from "react-wrap-balancer";
+import { X } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const ImageModal = ({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) => {
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [onClose]);
+
+  return (
+    <div 
+      className="fixed inset-0 z-50 overflow-auto bg-black/80 flex items-center justify-center"
+      onClick={onClose}
+    >
+      <Button 
+        variant="ghost" 
+        size="icon" 
+        className="absolute top-4 right-4 text-white hover:bg-white/20 z-[60]"
+        onClick={onClose}
+      >
+        <X className="h-6 w-6" />
+      </Button>
+      
+      <img
+        src={src}
+        alt={alt}
+        className="max-w-[90%] max-h-[90vh] object-contain m-auto pointer-events-none"
+      />
+    </div>
+  );
+};
 
 const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -75,19 +114,29 @@ const projects = [
   },
 ];
 
-const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => (
+const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+
+  return (
+    <>
     <AnimatedCard key={index}>
       <Card className="overflow-hidden h-full flex flex-col">
-        <Image
-          src={project.image}
-          alt={project.title}
-          width={400}
-          height={200}
-          className="w-full h-48 object-cover"
-        />
+        <div className="relative cursor-pointer" onClick={() => setIsImageModalOpen(true)}>
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={400}
+            height={200}
+            className="w-full h-48 object-cover transition-transform hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-black/0" />
+        </div>
         <CardContent className="p-4 flex flex-col flex-grow">
           <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-          <p className="text-sm text-muted-foreground mb-4 flex-grow" dangerouslySetInnerHTML={{ __html: project.description }}></p>
+          <p 
+            className="text-sm text-muted-foreground mb-4 flex-grow" 
+            dangerouslySetInnerHTML={{ __html: project.description }}
+          />
           <div className="flex space-x-2 mb-4">
             {project.technologies.map((Tech, i) => (
               <Tech key={i} className="text-primary w-6 h-6" />
@@ -100,7 +149,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
               </Button>
             )}
             {project.github && (
-                <Button asChild variant="outline" size="sm">
+              <Button asChild variant="outline" size="sm">
                 <Link href={project.github} target="_blank">
                   <FaGithub className="mr-2" />
                   GitHub
@@ -111,7 +160,17 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
         </CardContent>
       </Card>
     </AnimatedCard>
+    {isImageModalOpen && (
+      <ImageModal
+        src={project.image}
+        alt={project.title}
+        onClose={() => setIsImageModalOpen(false)}
+      />
+    )}
+    </>
   );
+};
+
 
 export default function Projects() {
   return (
