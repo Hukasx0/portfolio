@@ -100,7 +100,7 @@ const projects = [
   },
   {
     title: "Backup Database Application",
-    description: "Full-stack web application that <strong>automates database backups</strong> for PostgreSQL. Features include <strong>automated 3-hour backups</strong>, detailed logging, and a basic dashboard.",
+    description: "Full-stack web application that <strong>automates database backups</strong> for PostgreSQL. Features include <strong>automated backups on a configurable schedule</strong>, detailed logging, and a basic dashboard.",
     image: "/portfolio/backup-db-tool.webp",
     github: "https://github.com/Hukasx0/dotnet-angular-postgres-backup-tool",
     technologies: [SiAngular, SiTypescript, SiDotnet, SiCsharp, SiBootstrap, SiPostgresql],
