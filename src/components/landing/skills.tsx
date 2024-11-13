@@ -16,6 +16,7 @@ const skills: Skill[] = [
     { name: "TypeScript", icon: SiTypescript },
     { name: "T3 Stack", icon: TbBrandReactNative },
     { name: "React", icon: FaReact },
+    { name: "Angular", icon: SiAngular},
     { name: "OAuth2", icon: SiAuth0 },
     { name: "Shadcn ui", icon: SiShadcnui },
     { name: "tRPC", icon: SiTrpc },
@@ -28,8 +29,7 @@ const skills: Skill[] = [
     { name: "Cloudflare Pages", icon: SiCloudflarepages},
     { name: "Workers", icon: SiCloudflareworkers},
     { name: "C#", icon: SiCsharp },
-    { name: ".NET", icon: SiDotnet },
-    { name: "Angular", icon: SiAngular}
+    { name: ".NET", icon: SiDotnet }
 ];
 
 const skillLinks: { [key: string]: string } = {
