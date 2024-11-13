@@ -37,6 +37,7 @@ const skillLinks: { [key: string]: string } = {
   "TypeScript": "https://www.typescriptlang.org",
   "T3 Stack": "https://create.t3.gg",
   "React": "https://reactjs.org",
+  "Angular": "https://angular.dev/",
   "OAuth2": "https://oauth.net/2/",
   "Shadcn ui": "https://ui.shadcn.com",
   "tRPC": "https://trpc.io",
@@ -49,8 +50,7 @@ const skillLinks: { [key: string]: string } = {
   "Cloudflare Pages": "https://pages.cloudflare.com/",
   "Workers": "https://workers.cloudflare.com/",
   "C#": "https://docs.microsoft.com/en-us/dotnet/csharp/",
-  ".NET": "https://dotnet.microsoft.com/",
-  "Angular": "https://angular.dev/"
+  ".NET": "https://dotnet.microsoft.com/"
 };
 
 export default function Skills() {
