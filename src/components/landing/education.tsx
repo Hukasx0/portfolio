@@ -4,10 +4,10 @@ import Balancer from "react-wrap-balancer";
 
 const educations = [
   {
-    school: "ZSP2 Wągrowiec Highschool",
-    degree: "Programmer Major",
+    school: "ZSP2 Wągrowiec High School",
+    degree: "Programmer Technician (Technik Programista)",
     period: "2020 - 2025",
-    description: "Focused on computer science and programming fundamentals, preparing for a career in software development.",
+    description: "Focused on computer science, programming fundamentals, and preparing for a career in software development. Gained hands-on experience in full-stack web development, mobile and desktop applications, as well as database management. Completed professional internships, working on real-world projects and enhancing problem-solving skills.",
     logo: "/portfolio/zsp2wagrowiec.svg"
   },
 ];
