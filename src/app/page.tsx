@@ -8,12 +8,10 @@ import Experience from "@/components/landing/experience";
 import Hero from "@/components/landing/hero";
 import Projects from "@/components/landing/projects";
 import Skills from "@/components/landing/skills";
-import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
     <div className="w-screen overflow-x-hidden">
-      <Navbar />
       <div className="hero-container">
         <Hero />
         <About />

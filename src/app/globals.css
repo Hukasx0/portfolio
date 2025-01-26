@@ -93,10 +93,68 @@ html {
 }
 
 @layer base {
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
+
+  body::before {
+    content: '';
+    position: fixed;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    background: 
+
+      conic-gradient(
+        from 230deg at 50% 50%,
+        hsl(var(--primary) / 0.03),
+        hsl(var(--secondary) / 0.05),
+        hsl(var(--accent) / 0.03),
+        hsl(var(--primary) / 0.03)
+      ),
+
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E");
+    filter: blur(40px);
+    opacity: 0.4;
+    z-index: -1;
+    animation: gradient-rotate 40s linear infinite;
+  }
+
+  .dark body::before {
+    opacity: 0.6;
+    filter: blur(60px) contrast(1.2);
+    mix-blend-mode: multiply;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(to right, hsl(var(--border) / 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: linear-gradient(to bottom, transparent 10%, black 40%);
+    opacity: 0.15;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  @keyframes gradient-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }

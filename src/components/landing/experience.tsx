@@ -1,33 +1,39 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { BsBriefcase } from "react-icons/bs";
 import Link from "next/link";
-import Balancer from "react-wrap-balancer";
 
 const experiences = [
-    {
-      title: "Founder & Full Stack Developer",
-      company: "Blitzy (blitzyapp.com)",
-      period: "2024 - Present",
-      description: "Leading the development of Blitzy, a SaaS platform with a no-code editor for rapid idea validation. Utilizing Next.js, TypeScript, and Tailwind CSS to create a robust and user-friendly application.",
-      link: "https://blitzyapp.com/"
-    },
-    {
-      title: "Open source developer",
-      company: "GitHub",
-      period: "2022 - Present",
-      description: "Contributing to various open-source projects, including AI Companion, Character Factory, and Aichar. Developing innovative solutions using technologies such as Next.js, Rust, Python, and SQLite to create AI-powered applications and libraries.",
-      link: "https://github.com/Hukasx0"
-    },
-  ];
+  {
+    title: "Founder & Full Stack Developer",
+    company: "Blitzy",
+    period: "2024 - Present",
+    description: [
+      "Built SaaS no-code platform from scratch using Next.js, TypeScript and Tailwind CSS",
+      "Implemented visual editor, authentication system and database integrations",
+      "Empowering startups to validate ideas in hours instead of weeks"
+    ],
+    link: "https://blitzyapp.com/"
+  },
+  {
+    title: "Open Source Contributor",
+    company: "GitHub Projects",
+    period: "2022 - Present",
+    description: [
+      "AI Companion: Offline AI chatbot backend with webui, CUDA/Metal support",
+      "Character Factory: Full-stack studio with Stable Diffusion + LLM pipelines",
+      "And many more"
+    ],
+    link: "https://github.com/Hukasx0"
+  },
+];
 
 export default function Experience() {
   return (
     <Card className="w-full">
       <CardContent className="p-6">
-        <Balancer>
           <h2 className="text-3xl font-bold mb-6">Experience</h2>
-          <div className="flex flex-col items-center">
-            <div className="space-y-8 max-w-2xl">
+          <div className="flex flex-col">
+            <div className="space-y-8 w-full">
               {experiences.map((exp, index) => (
                 <div key={index} className="flex">
                   <div className="mr-4 mt-1">
@@ -41,19 +47,25 @@ export default function Experience() {
                       <span className="text-sm text-muted-foreground">{exp.period}</span>
                     </div>
                     <p className="text-base font-medium mb-1">
-                      <Link href={exp.link} target="_blank" className="text-primary hover:underline">
+                      <Link
+                        href={exp.link}
+                        target="_blank"
+                        className="text-primary hover:underline"
+                      >
                         {exp.company}
                       </Link>
                     </p>
-                    <p className="text-sm text-muted-foreground">{exp.description}</p>
+                    <div className="text-sm text-muted-foreground space-y-1">
+                      {exp.description.map((item, i) => (
+                        <div key={i}>{item}</div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-        </Balancer>
       </CardContent>
     </Card>
   );
 }
-

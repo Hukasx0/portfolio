@@ -1,13 +1,18 @@
 import Image from "next/image";
 import { Card, CardContent } from "../ui/card";
-import Balancer from "react-wrap-balancer";
 
 const educations = [
   {
     school: "ZSP2 Wągrowiec High School",
     degree: "Programmer Technician (Technik Programista)",
     period: "2020 - 2025",
-    description: "Focused on computer science, programming fundamentals, and preparing for a career in software development. Gained hands-on experience in full-stack web development, mobile and desktop applications, as well as database management. Completed professional internships, working on real-world projects and enhancing problem-solving skills.",
+    description: [
+      "Focus areas: Computer science fundamentals, algorithms, and software engineering principles",
+      "Full-stack development: Web applications (ASP.NET, Angular), mobile apps, and desktop software",
+      "Database systems: SQL Server, PostgreSQL, and MySql administration",
+      "Professional internships: 2 months working as a web developer",
+      "Exam preparation: INF.03 and INF.04"
+    ],
     logo: "/portfolio/zsp2wagrowiec.svg"
   },
 ];
@@ -16,7 +21,6 @@ export default function Education() {
   return (
     <Card className="w-full">
       <CardContent className="p-6">
-        <Balancer>
           <h2 className="text-3xl font-bold mb-6">Education</h2>
           <div className="space-y-8">
             {educations.map((edu, index) => (
@@ -38,12 +42,15 @@ export default function Education() {
                     <span className="text-sm text-muted-foreground">{edu.period}</span>
                   </div>
                   <p className="text-base font-medium mb-1">{edu.degree}</p>
-                  <p className="text-sm text-muted-foreground">{edu.description}</p>
+                  <div className="text-sm text-muted-foreground space-y-1">
+                    {edu.description.map((item, i) => (
+                      <div key={i}>{item}</div>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-        </Balancer>
       </CardContent>
     </Card>
   );
