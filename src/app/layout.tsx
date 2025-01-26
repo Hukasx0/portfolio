@@ -4,7 +4,6 @@ import "./globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster";
-import Navbar from "@/components/navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,8 +34,8 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              <Navbar />
-              <div vaul-drawer-wrapper="" className="bg-background/95 backdrop-blur-sm">
+              <div className="h-screen w-screen absolute z-[-1] backdrop-blur-sm isolate overflow-hidden"></div>
+              <div vaul-drawer-wrapper="" className="bg-background/95">
                 {children}
               </div>
               <Toaster />
