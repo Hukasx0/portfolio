@@ -34,7 +34,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              <div className="h-screen w-screen absolute z-[-1] backdrop-blur-sm isolate overflow-hidden"></div>
+              <div className="hidden xl:block h-screen w-screen absolute z-[-1] backdrop-blur-sm isolate overflow-hidden"></div>
               <div vaul-drawer-wrapper="" className="bg-background/95">
                 {children}
               </div>
