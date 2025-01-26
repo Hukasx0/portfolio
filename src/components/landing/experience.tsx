@@ -5,7 +5,7 @@ import Link from "next/link";
 const experiences = [
   {
     title: "Founder & Full Stack Developer",
-    company: "Blitzy",
+    company: "BlitzyApp.com",
     period: "2024 - Present",
     description: [
       "Built SaaS no-code platform from scratch using Next.js, TypeScript and Tailwind CSS",
