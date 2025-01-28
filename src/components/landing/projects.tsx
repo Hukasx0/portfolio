@@ -122,13 +122,13 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
       github: "https://github.com/Hukasx0/short-maker",
       technologies: [SiPython, SiFfmpeg],
     },
-    {
+    /*{
       title: "egzamin-inf04-rozwiazania",
       description: "<strong>Comprehensive solution guide</strong> for practical C# tasks from previous years' INF.04 exams. <strong>Invaluable resource for Polish IT students</strong> preparing for their professional certification.",
       image: "/portfolio/egzamin-inf04-rozwiazania.webp",
       github: "https://github.com/Hukasx0/egzamin-inf04-rozwiazania",
       technologies: [SiCsharp, SiDotnet],
-    },
+    },*/
   ];
 
 const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
