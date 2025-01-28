@@ -117,7 +117,7 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
     },
     {
       title: "Short Maker",
-      description: "<strong>Automated video compositing tool</strong> combining clips, audio, and dynamic subtitles. Leverages FFmpeg pipelines and Python for <strong>local, script-based short video production</strong> (TTS/graphics/dynamic subtitles). Solves content creation scalability through <strong>modular media processing</strong> without cloud dependencies or external APIs.",
+      description: "<strong>Automated video compositing tool</strong> combining clips, audio, and dynamic subtitles. Leverages FFmpeg pipelines and Python for <strong>local, script-based short vertical video production</strong> (TTS/graphics/dynamic subtitles). Solves content creation scalability through <strong>modular media processing</strong> without cloud dependencies or external APIs.",
       image: "/portfolio/short-maker.webp",
       github: "https://github.com/Hukasx0/short-maker",
       technologies: [SiPython, SiFfmpeg],
