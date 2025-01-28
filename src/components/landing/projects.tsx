@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc, SiCsharp, SiDotnet, SiCloudflare, SiVercel, SiPypi, SiGooglecolab, SiAngular, SiBootstrap } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc, SiCsharp, SiDotnet, SiCloudflare, SiVercel, SiPypi, SiGooglecolab, SiAngular, SiBootstrap, SiFfmpeg } from "react-icons/si";
 import Balancer from "react-wrap-balancer";
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -114,6 +114,13 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
       image: "/portfolio/backup-db-tool.webp",
       github: "https://github.com/Hukasx0/dotnet-angular-postgres-backup-tool",
       technologies: [SiAngular, SiTypescript, SiDotnet, SiCsharp, SiBootstrap, SiPostgresql],
+    },
+    {
+      title: "Short Maker",
+      description: "<strong>Automated video compositing tool</strong> combining clips, audio, and dynamic subtitles. Leverages FFmpeg pipelines and Python for <strong>local, script-based short video production</strong> (TTS/graphics/dynamic subtitles). Solves content creation scalability through <strong>modular media processing</strong> without cloud dependencies or external APIs.",
+      image: "/portfolio/short-maker.webp",
+      github: "https://github.com/Hukasx0/short-maker",
+      technologies: [SiPython, SiFfmpeg],
     },
     {
       title: "egzamin-inf04-rozwiazania",
