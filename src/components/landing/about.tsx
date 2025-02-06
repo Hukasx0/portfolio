@@ -21,14 +21,14 @@ export default function About() {
                             </Link> - no-code platform for rapid idea validation with <span className="text-primary">waitlist integration</span> and <span className="text-primary">static site export</span>
                         </li>
                         <li>
-                            <Link className="text-primary hover:underline font-bold" target="_blank" href="https://github.com/Hukasx0/aichar">
-                                Aichar
-                            </Link> - Python library written in Rust with <Link className="text-primary hover:underline" target="_blank" href="https://pypi.org/project/aichar/">738k+ PyPI downloads</Link>
-                        </li>
-                        <li>
                             <Link className="text-primary hover:underline font-bold" target="_blank" href="https://github.com/Hukasx0/ai-companion">
                                 AI Companion
                             </Link> - offline chatbot with long-term memory, ability to learn and even ability to be time aware
+                        </li>
+                        <li>
+                            <Link className="text-primary hover:underline font-bold" target="_blank" href="https://github.com/Hukasx0/aichar">
+                                Aichar
+                            </Link> - Python library written in Rust with <Link className="text-primary hover:underline" target="_blank" href="https://pypi.org/project/aichar/">738k+ PyPI downloads</Link>
                         </li>
                         <li>
                             <Link className="text-primary hover:underline font-bold" target="_blank" href="https://github.com/Hukasx0/character-factory">
