@@ -3,7 +3,6 @@ import { FaReact, FaGitAlt } from "react-icons/fa";
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSqlite, SiAuth0, SiTurso, SiShadcnui, SiTrpc, SiDrizzle, SiCloudflarepages, SiCloudflareworkers, SiCsharp, SiDotnet, SiAngular } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { Card, CardContent } from "@/components/ui/card";
-import Balancer from "react-wrap-balancer";
 import Link from "next/link";
 
 interface Skill {
@@ -57,7 +56,6 @@ export default function Skills() {
     return (
         <Card className="w-full">
             <CardContent className="p-6">
-                <Balancer>
                     <h2 className="text-3xl font-bold mb-6">My primary tech stack</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                         {skills.map((skill, index) => (
@@ -73,7 +71,6 @@ export default function Skills() {
                             </Link>
                         ))}
                     </div>
-                </Balancer>
             </CardContent>
         </Card>
     )

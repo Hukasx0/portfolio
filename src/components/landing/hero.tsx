@@ -51,97 +51,181 @@ export default function Hero() {
     }, []);
 
     return (
-        <Card className={cn("w-full", "mt-16")}>
-            <CardContent className="p-6 my-3">
+        <Card className="w-full mt-16 glass-card">
+            <CardContent className="p-8 md:p-12 my-3">
                 <div className="flex flex-col items-center text-center">
-                    <OrbitingItems
-                        items={[
-                            <SiNextdotjs key="nextjs" className="h-6 w-6" />,
-                            <SiReact key="react" className="h-6 w-6" />,
-                            <SiTypescript key="typescript" className="h-6 w-6" />,
-                            <SiTailwindcss key="tailwind" className="h-6 w-6" />,
-                            <SiTurso key="turso" className="h-6 w-6" />,
-                            <SiDrizzle key="drizzle" className="h-6 w-6" />,
-                        ]}
-                        radius={50}
-                    />
-                    {isJsEnabled ? 
-                    <motion.h1 
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
-                    >
-                        <Balancer>
-                        Hi, I&apos;m <span className="text-primary">Hubert</span>{" "}
-                        <span className="wave inline-block animate-wave">👋</span>
-                        </Balancer>
-                        </motion.h1>
-                        :
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    {isJsEnabled ? (
+                        <motion.div
+                            initial={{ scale: 0.5, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                            className="mb-12 w-full max-w-[280px] md:max-w-[320px]"
+                        >
+                            <OrbitingItems
+                                items={[
+                                    <SiNextdotjs key="nextjs" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiReact key="react" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiTypescript key="typescript" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiTailwindcss key="tailwind" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiTurso key="turso" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiDrizzle key="drizzle" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                ]}
+                                radius={50}
+                                containerClassName="!py-0"
+                                className="h-[220px] md:h-[260px] w-[220px] md:w-[260px]"
+                            />
+                        </motion.div>
+                    ) : (
+                        <div className="mb-12 w-full max-w-[280px] md:max-w-[320px]">
+                            <OrbitingItems
+                                items={[
+                                    <SiNextdotjs key="nextjs" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiReact key="react" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiTypescript key="typescript" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiTailwindcss key="tailwind" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiTurso key="turso" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiDrizzle key="drizzle" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                ]}
+                                radius={50}
+                                containerClassName="!py-0"
+                                className="h-[220px] md:h-[260px] w-[220px] md:w-[260px]"
+                            />
+                        </div>
+                    )}
+
+                    {isJsEnabled ? (
+                        <motion.h1 
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight"
+                        >
                             <Balancer>
                                 Hi, I&apos;m <span className="text-primary">Hubert</span>{" "}
-                                <span className="wave inline-block animate-wave">👋</span>
+                                <span className="wave inline-block">👋</span>
+                            </Balancer>
+                        </motion.h1>
+                    ) : (
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+                            <Balancer>
+                                Hi, I&apos;m <span className="text-primary">Hubert</span>{" "}
+                                <span className="wave inline-block">👋</span>
                             </Balancer>
                         </h1>
-                    }
+                    )}
 
-                    {isJsEnabled ?
-                    <motion.h2 
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.75 }}
-                        className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8"
-                    >
-                        <Balancer>
-                            Fullstack web developer from Poland 🇵🇱 passionate about creating innovative solutions
-                        </Balancer>
-                    </motion.h2>
-                    :
-                    <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8">
-                        <Balancer>
-                            Fullstack developer from Poland 🇵🇱 passionate about creating innovative solutions
-                        </Balancer>
-                    </h2>
-                    }
-
-                    <div className="flex flex-col space-y-4 mb-8 w-full max-w-xs">
-                        <Link href="#projects">
-                            <SwipeButton
-                                className=""
-                                firstClass="bg-primary text-primary-foreground"
-                                firstText="My projects"
-                                secondClass="bg-secondary text-secondary-foreground flex flex-row justify-center"
-                                secondText=<MoveDown className="w-5 h-5 pt-1" />
-                            />
-                        </Link>
-                        <ContactModal />
-                        {/*<button 
-                            onClick={handleDownloadResume}
-                            className="group relative overflow-hidden rounded-md border border-input bg-background hover:text-accent-foreground px-4 py-2 text-sm font-medium transition-colors w-full h-10 inline-flex items-center justify-center"
+                    {isJsEnabled ? (
+                        <motion.h2 
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.75, delay: 0.4 }}
+                            className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-12 tracking-tight"
                         >
-                            <span className="absolute bottom-0 left-0 h-full w-full origin-bottom translate-y-full transform overflow-hidden bg-accent transition-transform duration-300 ease-out group-hover:translate-y-0"></span>
-                            <span className="relative flex items-center justify-center space-x-2 z-10 transition-colors group-hover:text-accent-foreground">
-                                <span>Download Resume</span>
-                                <MdDownload className="w-4 h-4 mt-1" />
-                            </span>
-                        </button>*/}
-                    </div>
+                            <Balancer>
+                                Fullstack web developer from Poland 🇵🇱 passionate about creating innovative solutions
+                            </Balancer>
+                        </motion.h2>
+                    ) : (
+                        <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-12 tracking-tight">
+                            <Balancer>
+                                Fullstack web developer from Poland 🇵🇱 passionate about creating innovative solutions
+                            </Balancer>
+                        </h2>
+                    )}
 
-                    <div className="flex space-x-6">
-                        <Link href="https://github.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My GitHub account">
-                            <FaGithub className="w-6 h-6" />
-                        </Link>
-                        <Link href="https://twitter.com/Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My Twitter/X account">
-                            <FaTwitter className="w-6 h-6" />
-                        </Link>
-                        <button onClick={handleCopyEmail} className="text-muted-foreground hover:text-foreground transition-colors" value={"copy e-mail address to clipboard"} aria-label="Copy my e-mail address to clipboard">
-                            <MdEmail className="w-6 h-6" />
-                        </button>
-                        <Link href="https://www.producthunt.com/@Hukasx0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="My Product Hunt account">
-                            <FaProductHunt className="w-6 h-6" />
-                        </Link>
-                    </div>
+                    {isJsEnabled ? (
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            className="flex flex-col space-y-4 mb-12 w-full max-w-xs"
+                        >
+                            <Link href="#projects">
+                                <SwipeButton
+                                    className="shadow-lg hover:shadow-xl transition-all duration-300"
+                                    firstClass="bg-foreground text-background font-medium"
+                                    firstText="My projects"
+                                    secondClass="bg-primary/10 text-primary flex flex-row justify-center font-medium"
+                                    secondText=<MoveDown className="w-5 h-5 pt-1" />
+                                />
+                            </Link>
+                            <ContactModal />
+                        </motion.div>
+                    ) : (
+                        <div className="flex flex-col space-y-4 mb-12 w-full max-w-xs">
+                            <Link href="#projects">
+                                <SwipeButton
+                                    className="shadow-lg hover:shadow-xl transition-all duration-300"
+                                    firstClass="bg-foreground text-background font-medium"
+                                    firstText="My projects"
+                                    secondClass="bg-primary/10 text-primary flex flex-row justify-center font-medium"
+                                    secondText=<MoveDown className="w-5 h-5 pt-1" />
+                                />
+                            </Link>
+                            <ContactModal />
+                        </div>
+                    )}
+
+                    {isJsEnabled ? (
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.8 }}
+                            className="flex space-x-8"
+                        >
+                            <Link href="https://github.com/Hukasx0" target="_blank" rel="noopener noreferrer" 
+                                className="text-muted-foreground hover:text-foreground transition-all duration-300" 
+                                aria-label="My GitHub account"
+                            >
+                                <FaGithub className="w-6 h-6" />
+                            </Link>
+                            <Link href="https://twitter.com/Hukasx0" target="_blank" rel="noopener noreferrer" 
+                                className="text-muted-foreground hover:text-foreground transition-all duration-300" 
+                                aria-label="My Twitter/X account"
+                            >
+                                <FaTwitter className="w-6 h-6" />
+                            </Link>
+                            <button onClick={handleCopyEmail} 
+                                className="text-muted-foreground hover:text-foreground transition-all duration-300" 
+                                aria-label="Copy my e-mail address to clipboard"
+                            >
+                                <MdEmail className="w-6 h-6" />
+                            </button>
+                            <Link href="https://www.producthunt.com/@Hukasx0" target="_blank" rel="noopener noreferrer" 
+                                className="text-muted-foreground hover:text-foreground transition-all duration-300" 
+                                aria-label="My Product Hunt account"
+                            >
+                                <FaProductHunt className="w-6 h-6" />
+                            </Link>
+                        </motion.div>
+                    ) : (
+                        <div className="flex space-x-8">
+                            <Link href="https://github.com/Hukasx0" target="_blank" rel="noopener noreferrer" 
+                                className="text-muted-foreground hover:text-foreground transition-all duration-300" 
+                                aria-label="My GitHub account"
+                            >
+                                <FaGithub className="w-6 h-6" />
+                            </Link>
+                            <Link href="https://twitter.com/Hukasx0" target="_blank" rel="noopener noreferrer" 
+                                className="text-muted-foreground hover:text-foreground transition-all duration-300" 
+                                aria-label="My Twitter/X account"
+                            >
+                                <FaTwitter className="w-6 h-6" />
+                            </Link>
+                            <button onClick={handleCopyEmail} 
+                                className="text-muted-foreground hover:text-foreground transition-all duration-300" 
+                                aria-label="Copy my e-mail address to clipboard"
+                            >
+                                <MdEmail className="w-6 h-6" />
+                            </button>
+                            <Link href="https://www.producthunt.com/@Hukasx0" target="_blank" rel="noopener noreferrer" 
+                                className="text-muted-foreground hover:text-foreground transition-all duration-300" 
+                                aria-label="My Product Hunt account"
+                            >
+                                <FaProductHunt className="w-6 h-6" />
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </CardContent>
         </Card>

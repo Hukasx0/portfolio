@@ -32,7 +32,7 @@ export default function Contact() {
                     <p className="text-muted-foreground mb-6">
                         Feel free to reach out to me through any of the following platforms:
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4 mb-6">
                         <Button asChild variant="outline" className="flex items-center gap-2">
                             <Link href="https://github.com/Hukasx0" target="_blank" rel="noopener noreferrer">
                                 <FaGithub className="w-5 h-5" />
@@ -54,9 +54,12 @@ export default function Contact() {
                         <Button asChild variant="outline" className="flex items-center gap-2">
                             <Link href="#" onClick={handleCopyEmail}>
                                 <MdEmail className="w-5 h-5" />
-                                Email
+                                Copy Email address
                             </Link>
                         </Button>
+                    </div>
+                    <div className="text-muted-foreground text-sm">
+                        <p>Email address: <span className="font-mono hover:text-foreground transition-all duration-300">hubertkasp13@gmail.com</span></p>
                     </div>
                 </Balancer>
             </CardContent>

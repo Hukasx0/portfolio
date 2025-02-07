@@ -98,12 +98,12 @@ export default function OrbitingItems({
           className,
         )}
       >
-        <div className="absolute h-full w-full rounded-full border-2 border-border" />
+        <div className="absolute h-full w-full rounded-full border border-border" />
         {items.map((item, index) => {
           return (
             <div
               key={index}
-              className="absolute flex h-12 w-12 items-center justify-center rounded-full bg-secondary"
+              className="absolute flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-secondary/80 backdrop-blur-sm"
               style={calculateItemStyle({
                 index,
                 radius,
@@ -115,15 +115,13 @@ export default function OrbitingItems({
           );
         })}
 
-        <div
-          className={cn("absolute h-1/2 w-1/2 rounded-full border-2 border-border", reverse)}
-        >
+        <div className={cn("absolute h-24 w-24 md:h-28 md:w-28 rounded-full", reverse)}>
           <Image
             src="/portfolio/avatar.webp"
             alt="Hubert"
-            width={125}
-            height={125}
-            className="rounded-full mb-6 border-4 border-primary animate-pulse-light"
+            width={112}
+            height={112}
+            className="rounded-full border-2 border-border/40 animate-pulse-light"
           />
         </div>
       </div>
