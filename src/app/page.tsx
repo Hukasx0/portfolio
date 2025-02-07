@@ -12,9 +12,10 @@ import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className="w-screen overflow-x-hidden">
+    <div className="w-screen overflow-x-hidden bg-background relative">
+      <div className="fixed z-0 inset-0 bg-grid-light dark:bg-grid-dark opacity-75 dark:opacity-60 bg-[length:22px_22px] pointer-events-none" />
       <Navbar />
-      <div className="hero-container">
+      <div className="hero-container relative z-1">
         <Hero />
         <About />
         <Skills />

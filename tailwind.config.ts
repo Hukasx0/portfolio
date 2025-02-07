@@ -80,6 +80,10 @@ const config = {
           },
         },
       },
+      backgroundImage: {
+        'grid-light': "url(\"data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.07'%3E%3Ccircle cx='1' cy='1' r='1.2'/%3E%3C/g%3E%3C/svg%3E\")",
+        'grid-dark': "url(\"data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Ccircle cx='1' cy='1' r='1.2'/%3E%3C/g%3E%3C/svg%3E\")",
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
