@@ -61,7 +61,7 @@ export function ContactModal() {
         {
             from_name: data.name,
             to_name: "Hubert",
-            email: data.email,
+            email: data.email.toLowerCase(),
             topic: "Portfolio message",
             message: data.message
         },
