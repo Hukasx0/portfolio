@@ -28,7 +28,7 @@ export default function About() {
                         <li>
                             <Link className="text-primary hover:underline font-bold" target="_blank" href="https://github.com/Hukasx0/aichar">
                                 Aichar
-                            </Link> - Python library written in Rust with <Link className="text-primary hover:underline" target="_blank" href="https://pypi.org/project/aichar/">738k+ PyPI downloads</Link>
+                            </Link> - Python library written in Rust with <Link className="text-primary hover:underline" target="_blank" href="https://pypi.org/project/aichar/">750k+ PyPI downloads</Link>
                         </li>
                         <li>
                             <Link className="text-primary hover:underline font-bold" target="_blank" href="https://github.com/Hukasx0/character-factory">

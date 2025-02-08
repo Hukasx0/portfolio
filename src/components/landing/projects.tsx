@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc, SiCsharp, SiDotnet, SiCloudflare, SiVercel, SiPypi, SiGooglecolab, SiAngular, SiBootstrap, SiFfmpeg } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, SiSqlite, SiPostgresql, SiJupyter, SiTurso, SiTrpc, SiCsharp, SiDotnet, SiCloudflare, SiVercel, SiPypi, SiGooglecolab, SiAngular, SiBootstrap, SiFfmpeg, SiActix } from "react-icons/si";
 import Balancer from "react-wrap-balancer";
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -73,7 +73,7 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
     },
     {
       title: "Aichar",
-      description: "<strong>Python character management library</strong> for cross-platform AI personas. Enables <strong>creation/editing/export</strong> of characters across TavernAI, SillyTavern, Pygmalion and other frontends. Supports JSON/YAML/card formats with <strong>way faster processing</strong> via Rust core. <strong>738k+ PyPI downloads.</strong>",
+      description: "<strong>Python character management library</strong> for cross-platform AI personas. Enables <strong>creation/editing/export</strong> of characters across TavernAI, SillyTavern, Pygmalion and other frontends. Supports JSON/YAML/card formats with <strong>way faster processing</strong> via Rust core. <strong>750k+ PyPI downloads.</strong>",
       image: "/portfolio/aichar.webp",
       link: "https://pypi.org/project/aichar/",
       github: "https://github.com/Hukasx0/aichar",
@@ -84,7 +84,7 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
       description: "<strong>Self-hosted AI chatbot engine</strong> with offline execution (CPU/GPU), support for Llama 2/Mistral models (.gguf), and CUDA/Metal acceleration. Features roleplay syntax (*actions*), dual memory system (short/long-term), and real-time learning. Packaged as 26MB Rust binary with web UI.",
       image: "/portfolio/ai-companion.webp",
       github: "https://github.com/Hukasx0/ai-companion",
-      technologies: [SiReact, SiTypescript, SiTailwindcss, SiRust, SiSqlite],
+      technologies: [SiReact, SiTypescript, SiTailwindcss, SiRust, SiActix, SiSqlite],
     },
     {
       title: "AssistlyApp",

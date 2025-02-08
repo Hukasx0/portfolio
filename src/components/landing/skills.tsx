@@ -15,7 +15,6 @@ const skills: Skill[] = [
     { name: "TypeScript", icon: SiTypescript },
     { name: "T3 Stack", icon: TbBrandReactNative },
     { name: "React", icon: FaReact },
-    { name: "Angular", icon: SiAngular},
     { name: "OAuth2", icon: SiAuth0 },
     { name: "Shadcn ui", icon: SiShadcnui },
     { name: "tRPC", icon: SiTrpc },
