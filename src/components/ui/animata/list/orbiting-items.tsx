@@ -121,7 +121,7 @@ export default function OrbitingItems({
             alt="Hubert"
             width={112}
             height={112}
-            className="rounded-full border-2 border-border/40 animate-pulse-light"
+            className="rounded-full border-2 border-secondary/80 animate-pulse-light"
           />
         </div>
       </div>
