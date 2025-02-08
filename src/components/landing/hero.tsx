@@ -63,12 +63,12 @@ export default function Hero() {
                         >
                             <OrbitingItems
                                 items={[
-                                    <SiNextdotjs key="nextjs" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
-                                    <SiReact key="react" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
-                                    <SiTypescript key="typescript" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
-                                    <SiTailwindcss key="tailwind" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
-                                    <SiTurso key="turso" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
-                                    <SiDrizzle key="drizzle" className="h-6 w-6 md:h-7 md:w-7 text-foreground/80" />,
+                                    <SiNextdotjs key="nextjs" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
+                                    <SiReact key="react" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
+                                    <SiTypescript key="typescript" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
+                                    <SiTailwindcss key="tailwind" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
+                                    <SiTurso key="turso" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
+                                    <SiDrizzle key="drizzle" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
                                 ]}
                                 radius={50}
                                 containerClassName="!py-0"
