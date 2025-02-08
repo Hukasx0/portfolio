@@ -12,10 +12,9 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
-
   const menuRef = useRef<HTMLDivElement>(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -35,8 +34,10 @@ export default function Navbar() {
         isMenuOpen &&
         menuRef.current &&
         toggleButtonRef.current &&
+        navbarRef.current &&
         !menuRef.current.contains(event.target as Node) &&
-        !toggleButtonRef.current.contains(event.target as Node)
+        !toggleButtonRef.current.contains(event.target as Node) &&
+        !navbarRef.current.contains(event.target as Node)
       ) {
         closeMenu();
       }
@@ -50,7 +51,7 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 z-40 w-screen border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav className="mx-auto" aria-label="Main navigation">
+      <nav className="mx-auto" aria-label="Main navigation" ref={navbarRef}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="text-foreground font-bold text-2xl" onClick={closeMenu}>
