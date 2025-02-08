@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div id="about" className="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
+        <div id="about" className="scroll-mt-16 rounded-lg border bg-card text-card-foreground shadow-sm p-6">
             <h2 className="text-3xl font-bold mb-4">A little about me</h2>
             <div className="space-y-4">
             <p className="text-muted-foreground">

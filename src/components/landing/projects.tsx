@@ -191,7 +191,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
 
 export default function Projects() {
   return (
-    <Card id="projects" className="w-full">
+    <Card id="projects" className="scroll-mt-16 w-full">
       <CardContent className="p-6">
         <Balancer>
           <h2 className="text-3xl font-bold mb-6">My Projects</h2>
