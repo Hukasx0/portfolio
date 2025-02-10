@@ -15,18 +15,28 @@ export default function Navbar() {
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const navbarRef = useRef<HTMLDivElement>(null);
+  const themeToggleRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Node;
+
       if (
-        isMenuOpen &&
-        menuRef.current &&
-        toggleButtonRef.current &&
-        navbarRef.current &&
-        !menuRef.current.contains(event.target as Node) &&
-        !toggleButtonRef.current.contains(event.target as Node) &&
-        !navbarRef.current.contains(event.target as Node)
+        event.target instanceof Element &&
+        event.target.closest(".theme-dropdown-content")
       ) {
+        return;
+      }
+      if (
+        menuRef.current?.contains(target) ||
+        toggleButtonRef.current?.contains(target) ||
+        navbarRef.current?.contains(target) ||
+        themeToggleRef.current?.contains(target)
+      ) {
+        return;
+      }
+
+      if (isMenuOpen) {
         setIsMenuOpen(false);
       }
     };
@@ -65,13 +75,22 @@ export default function Navbar() {
               <GibberishText text="Hubert Kasperek" />
             </Link>
             <div className="hidden md:flex items-center space-x-4">
-              <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link
+                href="#about"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 About
               </Link>
-              <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link
+                href="#projects"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Projects
               </Link>
-              <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link
+                href="#contact"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Contact
               </Link>
               <a
@@ -84,15 +103,17 @@ export default function Navbar() {
               </a>
               <ThemeToggle />
             </div>
-            <div className="md:hidden flex items-center">
-              <ThemeToggle />
+            <div className="md:hidden flex items-center space-x-2">
+              <div ref={themeToggleRef}>
+                <ThemeToggle />
+              </div>
               <Button
                 ref={toggleButtonRef}
                 variant="ghost"
                 size="icon"
                 onClick={toggleMenu}
                 disabled={isAnimating}
-                className="ml-2 relative"
+                className="relative"
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={isMenuOpen}
               >
