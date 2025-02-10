@@ -17,15 +17,37 @@ export function ThemeToggle() {
   const { setTheme, resolvedTheme } = useTheme()
   const [mounted, setMounted] = React.useState(false)
   const [isOpen, setIsOpen] = React.useState(false)
+  const [isAnimating, setIsAnimating] = React.useState(false)
 
   React.useEffect(() => {
     setMounted(true)
   }, [])
 
   return (
-    <DropdownMenu modal={false} open={isOpen} onOpenChange={setIsOpen}>
+    <DropdownMenu
+      modal={false}
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!isAnimating) {
+          setIsAnimating(true)
+          setIsOpen(open)
+        }
+      }}
+    >
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className={`relative ${!mounted ? "hover:bg-transparent pointer-events-none" : ""}`}>
+        <Button
+          variant="ghost"
+          size="icon"
+          disabled={isAnimating}
+          onClick={() => {
+            if (!isAnimating) {
+              setIsAnimating(true)
+            }
+          }}
+          className={`relative ${
+            !mounted ? "hover:bg-transparent pointer-events-none" : ""
+          }`}
+        >
           {!mounted ? (
             <Sun className="text-transparent h-[1.2rem] w-[1.2rem]" />
           ) : (
@@ -37,8 +59,9 @@ export function ThemeToggle() {
                   animate={{ rotate: 0, opacity: 1 }}
                   exit={{ rotate: 90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
+                  onAnimationComplete={() => setIsAnimating(false)}
                 >
-                  {resolvedTheme === 'dark' ? (
+                  {resolvedTheme === "dark" ? (
                     <Moon className="h-[1.2rem] w-[1.2rem]" />
                   ) : (
                     <Sun className="h-[1.2rem] w-[1.2rem]" />
@@ -51,8 +74,9 @@ export function ThemeToggle() {
                   animate={{ rotate: 0, opacity: 1 }}
                   exit={{ rotate: -90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
+                  onAnimationComplete={() => setIsAnimating(false)}
                 >
-                  {resolvedTheme === 'dark' ? (
+                  {resolvedTheme === "dark" ? (
                     <Moon className="h-[1.2rem] w-[1.2rem]" />
                   ) : (
                     <Sun className="h-[1.2rem] w-[1.2rem]" />
@@ -74,25 +98,36 @@ export function ThemeToggle() {
                 exit={{ opacity: 0, scale: 0.85 }}
                 transition={{ duration: 0.2 }}
               >
-                <DropdownMenuItem 
-                  onClick={() => setTheme("light")}
+                <DropdownMenuItem
+                  onClick={() => {
+                    setTheme("light")
+                    setIsOpen(false)
+                  }}
                   className="cursor-pointer"
                 >
                   <Sun className="h-4 w-4 mr-2" />
                   Light
                 </DropdownMenuItem>
-                <DropdownMenuItem 
-                  onClick={() => setTheme("dark")}
+                <DropdownMenuItem
+                  onClick={() => {
+                    setTheme("dark")
+                    setIsOpen(false)
+                  }}
                   className="cursor-pointer"
                 >
                   <Moon className="h-4 w-4 mr-2" />
                   Dark
                 </DropdownMenuItem>
-                <DropdownMenuItem 
-                  onClick={() => setTheme("system")}
+                <DropdownMenuItem
+                  onClick={() => {
+                    setTheme("system")
+                    setIsOpen(false)
+                  }}
                   className="cursor-pointer"
                 >
-                  <span className="h-4 w-4 mr-2 flex items-center justify-center"><Laptop /></span>
+                  <span className="h-4 w-4 mr-2 flex items-center justify-center">
+                    <Laptop />
+                  </span>
                   System
                 </DropdownMenuItem>
               </motion.div>

@@ -10,23 +10,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const navbarRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -39,7 +27,7 @@ export default function Navbar() {
         !toggleButtonRef.current.contains(event.target as Node) &&
         !navbarRef.current.contains(event.target as Node)
       ) {
-        closeMenu();
+        setIsMenuOpen(false);
       }
     };
 
@@ -48,6 +36,25 @@ export default function Navbar() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    setIsAnimating(true);
+    const timeout = setTimeout(() => {
+      setIsAnimating(false);
+    }, 250);
+    return () => clearTimeout(timeout);
+  }, [isMenuOpen]);
+
+  const toggleMenu = () => {
+    if (isAnimating) return;
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    if (isMenuOpen && !isAnimating) {
+      setIsMenuOpen(false);
+    }
+  };
 
   return (
     <div className="fixed top-0 z-40 w-screen border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -84,96 +91,93 @@ export default function Navbar() {
                 variant="ghost"
                 size="icon"
                 onClick={toggleMenu}
+                disabled={isAnimating}
                 className="ml-2 relative"
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={isMenuOpen}
               >
-                {!mounted ? (
-                  <Menu className="h-6 w-6" />
-                ) : (
-                  <AnimatePresence mode="wait">
-                    {isMenuOpen ? (
-                      <motion.div
-                        key="close"
-                        initial={{ rotate: -90, opacity: 0 }}
-                        animate={{ rotate: 0, opacity: 1 }}
-                        exit={{ rotate: 90, opacity: 0 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <X className="h-6 w-6" />
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="menu"
-                        initial={{ rotate: 90, opacity: 0 }}
-                        animate={{ rotate: 0, opacity: 1 }}
-                        exit={{ rotate: -90, opacity: 0 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <Menu className="h-6 w-6" />
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                )}
+                <AnimatePresence mode="wait">
+                  {isMenuOpen ? (
+                    <motion.div
+                      key="close"
+                      initial={{ rotate: -90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: 90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <X className="h-6 w-6" />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="menu"
+                      initial={{ rotate: 90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: -90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Menu className="h-6 w-6" />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </Button>
             </div>
           </div>
         </div>
         <AnimatePresence>
-        {isMenuOpen && (
+          {isMenuOpen && (
             <motion.div
-            ref={menuRef}
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden overflow-hidden"
-            role="menu"
-            aria-label="Mobile menu"
+              ref={menuRef}
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="md:hidden overflow-hidden"
+              role="menu"
+              aria-label="Mobile menu"
             >
-            <motion.div 
+              <motion.div
                 initial={{ y: -20 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
                 className="px-2 pt-2 pb-3 space-y-1 sm:px-3"
-            >
+              >
                 <Link
-                href="#about"
-                onClick={closeMenu}
-                className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
-                role="menuitem"
+                  href="#about"
+                  onClick={closeMenu}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
+                  role="menuitem"
                 >
-                About
+                  About
                 </Link>
                 <Link
-                href="#projects"
-                onClick={closeMenu}
-                className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
-                role="menuitem"
+                  href="#projects"
+                  onClick={closeMenu}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
+                  role="menuitem"
                 >
-                Projects
+                  Projects
                 </Link>
                 <Link
-                href="#contact"
-                onClick={closeMenu}
-                className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
-                role="menuitem"
+                  href="#contact"
+                  onClick={closeMenu}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
+                  role="menuitem"
                 >
-                Contact
+                  Contact
                 </Link>
                 <a
-                href="https://github.com/Hukasx0"
-                onClick={closeMenu}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
-                role="menuitem"
+                  href="https://github.com/Hukasx0"
+                  onClick={closeMenu}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
+                  role="menuitem"
                 >
-                GitHub
+                  GitHub
                 </a>
+              </motion.div>
             </motion.div>
-            </motion.div>
-        )}
+          )}
         </AnimatePresence>
       </nav>
     </div>
