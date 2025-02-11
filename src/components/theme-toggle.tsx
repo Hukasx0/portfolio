@@ -34,7 +34,7 @@ export function ThemeToggle() {
   return (
     <DropdownMenu modal={false} open={isOpen} onOpenChange={setIsOpen}>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="relative">
+        <Button variant="ghost" size="icon" className={`relative ${!mounted ? "text-background pointer-events-none" : ""}`}>
           {!mounted ? (
             <Sun className="w-6 h-6" />
           ) : (
