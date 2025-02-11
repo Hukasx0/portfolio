@@ -6,7 +6,6 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { useState, useEffect, useRef } from "react";
 import GibberishText from "./ui/animata/text/gibberish-text";
-import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -117,89 +116,71 @@ export default function Navbar() {
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={isMenuOpen}
               >
-                <AnimatePresence mode="wait">
-                  {isMenuOpen ? (
-                    <motion.div
-                      key="close"
-                      initial={{ rotate: -90, opacity: 0 }}
-                      animate={{ rotate: 0, opacity: 1 }}
-                      exit={{ rotate: 90, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <X className="h-6 w-6" />
-                    </motion.div>
-                  ) : (
-                    <motion.div
-                      key="menu"
-                      initial={{ rotate: 90, opacity: 0 }}
-                      animate={{ rotate: 0, opacity: 1 }}
-                      exit={{ rotate: -90, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <Menu className="h-6 w-6" />
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                <div className="relative w-6 h-6">
+                  <Menu
+                    className={`absolute top-0 left-0 w-6 h-6 transition-transform duration-200 ${
+                      isMenuOpen ? "opacity-0 rotate-90" : "opacity-100 rotate-0"
+                    }`}
+                  />
+                  <X
+                    className={`absolute top-0 left-0 w-6 h-6 transition-transform duration-200 ${
+                      isMenuOpen ? "opacity-100 rotate-0" : "opacity-0 -rotate-90"
+                    }`}
+                  />
+                </div>
               </Button>
             </div>
           </div>
         </div>
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              ref={menuRef}
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="md:hidden overflow-hidden"
-              role="menu"
-              aria-label="Mobile menu"
+        <div
+          ref={menuRef}
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+          }`}
+          role="menu"
+          aria-label="Mobile menu"
+        >
+          <div
+            className={`px-2 pt-2 pb-3 space-y-1 sm:px-3 transition-transform duration-300 ease-in-out ${
+              isMenuOpen ? "translate-y-0" : "-translate-y-5"
+            }`}
+          >
+            <Link
+              href="#about"
+              onClick={closeMenu}
+              className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
+              role="menuitem"
             >
-              <motion.div
-                initial={{ y: -20 }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.3, delay: 0.1 }}
-                className="px-2 pt-2 pb-3 space-y-1 sm:px-3"
-              >
-                <Link
-                  href="#about"
-                  onClick={closeMenu}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
-                  role="menuitem"
-                >
-                  About
-                </Link>
-                <Link
-                  href="#projects"
-                  onClick={closeMenu}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
-                  role="menuitem"
-                >
-                  Projects
-                </Link>
-                <Link
-                  href="#contact"
-                  onClick={closeMenu}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
-                  role="menuitem"
-                >
-                  Contact
-                </Link>
-                <a
-                  href="https://github.com/Hukasx0"
-                  onClick={closeMenu}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
-                  role="menuitem"
-                >
-                  GitHub
-                </a>
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+              About
+            </Link>
+            <Link
+              href="#projects"
+              onClick={closeMenu}
+              className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
+              role="menuitem"
+            >
+              Projects
+            </Link>
+            <Link
+              href="#contact"
+              onClick={closeMenu}
+              className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
+              role="menuitem"
+            >
+              Contact
+            </Link>
+            <a
+              href="https://github.com/Hukasx0"
+              onClick={closeMenu}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-all"
+              role="menuitem"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </nav>
     </div>
   );
