@@ -8,8 +8,8 @@ const experiences = [
     company: "BlitzyApp.com",
     period: "2024 - Present",
     description: [
-      "Built SaaS no-code platform from scratch using T3 Stack, Next.js, tRPC, TypeScript and Tailwind CSS",
-      "Implemented visual editor, authentication system and database integrations",
+      "Built SaaS no-code platform from scratch using T3 Stack, Next.js, React, tRPC, TypeScript, Tailwind CSS and Turso database",
+      "Implemented visual editor, authentication system and database integration",
       "Empowering startups to validate ideas in hours instead of weeks"
     ],
     link: "https://blitzyapp.com/"
