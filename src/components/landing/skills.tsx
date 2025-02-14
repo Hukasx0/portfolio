@@ -1,9 +1,9 @@
 import { IconType } from "react-icons";
 import { FaReact, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSqlite, SiAuth0, SiTurso, SiShadcnui, SiTrpc, SiDrizzle, SiCloudflarepages, SiCloudflareworkers, SiCsharp, SiDotnet, SiAngular } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSqlite, SiAuth0, SiTurso, SiShadcnui, SiTrpc, SiDrizzle, SiCsharp, SiDotnet, SiCloudflare, SiPython, SiJavascript } from "react-icons/si";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
+import T3Icon from "../ui/icons/T3icon";
 
 interface Skill {
     name: string;
@@ -12,8 +12,9 @@ interface Skill {
 
 const skills: Skill[] = [
     { name: "Next.js", icon: SiNextdotjs },
+    { name: "T3 Stack", icon: T3Icon },
     { name: "TypeScript", icon: SiTypescript },
-    { name: "T3 Stack", icon: TbBrandReactNative },
+    { name: "JavaScript", icon: SiJavascript },
     { name: "React", icon: FaReact },
     { name: "OAuth2", icon: SiAuth0 },
     { name: "Shadcn ui", icon: SiShadcnui },
@@ -24,18 +25,18 @@ const skills: Skill[] = [
     { name: "Git", icon: FaGitAlt },
     { name: "Drizzle ORM", icon: SiDrizzle },
     { name: "Tailwind CSS", icon: SiTailwindcss },
-    { name: "Cloudflare Pages", icon: SiCloudflarepages},
-    { name: "Workers", icon: SiCloudflareworkers},
+    { name: "Workers & Pages", icon: SiCloudflare},
     { name: "C#", icon: SiCsharp },
-    { name: ".NET", icon: SiDotnet }
+    { name: ".NET", icon: SiDotnet },
+    { name: "Python", icon: SiPython },
 ];
 
 const skillLinks: { [key: string]: string } = {
   "Next.js": "https://nextjs.org",
-  "TypeScript": "https://www.typescriptlang.org",
   "T3 Stack": "https://create.t3.gg",
+  "TypeScript": "https://www.typescriptlang.org",
+  "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   "React": "https://reactjs.org",
-  "Angular": "https://angular.dev/",
   "OAuth2": "https://oauth.net/2/",
   "Shadcn ui": "https://ui.shadcn.com",
   "tRPC": "https://trpc.io",
@@ -45,10 +46,10 @@ const skillLinks: { [key: string]: string } = {
   "Git": "https://git-scm.com",
   "Drizzle ORM": "https://orm.drizzle.team",
   "Tailwind CSS": "https://tailwindcss.com",
-  "Cloudflare Pages": "https://pages.cloudflare.com/",
-  "Workers": "https://workers.cloudflare.com/",
+  "Workers & Pages": "https://pages.cloudflare.com/",
   "C#": "https://docs.microsoft.com/en-us/dotnet/csharp/",
-  ".NET": "https://dotnet.microsoft.com/"
+  ".NET": "https://dotnet.microsoft.com/",
+  "Python": "https://www.python.org/"
 };
 
 export default function Skills() {

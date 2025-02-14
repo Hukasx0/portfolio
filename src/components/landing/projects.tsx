@@ -9,6 +9,7 @@ import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiRust, SiPython, Si
 import Balancer from "react-wrap-balancer";
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
+import T3Icon from "../ui/icons/T3icon";
 
 const ImageModal = ({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) => {
   useEffect(() => {
@@ -62,7 +63,7 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
       description: "<strong>SaaS platform solving the problem of slow idea validation</strong> through visual no-code prototyping. Reduces time-to-market from weeks to hours by enabling <strong>no-code creation of basic website MVPs</strong> with <strong>built-in waitlist functionality</strong>",
       image: "/portfolio/blitzy.webp",
       link: "https://blitzyapp.com",
-      technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso, SiCloudflare],
+      technologies: [T3Icon, SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso, SiCloudflare],
     },
     {
       title: "Character Factory",
@@ -91,7 +92,7 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
       description: "<strong>Rapid prototyping exercise</strong> demonstrating product development under time constraints. Delivered cloud note management POC in 3 hours during hackathon, <strong>solving immediate need for centralized student resources</strong>.",
       image: "/portfolio/assistly.webp",
       link: "https://hacknarock-2024.pages.dev/",
-      technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso, SiCloudflare],
+      technologies: [T3Icon, SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso, SiCloudflare],
     },
     {
       title: "Todist",
@@ -99,7 +100,7 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
       image: "/portfolio/todist.webp",
       link: "https://todistapp.vercel.app/",
       github: "https://github.com/Hukasx0/todist",
-      technologies: [SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiPostgresql, SiVercel],
+      technologies: [T3Icon, SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiPostgresql, SiVercel],
     },
     {
       title: "Sharp Scheduler",

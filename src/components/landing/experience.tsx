@@ -14,7 +14,7 @@ const experiences = [
     ],
     link: "https://blitzyapp.com/"
   },
-  {
+  /*{{
     title: "Open Source Contributor",
     company: "GitHub Projects",
     period: "2022 - Present",
@@ -24,7 +24,7 @@ const experiences = [
       "And many more"
     ],
     link: "https://github.com/Hukasx0"
-  },
+  },}*/
 ];
 
 export default function Experience() {

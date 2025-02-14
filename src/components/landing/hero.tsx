@@ -1,16 +1,15 @@
 "use client";
 
 import { FaGithub, FaTwitter, FaProductHunt } from "react-icons/fa";
-import { MdEmail, MdDownload } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { Card, CardContent } from "../ui/card";
 import Balancer from "react-wrap-balancer";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ContactModal } from "../contact-modal";
 import OrbitingItems from "../ui/animata/list/orbiting-items";
-import { SiDrizzle, SiNextdotjs, SiReact, SiTailwindcss, SiTurso, SiTypescript } from "react-icons/si";
+import { SiDrizzle, SiJavascript, SiNextdotjs, SiPostgresql, SiReact, SiTailwindcss, SiTurso, SiTypescript } from "react-icons/si";
 import { MoveDown } from "lucide-react";
 
 import { motion } from "framer-motion"
@@ -67,8 +66,8 @@ export default function Hero() {
                                     <SiReact key="react" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
                                     <SiTypescript key="typescript" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
                                     <SiTailwindcss key="tailwind" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
-                                    <SiTurso key="turso" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
-                                    <SiDrizzle key="drizzle" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
+                                    <SiPostgresql key="postgres" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
+                                    <SiJavascript key="javascript" className="h-6 w-6 md:h-7 md:w-7 text-foreground/90" />,
                                 ]}
                                 radius={50}
                                 containerClassName="!py-0"
