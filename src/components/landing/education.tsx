@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Card, CardContent } from "../ui/card";
 
+const isGitHubPages = process.env.NEXT_PUBLIC_GITHUB_PAGES === 'true';
+
 const educations = [
   {
     school: "ZSP2 Wągrowiec High School",
@@ -13,7 +15,7 @@ const educations = [
       "Professional internships: 2 months working as a web developer",
       "Exam preparation: INF.03 and INF.04"
     ],
-    logo: "/portfolio/zsp2wagrowiec.svg"
+    logo: `${isGitHubPages ? '/portfolio' : ''}/zsp2wagrowiec.svg`
   },
 ];
 

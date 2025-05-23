@@ -73,6 +73,8 @@ jobs:
           echo "NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
           echo "NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}" >> $GITHUB_ENV
           echo "NEXT_PUBLIC_GH_PAGES=True" >> $GITHUB_ENV
+          echo "GITHUB_PAGES=true" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_GITHUB_PAGES=true" >> $GITHUB_ENV
       - name: Build with Next.js
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build

@@ -2,6 +2,8 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { SiDrizzle, SiNextdotjs, SiReact, SiTailwindcss, SiTurso, SiTypescript } from "react-icons/si";
 
+const isGitHubPages = process.env.NEXT_PUBLIC_GITHUB_PAGES === 'true';
+
 export const testOrbitingItems = [
   <SiNextdotjs key="nextjs" className="h-6 w-6" />,
   <SiReact key="react" className="h-6 w-6" />,
@@ -117,7 +119,7 @@ export default function OrbitingItems({
 
         <div className={cn("absolute h-24 w-24 md:h-28 md:w-28 rounded-full", reverse)}>
           <Image
-            src="/portfolio/avatar.webp"
+            src={`${isGitHubPages ? '/portfolio' : ''}/avatar.webp`}
             alt="Hubert"
             width={112}
             height={112}

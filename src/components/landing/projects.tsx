@@ -11,6 +11,8 @@ import { X } from "lucide-react";
 import { useEffect, useState } from "react";
 import T3Icon from "../ui/icons/T3icon";
 
+const isGitHubPages = process.env.NEXT_PUBLIC_GITHUB_PAGES === 'true';
+
 const ImageModal = ({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) => {
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
@@ -61,21 +63,21 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
     {
       title: "Blitzy",
       description: "<strong>SaaS platform solving the problem of slow idea validation</strong> through visual no-code prototyping. Reduces time-to-market from weeks to hours by enabling <strong>no-code creation of basic website MVPs</strong> with <strong>built-in waitlist functionality</strong>",
-      image: "/portfolio/blitzy.webp",
+      image: `${isGitHubPages ? '/portfolio' : ''}/blitzy.webp`,
       link: "https://blitzyapp.com",
       technologies: [T3Icon, SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso, SiCloudflare],
     },
     {
       title: "Character Factory",
       description: "<strong>AI persona engineering studio</strong> addressing character consistency challenges in generative AI. Combines Stable Diffusion with LLMs to enable <strong>cross-platform personality persistence</strong>, used by 25k+ monthly users for creation of roleplay characters and AI research.",
-      image: "/portfolio/character-factory.webp",
+      image: `${isGitHubPages ? '/portfolio' : ''}/character-factory.webp`,
       github: "https://github.com/Hukasx0/character-factory",
       technologies: [SiPython, SiJupyter, SiGooglecolab],
     },
     {
       title: "Aichar",
       description: "<strong>Python character management library</strong> for cross-platform AI personas. Enables <strong>creation/editing/export</strong> of characters across TavernAI, SillyTavern, Pygmalion and other frontends. Supports JSON/YAML/card formats with <strong>way faster processing</strong> via Rust core. <strong>750k+ PyPI downloads.</strong>",
-      image: "/portfolio/aichar.webp",
+      image: `${isGitHubPages ? '/portfolio' : ''}/aichar.webp`,
       link: "https://pypi.org/project/aichar/",
       github: "https://github.com/Hukasx0/aichar",
       technologies: [SiRust, SiPython, SiPypi],
@@ -83,21 +85,21 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
     {
       title: "AI Companion",
       description: "<strong>Self-hosted AI chatbot engine</strong> with offline execution (CPU/GPU), support for Llama 2/Mistral models (.gguf), and CUDA/Metal acceleration. Features roleplay syntax (*actions*), dual memory system (short/long-term), and real-time learning. Packaged as 26MB Rust binary with web UI.",
-      image: "/portfolio/ai-companion.webp",
+      image: `${isGitHubPages ? '/portfolio' : ''}/ai-companion.webp`,
       github: "https://github.com/Hukasx0/ai-companion",
       technologies: [SiReact, SiTypescript, SiTailwindcss, SiRust, SiActix, SiSqlite],
     },
     {
       title: "AssistlyApp",
       description: "<strong>Rapid prototyping exercise</strong> demonstrating product development under time constraints. Delivered cloud note management POC in 3 hours during hackathon, <strong>solving immediate need for centralized student resources</strong>.",
-      image: "/portfolio/assistly.webp",
+      image: `${isGitHubPages ? '/portfolio' : ''}/assistly.webp`,
       link: "https://hacknarock-2024.pages.dev/",
       technologies: [T3Icon, SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiTailwindcss, SiTurso, SiCloudflare],
     },
     {
       title: "Todist",
       description: "<strong>Fullstack technical showcase</strong> proving ability to ship production-ready apps rapidly. Implemented secure task management with auth and PostgreSQL in 24h, <strong>emphasizing clean architecture patterns</strong>.",
-      image: "/portfolio/todist.webp",
+      image: `${isGitHubPages ? '/portfolio' : ''}/todist.webp`,
       link: "https://todistapp.vercel.app/",
       github: "https://github.com/Hukasx0/todist",
       technologies: [T3Icon, SiNextdotjs, SiReact, SiTrpc, SiTypescript, SiPostgresql, SiVercel],
@@ -105,21 +107,21 @@ const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
     {
       title: "Sharp Scheduler",
       description: "Web application for <strong>task scheduling and terminal command automation</strong> with simple and clean admin interface. Enables users to <strong>schedule, manage, and monitor system commands</strong> using advanced cron expressions and provides comprehensive execution logging.",
-      image: "/portfolio/sharp-scheduler-screenshot.webp", 
+      image: `${isGitHubPages ? '/portfolio' : ''}/sharp-scheduler-screenshot.webp`, 
       github: "https://github.com/Hukasx0/sharp-scheduler",
       technologies: [SiAngular, SiTypescript, SiDotnet, SiCsharp, SiPostgresql, SiBootstrap],
     },
     {
       title: "Backup Database Application",
       description: "Full-stack web application that <strong>automates database backups</strong> for PostgreSQL. Features include <strong>automated backups on a configurable schedule</strong>, detailed logging, and a basic dashboard.",
-      image: "/portfolio/backup-db-tool.webp",
+      image: `${isGitHubPages ? '/portfolio' : ''}/backup-db-tool.webp`,
       github: "https://github.com/Hukasx0/dotnet-angular-postgres-backup-tool",
       technologies: [SiAngular, SiTypescript, SiDotnet, SiCsharp, SiBootstrap, SiPostgresql],
     },
     {
       title: "Short Maker",
       description: "<strong>Automated video compositing tool</strong> combining clips, audio, and dynamic subtitles. Leverages FFmpeg pipelines and Python for <strong>local, script-based short vertical video production</strong> (TTS/graphics/dynamic subtitles). Solves content creation scalability through <strong>modular media processing</strong> without cloud dependencies or external APIs.",
-      image: "/portfolio/short-maker.webp",
+      image: `${isGitHubPages ? '/portfolio' : ''}/short-maker.webp`,
       github: "https://github.com/Hukasx0/short-maker",
       technologies: [SiPython, SiFfmpeg],
     },
