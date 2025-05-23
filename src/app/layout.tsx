@@ -14,10 +14,12 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
 });
 
+const isGitHubPages = process.env.NEXT_PUBLIC_GITHUB_PAGES === 'true';
+
 export const metadata: Metadata = {
   title: "Hubert Kasperek's portfolio website",
   description: "Hubert Kasperek's portfolio website",
-  icons: [{ rel: "icon", url: "/portfolio/icon.png" }],
+  icons: [{ rel: "icon", url: `${isGitHubPages ? '/portfolio' : ''}/icon.png` }],
 };
 
 export default function RootLayout({
