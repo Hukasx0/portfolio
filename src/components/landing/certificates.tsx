@@ -47,7 +47,7 @@ export default function Certificates() {
                 <div className="flex-grow min-w-0">
                   <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
                     <h3 className="text-lg font-semibold">{cert.name}</h3>
-                    <span className="text-sm text-muted-foreground whitespace-nowrap ml-4">{cert.date}</span>
+                    <span className="text-sm text-muted-foreground whitespace-nowrap">{cert.date}</span>
                   </div>
                   <p className="text-base font-medium mb-1">
                     {cert.link ? (
